@@ -51,11 +51,23 @@ p {
     font-weight: 700;
 }
 
-.input-contact {
-    opacity: 50%;
-    color: #d9d9d9;
-    background-color: #d9d9d9;
-}
+input[type="text"], textarea {
+
+    background-color : #D9D9D9;
+    
+    }
+
+input[type="email"], textarea {
+
+    background-color : #D9D9D9;
+    
+    }
+
+input[type="tel"], textarea {
+
+    background-color : #D9D9D9;
+    
+    }
 
 a p {
     color: white;
