@@ -74,4 +74,28 @@ a:link {
   a:active { 
     text-decoration: none; 
   }
-  
+
+#sendButton {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
+}
+
+#sendButton:hover {
+    background-color: #f4661b; 
+}
+
+#sendButton:hover {
+    background-color: #f4661b; 
+}
+
+.py-150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
