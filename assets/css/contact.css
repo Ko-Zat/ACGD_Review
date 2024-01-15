@@ -6,12 +6,16 @@
     padding-top: 230px !important;
 }
 
+.pt-50 {
+    padding-top: 100px !important;
+}
+
 .px-14 {
     padding-left: 14rem !important;
     padding-right: 14rem !important;
 }
 
-.bg-gray {
+.bg-grey {
     background-color: #434343;
 }
 
@@ -22,4 +26,33 @@
 
 .pb-40 {
     padding-bottom: 40px;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.gras  {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+
+.light {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.bold {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.input-contact {
+    opacity: 50%;
+    color: #d9d9d9;
+    background-color: #d9d9d9;
 }
