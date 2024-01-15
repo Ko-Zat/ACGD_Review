@@ -88,11 +88,11 @@ a:link {
 }
 
 #sendButton:hover {
-    background-color: #f4661b; 
+    background-color: #b14810; 
 }
 
-#sendButton:hover {
-    background-color: #f4661b; 
+#sendButton:active {
+    background-color: #ee854d; 
 }
 
 .py-150 {
