@@ -23,3 +23,7 @@
 .pb-40 {
     padding-bottom: 40px;
 }
+
+.underline {
+    text-decoration-line: underline;
+}
