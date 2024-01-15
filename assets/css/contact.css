@@ -10,3 +10,7 @@
     padding-left: 14rem !important;
     padding-right: 14rem !important;
 }
+
+.bg-gray {
+    background-color: #434343;
+}
