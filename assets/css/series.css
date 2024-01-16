@@ -191,3 +191,9 @@ a:link {
     }
 }
 
+.limit {
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
