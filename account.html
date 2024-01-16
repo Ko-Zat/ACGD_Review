@@ -18,32 +18,33 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <div class="mx-5 p-2" style="width: 170px;"></div>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 gras text-uppercase">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">cinéma</a>
+                      <li class="nav-item px-4 ">
+                        <a class="nav-link " href="movie_theatre.html">cinéma</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item px-4">
                         <a class="nav-link" href="series.html">
                           series
                         </a>
                       </li>
-                      <li class="nav-item ">
+                      <li class="nav-item px-4">
                         <a class="nav-link" href="video_game.html">
                           gaming
                         </a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item px-4">
                         <a class="nav-link" href="music.html">
                           musique
                         </a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item px-4">
                         <a class="nav-link" href="book.html">
                           Livre
                         </a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item px-4">
                         <a class="nav-link" href="news_feed.html">
                           evenements
                         </a>
@@ -51,13 +52,53 @@
                     </ul>
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn" type="submit"><img src="./assets/image/loupe.png"></button>
-                      <button class="btn"><img src="./assets/image/contact/Group 13.svg" href="index.html" ></button>
+                      <button class="btn" type="submit"><img src="./assets/image/loupe.png" alt="loupe"></button>
                     </form>
+                    <a class="nav-item p-2" href="login.html"> <img src="./assets/image/Group 13.svg"></a>
                 </div>
               </nav>
         </div>
     </header>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class=".bg-#434343">Pays :</th>
+          <th scope="col">France</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Membre depuis :</th>
+          <td>1 Jour</td>
+        </tr>
+        <tr>
+          <th scope="row">Avis posté(s)</th>
+          <td>6 Avis</td>
+        </tr>
+        <tr>
+          <th scope="row">Dernière connexion</th>
+          <td colspan="2">1 Heure</td>
+        </tr>
+        <tr>
+          <th scope="row">Genre :</th>
+          <td colspan="2">Homme</td>
+        </tr>
+        <tr>
+          <th scope="row">Age :</th>
+          <td colspan="2">23 Ans</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--allows you to do the @ username or handle-->
+    <nav class="navbar bg-body-tertiary">
+      <form class="container-fluid">
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </form>
+    </nav>
+    <!--allows you to do the @ username or handle-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
