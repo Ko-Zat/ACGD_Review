@@ -28,6 +28,10 @@
     padding-bottom: 40px;
 }
 
+.ps-240 {
+    padding-left:15rem!important
+}
+
 .underline {
     text-decoration-line: underline;
 }
