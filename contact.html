@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700;900&display=swap" rel="stylesheet">
 	  <link rel="shortcut icon" href="./assets/image/ar48px.png" type="image/x-icon">
   </head>
+
   <body>
     <header class="fluid-container bg-grey gras">
         <div class="">
@@ -45,7 +47,7 @@
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn" type="submit"><img src="./assets/image/contact/loupe.png" alt=""></button>
                     </form>
-                    <a class="nav-item p-2" href="login.html"><img src="assets/image/account.svg" alt="account logo" width="26px" height="26px"></a>
+                    <a class="nav-item p-2" href="login.html"><img src="assets/image/account.svg" class="log" alt="account logo" width="26px" height="26px"></a>
                   </button>
                   </div>
                 </div>
@@ -61,39 +63,41 @@
       <p class="text-center">Grâce au formulaire ci-dessous</p>
       <h1 class="text-center pt-200 bold">Formulaire de contact:</h1>
       </div>
-      <div class="pt-100 px-14">
-        <p class="ps-1">Votre nom :</p>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control light " placeholder="Saisir votre nom" aria-label="name" aria-describedby="basic-addon1">
+      <div>
+        <div class="pt-100 px-14">
+          <p class="ps-1">Votre nom :</p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control light" placeholder="Saisir votre nom" aria-label="name" aria-describedby="basic-addon1">
+          </div>
         </div>
+        <div class="pt-3 px-14">
+          <p class="ps-1">Votre prénom :</p>
+          <div class="input-group">
+            <input type="text" class="form-control light" placeholder="Saisir votre prénom" aria-label="last name" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="pt-3 px-14">
+          <p class="ps-1">Votre Email :</p>
+          <div class="input-group">
+            <input type="email" class="form-control light" placeholder="Saisir votre Email" aria-label="Email" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="pt-3 px-14">
+          <p class="ps-1">Votre Téléphone :</p>
+          <div class="input-group">
+            <input type="tel" class="form-control light" placeholder="Saisir votre téléphone" aria-label="Phone" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="pt-3 px-14">
+          <p class="ps-1">Votre Message :</p>
+          <div class="input-group">
+            <textarea class="form-control light msg" placeholder="Saisir votre message" aria-label="Username" aria-describedby="basic-addon1"></textarea>
+          </div>
+      </div>    
       </div>
       <div class="pt-3 px-14">
-        <p class="ps-1">Votre prénom :</p>
-        <div class="input-group">
-          <input type="text" class="form-control light" placeholder="Saisir votre prénom" aria-label="last name" aria-describedby="basic-addon1">
-        </div>
-      </div>
-      <div class="pt-3 px-14">
-        <p class="ps-1">Votre Email :</p>
-        <div class="input-group">
-          <input type="email" class="form-control light" placeholder="Saisir votre Email" aria-label="Email" aria-describedby="basic-addon1">
-        </div>
-      </div>
-      <div class="pt-3 px-14">
-        <p class="ps-1">Votre Téléphone :</p>
-        <div class="input-group">
-          <input type="tel" class="form-control light" placeholder="Saisir votre téléphone" aria-label="Phone" aria-describedby="basic-addon1">
-        </div>
-      </div>
-      <div class="pt-3 px-14">
-        <p class="ps-1">Votre Message :</p>
-        <div class="input-group">
-          <textarea class="form-control light msg" placeholder="Saisir votre message" aria-label="Username" aria-describedby="basic-addon1"></textarea>
-        </div>
-    </div>    
-      <div class="pt-3 px-14">
-        <p class="ps-1 d-inline">Préférence de réponse :</p>
-        <div class="d-inline ps-5">
+        <p class="ps-1 d-inline px-5">Préférence de réponse :</p>
+        <div class="d-inline">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
             <label class="form-check-label" for="inlineRadio1">
@@ -115,7 +119,7 @@
         </div>
       </div>
       <div class="text-center py-150">
-        <button id="sendButton">Envoyer</button>
+        <button type="submit" id="sendButton">Envoyer</button>
       </div>
     </main>
     <footer class="bg-grey">
