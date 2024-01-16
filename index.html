@@ -8,45 +8,108 @@
     <link href="./assets/css/index.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"> <img src="./assets/image/areview.png" alt="LOGO"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Cinéma</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Série</a>
-                      </li>
-                      <li class="nav-item gaming">
-                        <a class="nav-link gaming-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Gaming
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Musique</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Livre</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Événements</a>
-                      </li>
+    <header class="fluid-container bg-grey gras">
+      <div class="row">
+         <!--menu-->
+          <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand p-2" href="index.html"><img src="assets/image/areview-header.png" alt="Logo retour Home"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link text-white" href="movietheater.html">cinéma</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link text-white" href="series.html">séries</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link text-white" href="video_game.html">gaming lala</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link text-white" href="music.html">musique</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link text-white" href="book.html">livre</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                      <a class="nav-link text-white" href="events.html">événement</a>
+                    </li>
                     </ul>
+                    <!--search-->
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      <button class="btn" type="submit"><img src="./assets/image/contact/loupe.png" alt=""></button>
                     </form>
+                    <a class="nav-item p-2" href="login.html"><img src="assets/image/Group 13.svg" alt="account logo" width="26px" height="26px"></a>
                   </div>
               </nav>
         </div>
     </header>
-    <h1>Distinguer le remarquable du banal</h1>
+    <main>
+        <!--carousel slider-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://placehold.co/1920x305"  class="img-fluid d-block w-100" alt=".slider.">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1 class="bold textex-center">Distinguer le remarquable du banal</h1>
+      <div>
+      <div>
+        <h2 class="text-uppercase gras text-center py-2 stitre">Cinéma</h2>
+      </div>
+        <div>
+          <!--Big square image-->
+          <img src="https://placehold.co/490x453" class="b-img rounded mx-auto d-block" alt="fake image">
+        </div>
+        <div>
+          <!--Medium rectangle image 1-->
+          <img src="https://placehold.co/192x127" class="m-img rounded mx-auto d-block" alt="fake image">
+          <!--Texte sum article 1-->
+          <H3>Aquaman</H3>
+          <P class="sum-artile pt-lg-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+          <!--Medium rectangle image 2-->
+          <img src="https://placehold.co/192x127" class="m-img overflow-auto" alt="fake image">
+           <!--Texte sum article 2-->
+           <H3>Dune</H3>
+           <P class="sum-artile pt-lg-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+          <!--Medium rectangle image 1-->
+           <img src="https://placehold.co/192x127" class="m-img" alt="fake image">
+          <!--Texte sum article 1-->
+          <H3>Dvd spectacles</H3>
+          <P class="sum-artile pt-lg-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+        </div>
+        <div>
+          <!--Medium rectangle image 1-->
+          <img src="https://placehold.co/192x127" class="m-img" alt="fake image">
+          <!--Texte sum article 1-->
+          <H3>Aquaman</H3>
+          <P class="sum-artile pt-lg-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+          <!--Medium rectangle image 2-->
+          <img src="https://placehold.co/192x127" class="m-img" alt="fake image">
+           <!--Texte sum article 2-->
+           <H3>Dune</H3>
+           <P class="sum-artile pt-lg-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+          <!--Medium rectangle image 1-->
+           <img src="https://placehold.co/192x127" class="m-img" alt="fake image">
+          <!--Texte sum article 1-->
+          <H3>Dvd spectacles</H3>
+          <P class="sum-artile pt-lg-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+        </div>
+      </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
