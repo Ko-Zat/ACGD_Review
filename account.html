@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,900;0,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Navbar header-->
     <header class="grey">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -92,11 +92,11 @@
         </tr>
       </tbody>
     </table>
-    <!-- récemment vus -->
+    <!-- Recently viewed -->
     <div>
       <h2 class="text-uppercase gras text-center py-3 titre mb-5">récemment vus</h2>
     </div> 
-    <!-- d-inline permet d'alligner les images -->
+    <!-- Recently viewed articles -->
     <div class="text-center hstack gap-2">
       <div class="text-center actu">
         <div>
@@ -186,13 +186,16 @@
               </div>
             </div>     
    </div>
+       <!-- see more -->
    <a class="icon-link" href="#">
     <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
     Voir plus
   </a>
+      <!-- Favorite -->
   <div>
     <h2 class="text-uppercase gras text-center py-3 titre ">favoris</h2>
   </div>  
+        <!-- Favorite articles-->
   <div class="text-center">
     <div class="text-center actu">
       <div>
@@ -370,6 +373,7 @@
             </div>
           </div>      
  </div>
+ <!-- See more -->
  <a class="icon-link" href="#">
   <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
   Voir plus
@@ -377,7 +381,7 @@
 <div>
   <h2 class="text-uppercase gras text-center py-3 titre ">centres d'interêts</h2>
 </div> 
-<!-- start -->
+<!-- Categories -->
 <div class="row mt-5 mb-5">
   <div class="col-lg-4 position-relative">
     <img src="./assets/image/account/aventure.png" class="img-fluid" alt="Aventure">
@@ -421,7 +425,7 @@
 <div>
   <h2 class="text-uppercase gras text-center py-3 titre ">derniers messages</h2>
 </div>
-<!-- Debut -->
+<!-- Review -->
 <div class="row">
   <div class="col-sm-3 mar mt-3">
     <div class="card">
@@ -490,21 +494,47 @@
   <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
   Voir plus
 </a>
-<!-- fin -->
+<!-- Account management-->
 <div>
   <h2 class="text-uppercase gras text-center py-3 titre ">gestion compte</h2>
 </div>
-<!-- start -->
-<!-- fin -->
-    <!--allows you to do the @ username or handle-->
-    <nav class="navbar bg-body-tertiary">
-      <form class="container-fluid">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-      </form>
-    </nav>
+<!-- Form-->
+<div>
+  <div class="pt-4 px-14">
+    <p class="ps-1">Votre Pseudo : BodoWT</p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control light" placeholder="Saisir votre nouveau Pseudo" aria-label="name" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="pt-3 px-14">
+    <p class="ps-1">Votre Prénom : Victorien</p>
+    <div class="input-group">
+      <input type="text" class="form-control light" placeholder="Saisir votre nouveau prénom" aria-label="last name" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="pt-3 px-14">
+    <p class="ps-1">Votre Email : victorien.lague@gmail.com</p>
+    <div class="input-group">
+      <input type="email" class="form-control light" placeholder="Saisir votre nouveau Email" aria-label="Email" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="pt-3 px-14">
+    <p class="ps-1">Mot de passe : ***********</p>
+    <div class="input-group">
+      <input type="tel" class="form-control light" placeholder="Saisir votre nouveau mot de passe" aria-label="Phone" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="pt-3 px-14">
+    <p class="ps-1">Pour confirmer entrer votre mot de passe :</p>
+    <div class="input-group">
+      <input type="tel" class="form-control light" placeholder="Saisir mot de passe" aria-label="Phone" aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <!-- Confirm -->
+  <div class="text-center py-5">
+    <button class="btn" type="submit" id="confirmer">Confirmer</button>
+  </div>
+<!-- Footer -->
     <footer class="grey">
       <div class="text-center py-4">
         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
@@ -528,7 +558,6 @@
         <p>droits légaux. dépôt....</p>
       </div>
     </footer>
-    <!--allows you to do the @ username or handle-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -48,12 +48,29 @@
     text-decoration: none;
  }
  .neg {
-    margin-top: -0.25rem !important;
+    margin-top: -0.25rem ;
   }
 p {
     text-align: left;
+    font-family: 'Noto Sans', sans-serif;
 }
 .mar {
     margin-left: 80px;
     margin-right: 80px;
+}
+.px-14 {
+    padding-left: 14rem ;
+    padding-right: 14rem ;
+}
+
+#confirmer {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
 }
