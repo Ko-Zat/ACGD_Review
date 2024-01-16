@@ -1,0 +1,31 @@
+.bg_grey{
+    background-color: #434343;
+}
+
+.bg_light{
+    background-color: #d9d9d9;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.thin{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+.light{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+
+.bold{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.gras{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}

@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Description</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/movie_description.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie Description</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/movie_description.css">
+	<link rel="icon" href="./assets/image/ar48px.png" type="x-icon">
+	<link rel="shortcut-icon" href="./assets/image/ar48px.png" type="x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,900;0,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="fluid-container">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html" >
-                    <img src="./assets/image/areview.png" alt="LOGO">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">CINÉMA</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">SÉRIES</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">GAMING</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">MUSIQUE</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">LIVRE</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ÉVÉNEMENTS</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-        </div>
-        <h1>The Thing</h1>
-        <p> 1h49 - Horreur, Mystère, Science-Fiction </p>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
+	<!-- The main top header -->
+	<header class="bg_grey">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+
+				<!-- AReview image button leads to main page -->
+				<a class="navbar-brand" href="index.html" >
+					<img src="./assets/image/areview.png" alt="LOGO" width="200px">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-5 p-2 me-auto mb-2 mb-lg-0 gras text-uppercase" style="width: 200px">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="movie_theatre.html">cinéma</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="series.html">séries</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="video_game.html">gaming</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="music.html">musique</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="book.html">livre</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="evenement.html">événements</a>
+						</li>
+					</ul>
+
+					<!-- Login -->
+					<!-- TODO: Replace this with profile icon -->
+					<a class="nav-link text-white" href="login.html">×login×</a>
+
+					<!-- Search bar -->
+					<!-- TODO: Replace this with magnigying glass icon -->
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Rechercher</button>
+					</form>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
+	<!-- Website content -->
+	<div class="bg_light">
+		<h1>The Thing</h1>
+		<p> 1h49 - Horreur, Mystère, Science-Fiction </p>
+	</div>
+
 </body>
 </html>
