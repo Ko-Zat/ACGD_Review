@@ -17,6 +17,10 @@
 
 .bg-grey {
     background-color: #434343;
+    
+}
+
+.headersize {
     max-width: 2500px;
     display: inline-flexbox;
     margin-left: auto;
