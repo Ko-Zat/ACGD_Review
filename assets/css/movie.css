@@ -133,3 +133,7 @@ a:hover {
 a:active { 
 	text-decoration: none; 
 }
+.thead{
+    text-shadow: 5px 5px;
+    border-radius: 30%;
+}
