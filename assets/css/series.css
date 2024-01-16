@@ -17,6 +17,10 @@
 
 .bg-grey {
     background-color: #434343;
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .py-40 {
@@ -137,6 +141,10 @@ a:link {
   background-color: #434343;
   color: #FFF;
   font-size: 20px;
+  max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hashtag a {
@@ -150,10 +158,16 @@ a:link {
   text-align:center!important
 }
 
-.actu{
-  width: 90%;
-  max-width: fit-content;
-  transform: translateX(5%);
+.mob {
+    width: 1660px;
+}
+
+.slide {
+    width: 100%;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* .right {
@@ -166,3 +180,10 @@ a:link {
         opacity: 0%;
     }
 }
+
+@media (max-width: 1676px) {
+    .mob {
+        width: 1400px;
+    }
+}
+
