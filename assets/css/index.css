@@ -71,7 +71,10 @@ h2{
     color: #fcfaf9;
     background-color: #434343;
     text-align: center;
-    margin-top: 0%;
+}
+
+h3{
+    color:#209989;
 }
 
 .mx-auto{
@@ -84,5 +87,5 @@ h2{
 }
 
 .b-img{
-     margin-left: 0%;
+     margin-left: 10px;
 }
