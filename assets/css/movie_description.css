@@ -65,6 +65,7 @@ a:active {
 
 .main_frame {
 	border: 1px solid var(--color-light-grey);
+	border-top-width: 0;
 	width: 100%;
 }
 
