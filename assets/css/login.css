@@ -66,9 +66,18 @@
     }
 
 .middle_x {
-        display: flex; 
         justify-content: center; 
-        width: 100%; 
-        margin-left: 0; 
-        margin-right: 0; 
       }
+
+.py-40 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+.lien a{
+        color: white;
+        text-decoration: none;
+    }
+
+.pb-40 {
+        padding-bottom: 40px;
+    }
