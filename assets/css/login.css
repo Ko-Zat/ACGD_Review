@@ -54,9 +54,6 @@
     outline: none;
 
 } 
-*{
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300; }
 
 .headersize {
         max-width: 2500px;
@@ -64,10 +61,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-.middle_x {
-        justify-content: center; 
-      }
 
 .py-40 {
         padding-top: 40px;
