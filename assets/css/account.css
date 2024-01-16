@@ -1,4 +1,4 @@
-.header {
+.grey {
     background-color: #434343;
 } 
 .bold{
@@ -18,3 +18,15 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: 100; 
 }
+.titre {
+    background-color: #434343;
+    color: #FFF;
+    font-size: 20px;
+  }
+ .text {
+    font-size: 13px;
+ }
+ .titre1 {
+    font-size: 20;
+    color: #1BB5B0;
+ }
