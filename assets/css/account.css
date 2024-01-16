@@ -30,3 +30,18 @@
     font-size: 20;
     color: #1BB5B0;
  }
+ .titre2 {
+    font-size: 20;
+    color: #1BB5B0;
+    text-align: left;
+ }
+ .lien  a{
+    color: #FFF;
+    text-decoration: none;
+ }
+ .neg {
+    margin-top: -0.25rem !important;
+  }
+p {
+    text-align: left;
+}
