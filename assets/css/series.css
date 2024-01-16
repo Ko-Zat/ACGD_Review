@@ -65,8 +65,11 @@ input[type="text"], input[type="email"], input[type="tel"], textarea.msg {
     height: 150px;
 }
 
+.black {
+    color: black;
+}
 
-a p {
+.lien a{
     color: white;
     text-decoration: none;
 }
@@ -132,4 +135,10 @@ a:link {
   .stitre {
     background-color: #434343;
     color: #FFF;
+    font-size: 20px;
+  }
+
+  .hashtag a {
+    color: black;
+    text-decoration: none;
   }
