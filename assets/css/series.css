@@ -150,6 +150,17 @@ a:link {
   text-align:center!important
 }
 
+.mob {
+    width: 1660px;
+}
+
+.slide {
+    width: 100%;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 /* .right {
     position: absolute;
@@ -161,3 +172,15 @@ a:link {
         opacity: 0%;
     }
 }
+
+@media (max-width: 1676px) {
+    .mob {
+        width: 1400px;
+    }
+}
+
+/* @media (max-width: 2500px) {
+    .mob {
+        .slide
+    }
+} */
