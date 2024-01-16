@@ -34,6 +34,10 @@
 	padding-right: 12%;
 }
 
+.pl-48 {
+	padding-left: 2.5%;
+}
+
 .pb-40 {
 	padding-bottom: 40px;
 }
@@ -65,6 +69,7 @@ a:active {
 
 .main_frame {
 	border: 1px solid var(--color-light-grey);
+	border-top-width: 0;
 	width: 100%;
 }
 
