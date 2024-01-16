@@ -1,10 +1,6 @@
-.header {
+.grey {
     background-color: #434343;
 } 
-.nav-item{
-    margin-right: 25px;
-    margin-left: 25px;
-}
 .bold{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700; 
@@ -22,3 +18,15 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: 100; 
 }
+.titre {
+    background-color: #434343;
+    color: #FFF;
+    font-size: 20px;
+  }
+ .text {
+    font-size: 13px;
+ }
+ .titre1 {
+    font-size: 20;
+    color: #1BB5B0;
+ }
