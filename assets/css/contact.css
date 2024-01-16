@@ -129,6 +129,8 @@ a:link {
     min-width: none;
 }
 
+
+/* for mobile */
 @media (max-width: 768px) {
     .px-14 {
         padding-left: 1rem !important;
