@@ -17,6 +17,10 @@
 
 .bg-grey {
     background-color: #434343;
+    
+}
+
+.headersize {
     max-width: 2500px;
     display: inline-flexbox;
     margin-left: auto;
@@ -177,13 +181,19 @@ a:link {
 
 @media (max-width: 768px) {
     .mob {
-        opacity: 0%;
+        display: none;
     }
 }
 
-@media (max-width: 1676px) {
+@media only screen and (max-width: 1676px) {
     .mob {
         width: 1400px;
     }
 }
 
+.limit {
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
