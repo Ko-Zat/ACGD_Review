@@ -1,0 +1,68 @@
+.bold{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+.light{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+.gras{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+
+.thin{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+.bg-grey {
+    background-color: #434343;
+}
+
+.celebrity-block-text-identity {
+    font-size: 20pt;
+    padding: 50px;
+}
+
+.celebrity-block-text-roles {
+    font-size: 10pt;
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.celebrity-picture {
+    width: 587px;
+    height: 438px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.last-movie {
+    border-radius: 10px;
+    width: 1189px;
+    height: 438px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.last-movie-title {
+    margin-top: -80px;
+    margin-left: 1150px;
+    font-size: 20pt;
+}
+
+.last-movie-trailer-text {
+    margin-top: -20px;
+    margin-left: 1175px;
+    font-size: 15pt;
+}
+
+.celebrity-block {
+    margin-top: 40px;
+    width: 1857px;
+    height: 1090px;
+    flex-shrink: 0;
+    background-color: #434343;
+}
