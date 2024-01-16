@@ -28,6 +28,10 @@
     padding-bottom: 40px;
 }
 
+.ps-240 {
+    padding-left:15rem!important
+}
+
 .underline {
     text-decoration-line: underline;
 }
@@ -105,3 +109,18 @@ a:link {
     padding-bottom: 150px;
 }
 
+
+.navbar-nav {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  
+  
+  .navbar-toggler {
+    margin-left: auto; 
+  }
+  
