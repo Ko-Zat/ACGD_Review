@@ -20,6 +20,14 @@
     background-color: #434343;
 }
 
+.celebrity-block {
+    margin-top: 40px;
+    padding: 1%;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: #434343;
+}
+
 .celebrity-block-text-identity {
     font-size: 20pt;
     padding: 50px;
@@ -36,6 +44,8 @@
     height: 438px;
     flex-shrink: 0;
     border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .last-movie {
@@ -43,26 +53,54 @@
     width: 1189px;
     height: 438px;
     flex-shrink: 0;
+    margin-left: 15px;
     margin-top: 20px;
-    margin-left: 10px;
 }
 
 .last-movie-title {
     margin-top: -80px;
-    margin-left: 1150px;
+    margin-left: 1080px;
     font-size: 20pt;
 }
 
 .last-movie-trailer-text {
     margin-top: -20px;
-    margin-left: 1175px;
+    margin-left: 1108px;
     font-size: 15pt;
 }
 
-.celebrity-block {
-    margin-top: 40px;
-    width: 1857px;
-    height: 1090px;
+.orange-bar-horizontal {
+    width: 5px;
+    height: 68px;
+    transform: rotate(-90deg);
     flex-shrink: 0;
-    background-color: #434343;
+    border-radius: 10px;
+    background: #F4661B;
+    margin-left: 4.5%;
+}
+
+.orange-bar-title {
+    font-size: 20pt;
+    margin-left: 2.5%
+}
+
+.small-movie-border {
+    width: 587px;
+    height: 140px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(77, 77, 77, 0.41);
+    background: rgba(217, 217, 217, 0.00);
+    margin-left: 2.5%
+}
+
+.small-movie-image {
+    border-radius: 10px;
+}
+
+.small-movie-title {
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top: -30%;
+    padding: 50px;
 }
