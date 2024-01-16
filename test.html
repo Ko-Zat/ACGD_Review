@@ -1,338 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Account</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/account.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" > 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,900;0,700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="grey">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"> <img src="./assets/image/areview-header.png"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <div class="mx-5 p-2" style="width: 170px;"></div>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gras text-uppercase">
-                      <li class="nav-item px-4 ">
-                        <a class="nav-link text-white" href="movie_theatre.html">cinéma</a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link text-white" href="series.html">
-                          series
-                        </a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link text-white" href="video_game.html">
-                          gaming
-                        </a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link text-white" href="music.html">
-                          musique
-                        </a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link text-white" href="book.html">
-                          Livre
-                        </a>
-                      </li>
-                      <li class="nav-item px-4">
-                        <a class="nav-link text-white" href="events.html">
-                          evenements
-                        </a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn" type="submit"><img src="./assets/image/loupe.png" alt="loupe"></button>
-                    </form>
-                    <a class="nav-item p-2" href="login.html"> <img src="./assets/image/account.svg"></a>
-                </div>
-              </nav>
-        </div>
-    </header>
-    <img src="./assets/image/account/foret.png" alt="" class="mt-3" style="height: 350px; width: 1920px;">
-    <table class="table table-dark table-striped-columns table-bordered"><!--Allows to create the table with the information-->
-      <tbody>
-        <tr>
-          <th scope="row" class="">Pays :</th>
-          <td class="text-center">France</th>
-        </tr>
-        <tr>
-          <th scope="row">Membre depuis :</th>
-          <td class="text-center">1 Jour</td>
-        </tr>
-        <tr>
-          <th scope="row" >Avis posté(s)</th>
-          <td class="text-center">6 Avis</td>
-        </tr>
-        <tr>
-          <th scope="row">Dernière connexion</th>
-          <td class="text-center">1 Heure</td>
-        </tr>
-        <tr>
-          <th scope="row">Genre :</th>
-          <td class="text-center">Homme</td>
-        </tr>
-        <tr>
-          <th scope="row">Age :</th>
-          <td class="text-center">23 Ans</td>
-        </tr>
-      </tbody>
-    </table><!--Allows to create the table with the information-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="fluid-container bg-grey gras">
     <div>
-      <h2 class="text-uppercase gras text-center py-2 titre ">récemment vus</h2>
-    </div> 
-    <!-- d-inline permet d'alligner les images -->
-    <div class="text-center">
-      <div class="text-center actu">
-        <div>
-        <a href="index.html" class="rounded float-start m-5 "><img src="./assets/image/account/exorciste.png" style="height: 436px; width: 472px;"></a>
-        <div class="hstack gap-2">
-        <div class=" mb-3 mt-3 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./assets/image/account/island.png" class="img-fluid rounded-start mt-4" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre1">Shutter Island</h5>
-                <p class="card-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab facere quidem eius nesciunt tenetur ipsam voluptatibus quam impedit, distinctio cum nihil non. Velit consectetur adipisci repellendus, odit incidunt libero molestias!</p>
-              </div>
-            </div>
+      <!--menu-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand p-2" href="index.html"><img src="assets/image/areview-header.png"
+              alt="Logo retour Home"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item text-uppercase">
+                <a class="nav-link text-white" href="movietheater.html">cinéma</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link text-white" href="series.html">séries</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link text-white" href="video_game.html">gaming</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link text-white" href="music.html">musique</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link text-white" href="book.html">livre</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link text-white" href="events.html">événement</a>
+              </li>
+            </ul>
+            <!--search-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit"><img src="./assets/image/contact/loupe.png" alt=""></button>
+            </form>
+            <a class="nav-item p-2" href="login.html"><img src="assets/image/Group 13.svg" alt="account logo"
+                width="26px" height="26px"></a>
           </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!--carousel slider-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://placehold.co/1920x305" class="img-fluid d-block w-100" alt=".slider.">
         </div>
-        <div class=" mb-3 mt-3 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./assets/image/account/interstellar.png" class="img-fluid rounded-start mt-4" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre1">Interstellar</h5>
-                <p class="card-text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint reiciendis quia culpa assumenda eos, odio recusandae rerum suscipit autem laboriosam aut repellendus delectus ut, eum quasi possimus ab animi cum.</p>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hstack gap-2">
-          <div class=" mb-3 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./assets/image/account/leo.png" class="img-fluid rounded-start mt-4" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title titre1">Léonardo di Caprio</h5>
-                  <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam reiciendis nemo in minus mollitia modi nobis molestias facilis quod esse inventore ducimus asperiores officiis consequuntur vel, sunt repellendus voluptates.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class=" mb-3 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./assets/image/account/oppen.png" class="img-fluid rounded-start mt-4" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title titre1">Oppenheimer</h5>
-                  <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facilis dignissimos rem suscipit ab perferendis mollitia possimus eum voluptatibus vitae eos porro omnis commodi praesentium, alias molestiae itaque molestias animi!</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="hstack gap-2">
-            <div class=" mb-3 mx-5" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./assets/image/account/barbie.png" class="img-fluid rounded-start mt-4" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title titre1">Barbie</h5>
-                    <p class="card-text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint porro voluptas itaque sequi ad totam. Repellat eaque, dicta soluta consequatur quia, quam voluptas architecto cupiditate, veniam sapiente magni exercitationem adipisci.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-3 mx-5" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./assets/image/account/spiderman.png" class="img-fluid rounded-start mt-4" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title titre1">Spiderman</h5>
-                    <p class="card-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, soluta fugiat. Nobis repellat aut assumenda inventore commodi excepturi aperiam eum esse amet, voluptatem pariatur porro, fugit exercitationem qui totam maiores!</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>     
-   </div>
-   <a class="icon-link" href="#">
-    <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
-    Voir plus
-  </a>
-  <div>
-    <h2 class="text-uppercase gras text-center py-2 titre ">favoris</h2>
-  </div>  
-  <div class="text-center">
-    <div class="text-center actu">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="bold textex-center text-uppercase">Distinguer le remarquable du banal</h1>
+    <div>
+      <!--movies-->
       <div>
-      <div class="hstack gap-3">
-      <div class=" mb-3 mt-3 mx-5" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./assets/image/account/interstellar.png" class="img-fluid rounded-start mt-4" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title titre1">Interstellar</h5>
-              <p class="card-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab facere quidem eius nesciunt tenetur ipsam voluptatibus quam impedit, distinctio cum nihil non. Velit consectetur adipisci repellendus, odit incidunt libero molestias!</p>
-            </div>
-          </div>
-        </div>
+        <h3 class="text-uppercase gras text-center py-2 stitre">Cinéma</h3>
       </div>
-      <div class=" mb-3 mt-3 mx-5" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./assets/image/account/island.png" class="img-fluid rounded-start mt-4" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title titre1">Shutter Island</h5>
-              <p class="card-text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint reiciendis quia culpa assumenda eos, odio recusandae rerum suscipit autem laboriosam aut repellendus delectus ut, eum quasi possimus ab animi cum.</p>
-            </div>
-            </div>
+      <div>
+        <div>
+          <!--big image Movies-->
+          <a href="movies.html" class=" float-start m-5"><img src="./assets/image/account/exorciste.png" alt="fake image"style="height: 436px; width: 427px;"></a>
+        </div>
+        <div class="hstack gap-2">
+          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!--image article 1-->
+                <img src="./assets/image/account/barbie.png" class="card-img-top" alt="fake image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="blue bold card-title">Aquaman</h5>
+                  <!--texte article 1-->
+                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+                </div>
+              </div>
           </div>
         </div>
-        <div class="mb-3 mt-3 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./assets/image/account/oppen.png" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre1">Oppenheimer</h5>
-                <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consectetur voluptates vero recusandae voluptate iste libero pariatur temporibus ipsa. Iure incidunt aut ducimus nihil ullam harum sunt voluptas. Vitae, possimus.</p>
+          <div class="mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!--image article 2-->
+                <img src="https://placehold.co/192x127"  class="card-img-top" alt="fake image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="blue bold card-title">Dune</h5>
+                  <!--texte article 2-->
+                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="hstack gap-2">
+          <div class="mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!--image article 1-->
+                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="blue bold card-title">Aquaman</h5>
+                  <!--texte article 1-->
+                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!--image article 2-->
+                <img src="https://placehold.co/192x127"  class="card-img-top" alt="fake image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="blue bold card-title">Dune</h5>
+                  <!--texte article 2-->
+                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hstack gap-2">
+          <div class="mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!--image article 1-->
+                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="blue bold card-title">Aquaman</h5>
+                  <!--texte article 1-->
+                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <!--image article 2-->
+                <img src="https://placehold.co/192x127"  class="card-img-top" alt="fake image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="blue bold card-title">Dune</h5>
+                  <!--texte article 2-->
+                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--series-->
+        <div>
+          <h3 class="text-uppercase gras text-center py-2 stitre">Cinéma</h3>
+        </div>
+    <div class="text-center pb-40">
+      <div class="text-white text-uppercase lien">
+        <a href="">
+          <p class="d-inline px-3">newsletter</p>
+        </a>
+        <a href="contact.html">
+          <p class="d-inline px-3">contact</p>
+        </a>
+        <a href="">
+          <p class="d-inline px-3">modération</p>
+        </a>
+        <a href="">
+          <p class="d-inline px-3">mention légale</p>
+        </a>
+        <a href="">
+          <p class="d-inline px-3">c.g.u cookies</p>
+        </a>
+        <a href="">
+          <p class="d-inline px-3">politique de confidentialité</p>
+        </a>
       </div>
-      <div class="hstack gap-3">
-        <div class=" mb-3 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./assets/image/account/superman.png" class="img-fluid rounded-start mt-4" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre1">Superman</h5>
-                <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam reiciendis nemo in minus mollitia modi nobis molestias facilis quod esse inventore ducimus asperiores officiis consequuntur vel, sunt repellendus voluptates.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mb-3 mt-3 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./assets/image/account/poupée.png" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre1">Poupée de chiffon</h5>
-                <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur alias fugiat sequi architecto mollitia error libero unde non fugit minus corrupti, iusto in quae, quam, ab ipsa ipsum dolor odit!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class=" mb-3 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="./assets/image/account/minecraft.png" class="img-fluid rounded-start mt-4" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre1">Minecraft</h5>
-                <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facilis dignissimos rem suscipit ab perferendis mollitia possimus eum voluptatibus vitae eos porro omnis commodi praesentium, alias molestiae itaque molestias animi!</p>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div> 
-        <div class="hstack gap-3">
-          <div class=" mb-3 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./assets/image/account/margot.png" class="img-fluid rounded-start mt-4" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title titre1">Margot Robbie</h5>
-                  <p class="card-text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint porro voluptas itaque sequi ad totam. Repellat eaque, dicta soluta consequatur quia, quam voluptas architecto cupiditate, veniam sapiente magni exercitationem adipisci.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mt-3 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./assets/image/account/romeo.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title titre1">Roméo Elvis</h5>
-                  <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti aliquam provident explicabo quaerat, quibusdam et! Culpa, enim porro iure sunt dolor eius consequatur dolorum nulla, qui maxime blanditiis perferendis.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./assets/image/account/jul.png" class="img-fluid rounded-start mt-4" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title titre1">Le J</h5>
-                  <p class="card-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, soluta fugiat. Nobis repellat aut assumenda inventore commodi excepturi aperiam eum esse amet, voluptatem pariatur porro, fugit exercitationem qui totam maiores!</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>   
-          
- </div>
- <a class="icon-link" href="#">
-  <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
-  Voir plus
-</a>
-<div>
-  <h2 class="text-uppercase gras text-center py-2 titre ">derniers messages</h2>
-</div> 
-    <!--allows you to do the @ username or handle-->
-    <nav class="navbar bg-body-tertiary">
-      <form class="container-fluid">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-      </form>
-    </nav>
-    <!--allows you to do the @ username or handle-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+    </div>
+    <div class="pb-1 text-white ps-4">
+      <p>droits légaux. dépôt....</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
 </html>
