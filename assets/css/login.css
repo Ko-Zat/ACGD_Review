@@ -57,3 +57,18 @@
 *{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300; }
+
+.headersize {
+        max-width: 2500px;
+        display: inline-flexbox;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.middle_x {
+        display: flex; 
+        justify-content: center; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-right: 0; 
+      }
