@@ -87,5 +87,12 @@ h3{
 }
 
 .b-img{
-     margin-left: 10px;
+    padding-left: 117px;
+    padding-right: 117px;
 }
+
+.lien a{
+    color: white;
+    text-decoration: none;
+}
+
