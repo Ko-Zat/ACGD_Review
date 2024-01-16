@@ -19,6 +19,13 @@
     background-color: #434343;
 }
 
+.headersize {
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .py-40 {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -39,6 +46,10 @@
 p {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gras  {
@@ -150,4 +161,15 @@ a:link {
 .form-control {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 100!important;
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.limit {
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
 }
