@@ -152,6 +152,7 @@ a:link {
 
 .actu{
   width: 90%;
+  max-width: fit-content;
   transform: translateX(5%);
 }
 
