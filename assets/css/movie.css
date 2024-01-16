@@ -1,10 +1,14 @@
-.header {
+.header{
     background-color: #434343;
-} 
-.nav-item{
-    margin-right: 25px;
-    margin-left: 25px;
+    
 }
+.bg_grey{
+    background-color: #434343;;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
 .bold{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700; 
@@ -16,9 +20,4 @@
 .gras{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900; 
-}
-
-.thin{
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 100; 
 }
