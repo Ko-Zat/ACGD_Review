@@ -160,3 +160,9 @@ a:link {
     position: absolute;
     transform: translateX(10);
 } */
+
+@media (max-width: 768px) {
+    .mob {
+        opacity: 0%;
+    }
+}

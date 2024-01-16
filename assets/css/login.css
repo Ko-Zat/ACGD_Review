@@ -1,3 +1,7 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300; }
+    
 .bg_grey{
     background-color: #434343;;
 }
@@ -38,3 +42,18 @@
     margin-left: auto; 
   }
   
+  #bouton_orange {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
+
+} 
+*{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300; }
