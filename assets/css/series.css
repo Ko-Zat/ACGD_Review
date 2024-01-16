@@ -17,6 +17,10 @@
 
 .bg-grey {
     background-color: #434343;
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .py-40 {
@@ -137,6 +141,10 @@ a:link {
   background-color: #434343;
   color: #FFF;
   font-size: 20px;
+  max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hashtag a {
@@ -179,8 +187,3 @@ a:link {
     }
 }
 
-/* @media (max-width: 2500px) {
-    .mob {
-        .slide
-    }
-} */
