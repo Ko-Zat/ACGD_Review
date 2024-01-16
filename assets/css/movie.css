@@ -45,13 +45,26 @@
     margin: 25px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea.msg {
-    background-color : #a7a7a7;
+input[type="text"], textarea.msg {
+    background-color : #8b8b8b;
 } 
 
+.navbar-nav {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  
+  .navbar-toggler {
+    margin-left: auto; 
+  }
 
-
-
+  .hashtag a {
+    color: black;
+   }
 
 
 
