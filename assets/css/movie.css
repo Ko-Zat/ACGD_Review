@@ -1,0 +1,30 @@
+.header{
+    background-color: #434343;
+    
+}
+ 
+.nav-link{
+    color: white;
+    font-size: 30px;
+
+}
+
+.bg_grey{
+    background-color: #434343;;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700; 
+}
+.light{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300; 
+}
+.gras{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900; 
+}
