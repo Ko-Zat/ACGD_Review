@@ -1,6 +1,10 @@
 .bg_grey{
     background-color: #434343;;
 }
+
+.bg_light{
+    background-color: #d9d9d9;;
+}
 .uppercase{
     text-transform: uppercase;
 }
@@ -17,3 +21,9 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900; 
 }
+
+.thin{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100; 
+}
+
