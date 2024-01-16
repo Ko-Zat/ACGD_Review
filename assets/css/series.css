@@ -48,6 +48,7 @@ p {
 
 .light {
     font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
 }
 
 .bold {
@@ -145,11 +146,17 @@ a:link {
 }
 
 .actu img{
-  width: 15%;
+  width: 250px;
   text-align:center!important
 }
 
 .actu{
   width: 90%;
+  max-width: fit-content;
   transform: translateX(5%);
 }
+
+/* .right {
+    position: absolute;
+    transform: translateX(10);
+} */
