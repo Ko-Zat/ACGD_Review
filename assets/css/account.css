@@ -30,13 +30,21 @@
     font-size: 20;
     color: #1BB5B0;
  }
+ .titre3 {
+    font-size: 20;
+    font-family: 'Noto Sans',sans-serif;
+    color: #FFF;
+    background-color: #434343;
+ }
  .titre2 {
     font-size: 20;
     color: #1BB5B0;
+    font-family: 'Noto Sans',sans-serif;
     text-align: left;
  }
  .lien  a{
     color: #FFF;
+    font-family: 'Noto Sans',sans-serif;
     text-decoration: none;
  }
  .neg {
