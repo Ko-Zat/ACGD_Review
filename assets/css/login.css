@@ -1,9 +1,15 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300; }
+    
 .bg_grey{
     background-color: #434343;;
 }
-.uppercase{
-    text-transform: uppercase;
+
+.bg_light{
+    background-color: #d9d9d9;;
 }
+
 
 .bold{
     font-family: 'Noto Sans', sans-serif;
@@ -17,3 +23,54 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900; 
 }
+
+.thin{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100; 
+}
+
+.navbar-nav {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  
+  
+  .navbar-toggler {
+    margin-left: auto; 
+  }
+  
+  #bouton_orange {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
+
+} 
+
+.headersize {
+        max-width: 2500px;
+        display: inline-flexbox;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.py-40 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+.lien a{
+        color: white;
+        text-decoration: none;
+    }
+
+.pb-40 {
+        padding-bottom: 40px;
+    }

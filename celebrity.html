@@ -6,31 +6,80 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Acteur / Auteur</title>
+    <link href="./assets/css/celebrity.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+<header class="bg-grey gras">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/assets/image/areview.png" alt="Home" width="200px" height="52px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">CINÉMA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="series.html">SÉRIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">GAMING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">MUSIQUE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">LIVRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="evenement.html">ÉVÉNEMENTS</a>
+                    </li>
                 </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+                    <button class="btn" type="submit"><img src="assets/image/loupe.png" alt="Search"></button>
+                </form>
+                <form class="d-flex" role="none">
+                    <a class="btn" href="account.html">
+                        <img src="assets/image/account.svg" alt="Account">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main>
+        <div class="celebrity-block mt-*">
+            <div>
+                <p class="celebrity-block-text-identity bold text-white">Gérard DeuxParDeux</p>
+                <p class="celebrity-block-text-roles bold text-white">Acteur ・ Réalisateur</p>
+                <p class="last-movie-title bold text-white">Fast And Curious</p>
+                <p class="last-movie-trailer-text bold text-white">Bande d'annonce</p>
+            </div>
+
+            <img class="celebrity-picture" src="assets/image/celebrities/gerard_deuxpardeux/picture1.png" alt="Gérard DeuxParDeux" style="width: 30%;">
+            <img class="last-movie" src="assets/image/celebrities/movies/fastandfurious.png" alt="Trailer" style="width: 65%;">
+
+            <img class="celebrity-picture" src="assets/image/celebrities/gerard_deuxpardeux/picture2.png" alt="Gérard DeuxParDeux" style="width: 30%;">
+            <img class="celebrity-picture" src="assets/image/celebrities/gerard_deuxpardeux/picture3.png" alt="Gérard DeuxParDeux" style="width: 30%;">
+            <img class="celebrity-picture" src="assets/image/celebrities/gerard_deuxpardeux/picture4.png" alt="Gérard DeuxParDeux" style="width: 30%;">
+        </div>
+        <div class="orange-bar-horizontal"></div>
+        <div class="orange-bar-title">
+            <p class="bold">Connu pour :</p>
+        </div>
+        <div class="small-movie-border">
+            <img class="small-movie-image" src="assets/image/celebrities/movies/my_cam.png" width="25%" height="100%">
+            <p class="small-movie-title bold">Mon appareil, mon ami</p>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
