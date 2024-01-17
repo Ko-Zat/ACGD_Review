@@ -6,131 +6,72 @@
     <title>Bootstrap demo</title>
     <link href="./assets/css/evenement.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700;900&display=swap" rel="stylesheet">
 	  <link rel="shortcut icon" href="./assets/image/ar48px.png" type="image/x-icon">
   </head>
   <body>
-    <header class="fluid-container bg-grey gras">
-        <div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand p-2" href="index.html"><img src="assets/image/areview.png" alt="Logo retour Home" width="200.416px" height="52.331px"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item text-uppercase">
-                        <a class="nav-link text-white" href="movietheater.html">cinéma</a>
-                      </li>
-                      <li class="nav-item text-uppercase">
-                        <a class="nav-link text-white" href="series.html">séries</a>
-                      </li>
-                      <li class="nav-item text-uppercase">
-                        <a class="nav-link text-white" href="video_game.html">gaming</a>
-                      </li>
-                      <li class="nav-item text-uppercase">
-                        <a class="nav-link text-white" href="music.html">musique</a>
-                      </li>
-                      <li class="nav-item text-uppercase">
-                        <a class="nav-link text-white" href="book.html">livre</a>
-                      </li>
-                      <li class="nav-item text-uppercase">
-                        <a class="nav-link text-white" href="events.html">événement</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn" type="submit"><img src="./assets/image/events/loupe.svg" class="img-loupe" alt="loupe" width="20px"/></button>
-                    </form>
-                    <a class="nav-item p-2" href="login.html"><img src="assets/image/contact/Group 13.svg" alt="account logo" width="26px" height="26px"></a>
-                  </button>
-                </div>
-                </div>
-              </nav>
+    <header class="header container-fluid">
+       <div class="row">
+        <div class="col-3" id="logo">
+          <img src="./assets/image/areview-header.png" class="img-fluid" alt="logo" width="200" height="52">
         </div>
+        <div class="col-6" id="menu">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item pe-5">
+                    <a class="nav-link" href="#">cinema</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link" href="#">serie</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link" href="#">gaming</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link" href="#">musique</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link" href="#">livre</a>
+                  </li>
+                  <li class="nav-item pe-5">
+                    <a class="nav-link" href="#">evenements</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-3 " id="profile">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+       </div>
     </header>
-    <section class="section1">
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/image/events/artifice.jpg" class="d-block w-100" alt="artifice" height="350px">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/image/events/spectacle01.jpeg" class="d-block w-100" alt="spectacle01" height="350px">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/image/events/concert01.jpg" class="d-block w-100" alt="concert01" height="350px">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <!--<img src="https://placehold.co/1920x305" alt="slider" width="1920"  height="305" class="img-fluid position-absolute">-->
+          <h1 class="position-relative text-center pb-100">slider</h1>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <h1 class="titre1">evenements</h1>
-    <h2 class="titre2">actualites</h2>
-     <article class="article">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./assets/image/events/concert02.jpg" class="d-block w-100" alt="Eminem" height="450px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="title-p">Eminem</h5>
-              <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./assets/image/events/presentationbook01.jpeg" class="d-block w-100" alt="presentationbook01" height="450px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="title-p">Why we Fight</h5>
-              <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./assets/image/events/comiccon01.jpeg" class="d-block w-100" alt="comiccon" height="450px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="title-p">Comic Con</h5>
-              <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> 
-     </article>
-    </section>
-    <footer class="footer">
-      <div class="text-center py-40">
-        <a href="https://www.youtube.com/watch?v=JYalkB0YQ0U" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
+    <footer class="footer text-center">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
         <a href="" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px" height="42px"></a>
         <a href="" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px" height="42px"></a>
         <a href="" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px" height="42px"></a>
         <a href="" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px" height="42px"></a>
         <a href="" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px" height="42px"></a>
+      </section>
       </div>
       <div class="text-center pb-40">
         <div class="text-white text-uppercase">
@@ -147,5 +88,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
   </body>
 </html>
