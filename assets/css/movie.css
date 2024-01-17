@@ -1,3 +1,9 @@
+:root { 
+    --orange: #f4661b;
+}
+#search svg {
+    color : var(--orange);
+}
 .header{
     background-color: #434343;
     
