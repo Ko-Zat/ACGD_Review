@@ -12,70 +12,121 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,900;0,700&display=swap" rel="stylesheet">
+	<!-- v Get CDN Font-Awesome v -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 	
 	<!-- The header -->
-	<header class="flui-container bg_grey gras text-uppercase">
-		<nav class="navbar navbar-expand-lg">
-			<div class="container-fluid">
+	<header class="container-fluid bg_grey">
+		<div class="row">
 
-				<!-- AReview image button leads to main page -->
-				<a class="navbar-brand p-2" href="index.html" >
-					<img src="./assets/image/areview.png" alt="LOGO" width="200px">
+			<div class="col-3" id="logo">
+				<img src="./assets/image/areview.png" alt="logo" width="200" height="52" class="img-fluid">
+			</div>
+
+			<div class="col-6" id="menu">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+
+						<div class="collapse navbar-collapse uppercase" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link text-white" href="movies.html">cinéma</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="series.html">séries</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#">gaming</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#">musique</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#">livre</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#evenements">événements</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="col-3" id="search">
+				<a href="login.html">
+					<i class="fa-solid fa-user"></i>
 				</a>
+			</div>
+		</div>
 
-				<!-- Category list -->
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 center">
-						<li class="nav-item pe-5">
-							<a class="nav-link text-white" href="movies.html">cinéma</a>
-						</li>
-						<li class="nav-item pe-5">
-							<a class="nav-link text-white" href="series.html">séries</a>
-						</li>
-						<li class="nav-item pe-5">
-							<a class="nav-link text-white" href="video_game.html">gaming</a>
-						</li>
-						<li class="nav-item pe-5">
-							<a class="nav-link text-white" href="music.html">musique</a>
-						</li>
-						<li class="nav-item pe-5">
-							<a class="nav-link text-white" href="book.html">livre</a>
-						</li>
-						<li class="nav-item pe-5">
-							<a class="nav-link text-white" href="evenement.html">événements</a>
-						</li>
-					</ul>
 
-					<!-- Search bar : confirm search by clicking magnifying glass icon -->
-					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-						<button class="btn" type="submit">
-							<img src="assets/image/loupe.png" alt="rechercher" width="26px" height="26px">
-						</button>
-					</form>
+		<!--
+		<nav class="navbar navbar-expand-lg">
+		-->
 
-					<!-- Login icon leads to login page -->
-					<a class="nav-item" href="login.html">
-						<img src="assets/image/account.svg" alt="account logo" width="26pc" height="26px">
-					</a>
+			<!-- AReview image button leads to main page -->
+			<!--
+			<a class="navbar-brand p-2" href="index.html" >
+				<img src="./assets/image/areview.png" alt="LOGO" width="200px">
+			</a>
+			-->
 
-				</div>
+			<!-- Category list -->
+			<!--
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 center">
+					<li class="nav-item pe-5">
+						<a class="nav-link text-white" href="movies.html">cinéma</a>
+					</li>
+					<li class="nav-item pe-5">
+						<a class="nav-link text-white" href="series.html">séries</a>
+					</li>
+					<li class="nav-item pe-5">
+						<a class="nav-link text-white" href="video_game.html">gaming</a>
+					</li>
+					<li class="nav-item pe-5">
+						<a class="nav-link text-white" href="music.html">musique</a>
+					</li>
+					<li class="nav-item pe-5">
+						<a class="nav-link text-white" href="book.html">livre</a>
+					</li>
+					<li class="nav-item pe-5">
+						<a class="nav-link text-white" href="evenement.html">événements</a>
+					</li>
+				</ul>
+				-->
+
+				<!-- Search bar : confirm search by clicking magnifying glass icon -->
+				<!--
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+					<button class="btn" type="submit">
+						<img src="assets/image/loupe.png" alt="rechercher" width="26px" height="26px">
+					</button>
+				</form>
+				-->
+
+				<!-- Login icon leads to login page -->
+				<!--
+				<a class="nav-item" href="login.html">
+					<img src="assets/image/account.svg" alt="account logo" width="26pc" height="26px">
+				</a>
 			</div>
 		</nav>
+		-->
 	</header>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	
 	<!-- Website content -->
 	<div class="px-80 py-40">
 
 		<!-- Movie Title & quick description -->
-		<div class="px-48">
-			<h1>The Thing</h1>
-			<p> 1h72 - Horreur, Mystère, Science-Fiction </p>
-		</div>
+		<section id="titre_film" class="px-48">
+			<h1 class="gras text_blue">The Thing</h1>
+			<p class="bold"> 1h72 - Horreur, Mystère, Science-Fiction </p>
+		</section>
 
 		<!-- Movie informations navigation tabs -->
 		<ul class="nav nav-tabs nav-justified">
@@ -103,97 +154,107 @@
 		<div class="main_frame">
 
 			<!-- Image & Trailer chunk -->
-			<div class="py-48 px-48">
-				<!-- Temporary sizes
-					445x700 -> 371x583
-					1154x700 -> 962x583
-				-->
-				<img src="https://placehold.co/445x700" width="23.2%">
-				<img src="https://placehold.co/1154x700" width="60.1%">
-			</div>
+			<section id="image&BA" class="px-48 py-48">
+				<img src="https://placehold.co/445x700" width="25.5%">
+				<img src="https://placehold.co/1154x700" width="66.2%">
+			</section>
 
 			<!-- Infos chunk -->
 			<div class="px-48">
 				<hr/>
 				<div class="px-232 py-48">
 
-					<!-- TODO: Star & note -->
-					<p>Note here.</p>
-
-					<hr/>
-					<h4>Synopsis :</h4>
-					<p>
-						Une équipe de chercheurs en Antarctique est chasée par 
-						une étrange créature capable d'imiter ses victimes. 
-						Mais qui peut bien être la chose ?
-					</p>
-					<hr/>
-					<h4>Notre Avis :</h4>
-					<p>
-						Un huis clos dans une base scientifique perdue au milieu 
-						de l'antarctique, John Carpenter nous montre une fois de plus, 
-						dans ce slasher unique en son genre, qu'il est le maître 
-						incontesté de l'horreur. Des effets spéciaux qui n'ont pas 
-						viellit, un minimalisme dont le maître nous a habitué, 
-						des acteurs époustouflants et un suspence insoutenable vous 
-						attendront dans "The Thing", le chef-d'œuvre de John Carpenter.
-					</p>
+					<!-- Note & Star chunk -->
+					<section id="note">
+						<div id="star">
+							<a class="bold" href="#notreavis">
+								<i class="fa-solid fa-star"></i>
+								<h1>5/5</h1>
+							</a>
+						</div>
+					</section>
 					<hr/>
 
-					<!-- The short infos & casting table -->
-					<h4>Informations supplémentaires :</h4>
-					<table class="table table-sm table-bordered table-striped table-hover">
-						<thread>
-							<tr>
-								<th scope="row">Année</th>
-								<th>1982</th>
-							</tr>
-						</thread>
-						<thread>
-							<tr>
-								<th scope="row">Réalisation</th>
-								<th>John Carpenter</th>
-							</tr>
-						</thread>
-						<thread>
-							<tr>
-								<th scope="row">Scénario</th>
-								<th>Bill Lancaster, John W. Campbell Jr.</th>
-							</tr>
-						</thread>
-						<thread>
-							<tr>
-								<th scope="row">Acteurs</th>
-								<th>
-									Kurt Russel, Keith David, Wilford Brimley, Richard Masur, 
-									T.K. Carter, David Clennon, Richard Dysart, Charles Hallahan, 
-									Peter Maloney, Donald Moffat, Joel Polis, Thomas G. Waites, 
-									Norbert Weisser, Larry Franco, Nate Irwin, William Zeman, 
-									Adrienne Barbeau, John Carpenter
-								</th>
-							</tr>
-						</thread>
-						<thread>
-							<tr>
-								<th scope="row">Musique</th>
-								<th>Ennio Moriconne</th>
-							</tr>
-						</thread>
-						<thread>
-							<tr>
-								<th scope="row">Production</th>
-								<th>
-									Stuart Cohen, David Foster, Larry Franco, 
-									Wilbur Stark, Lawrence Turman
-								</th>
-							</tr>
-						</thread>
-					</table>
+					<section id="synopsis">
+						<h4 class="bold text_blue">Synopsis :</h4>
+						<p>
+							Une équipe de chercheurs en Antarctique est chasée par 
+							une étrange créature capable d'imiter ses victimes. 
+							Mais qui peut bien être "la chose" ?
+						</p>
+					</section>
+					<hr/>
+
+					<section id="notreavis">
+						<h4 class="bold text_blue">Notre Avis :</h4>
+						<p>
+							Un huis clos dans une base scientifique perdue au milieu 
+							de l'antarctique, John Carpenter nous montre une fois de plus, 
+							dans ce slasher unique en son genre, qu'il est le maître 
+							incontesté de l'horreur. Des effets spéciaux qui n'ont pas 
+							viellit, un minimalisme dont le maître nous a habitué, 
+							des acteurs époustouflants et un suspence insoutenable vous 
+							attendront dans "The Thing", le chef-d'œuvre de John Carpenter.
+						</p>
+					</section>
+					<hr/>
+
+					<section id="infosup">
+						<!-- The short infos & casting table -->
+						<h4 class="bold text_blue">Informations supplémentaires :</h4>
+						<table class="table table-sm table-striped table-hover">
+							<thread>
+								<tr>
+									<th scope="row">Année</th>
+									<th>1982</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Réalisation</th>
+									<th>John Carpenter</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Scénario</th>
+									<th>Bill Lancaster, John W. Campbell Jr.</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Acteurs</th>
+									<th>
+										Kurt Russel, Keith David, Wilford Brimley, Richard Masur, 
+										T.K. Carter, David Clennon, Richard Dysart, Charles Hallahan, 
+										Peter Maloney, Donald Moffat, Joel Polis, Thomas G. Waites, 
+										Norbert Weisser, Larry Franco, Nate Irwin, William Zeman, 
+										Adrienne Barbeau, John Carpenter
+									</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Musique</th>
+									<th>Ennio Moriconne</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Production</th>
+									<th>
+										Stuart Cohen, David Foster, Larry Franco, 
+										Wilbur Stark, Lawrence Turman
+									</th>
+								</tr>
+							</thread>
+						</table>
+					</section>
 				</div>
 				<hr/>
 
 				<!-- The Comments chunk -->
-				<h4>Commentaires :</h4>
+				<h4 class="bold text_blue">Commentaires :</h4>
 
 			</div>
 		</div>
@@ -226,6 +287,7 @@
 
 	</footer>
 
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </body>
 </html>
