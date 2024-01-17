@@ -5,10 +5,29 @@
 	--dark-grey: #434343;
 	--orange: #F4661B;
 	--blue: #1BB5B0;
+	--yellow: #FFD600;
+}
+
+#logo {
+	margin: 10px;
 }
 
 #search svg {
 	color: var(--orange);
+}
+
+#note {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+#star svg {
+	color: var(--yellow);
+	width: 64px;
+	height: 64px;
+	display: block;
+	margin: auto;
 }
 
 .py-40 {
