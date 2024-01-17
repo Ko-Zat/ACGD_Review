@@ -16,7 +16,15 @@
     font-weight: 100;
 }
 
-.bg-grey {
+:root {
+    --orange: #F4661B;
+}
+
+#search svg {
+    color: var(--orange);
+}
+
+.color-grey {
     background-color: #434343;
 }
 
@@ -28,79 +36,16 @@
     background-color: #434343;
 }
 
-.celebrity-block-text-identity {
-    font-size: 20pt;
-    padding: 50px;
-}
-
-.celebrity-block-text-roles {
-    font-size: 10pt;
-    margin-top: -60px;
-    margin-left: 50px;
-}
-
 .celebrity-picture {
-    width: 587px;
-    height: 438px;
+    height: 340px;
     flex-shrink: 0;
     border-radius: 10px;
-    margin-left: 50px;
-    margin-top: 20px;
+    padding: 5px;
 }
 
-.last-movie {
+.movie-trailer {
     border-radius: 10px;
-    width: 1189px;
-    height: 438px;
+    height: 340px;
     flex-shrink: 0;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-
-.last-movie-title {
-    margin-top: -80px;
-    margin-left: 1080px;
-    font-size: 20pt;
-}
-
-.last-movie-trailer-text {
-    margin-top: -20px;
-    margin-left: 1108px;
-    font-size: 15pt;
-}
-
-.orange-bar-horizontal {
-    width: 5px;
-    height: 68px;
-    transform: rotate(-90deg);
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #F4661B;
-    margin-left: 4.5%;
-}
-
-.orange-bar-title {
-    font-size: 20pt;
-    margin-left: 2.5%
-}
-
-.small-movie-border {
-    width: 587px;
-    height: 140px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid rgba(77, 77, 77, 0.41);
-    background: rgba(217, 217, 217, 0.00);
-    margin-left: 2.5%
-}
-
-.small-movie-image {
-    border-radius: 10px;
-}
-
-.small-movie-title {
-    font-size: 20px;
-    margin-left: 120px;
-    margin-top: -30%;
-    padding: 50px;
+    padding: 5px;
 }
