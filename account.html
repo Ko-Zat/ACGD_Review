@@ -12,15 +12,14 @@
   </head>
   <body>
     <!-- Navbar header-->
-    <header class="grey">
+    <header class="grey container-fluid">
+      <div class="row">
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"> <img src="./assets/image/areview-header.png"></a>
+                  <a class="navbar-brand mx-3 " href="index.html"> <img src="./assets/image/areview-header.png"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <div class="mx-5 p-2" style="width: 170px;"></div>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 gras text-uppercase">
                       <li class="nav-item px-4 ">
                         <a class="nav-link text-white" href="movies.html">cinéma</a>
@@ -57,14 +56,25 @@
                       <button class="btn" type="submit"><img src="./assets/image/loupe.png" alt="loupe"></button>
                     </form>
                     <a class="nav-item p-2" href="login.html"> <img src="./assets/image/account.svg"></a>
-                </div>
+                  </div>
               </nav>
         </div>
         <!-- banner -->
     </header>
-    <img src="./assets/image/account/foret.png" alt="" class="mt-3" style="height: 350px; width: 1920px;">
+    <div>
+    <div id="banner" class="row">
+      <div class="col-12">
+    <img src="./assets/image/account/foret.png" alt="" class="mt-3 position-absolute" style="height: 350px; width: 1920px;">
+    <img src="./assets/image/account/avatar.png" alt="Avatar" class="rounded-circle position-relative tp start-0 translate-middle ms-5" height="50px" width="50px">
+    <div class="rounded-circle position-relative translate-middle mx-5">
+  </div>
+  </div>
+</div>
+</div>
+          <!--Allows to create the table with the information-->
+          <div id="table" class="row mart">
+            <div class="col-12">
     <table class="table table-striped-columns table-dark  table-bordered mb-0">
-      <!--Allows to create the table with the information-->
       <tbody>
         <tr>
           <td scope="row" class="" style="background-color:#413A3A">Pays :</td>
@@ -92,100 +102,131 @@
         </tr>
       </tbody>
     </table>
+    </div>
+  </div>
     <!-- Recently viewed -->
     <div>
       <h2 class="text-uppercase gras text-center py-3 titre mb-5">récemment vus</h2>
     </div> 
     <!-- Recently viewed articles -->
-    <div class="text-center hstack gap-2">
-      <div class="text-center actu">
-        <div>
-        <a href="index.html" class="rounded float-start mx-5 mt-2"><img src="./assets/image/account/exorciste.png" style="height: 436px; width: 472px;"></a>
-        <div class="hstack gap-2">
-        <div class=" mb-3 mt-5 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <a href=""><img src="./assets/image/account/island.png" class="img-fluid rounded-start " alt="..."></a>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre2">Shutter Island</h5>
-                <p class="card-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab facere quidem eius nesciunt tenetur ipsam voluptatibus quam impedit, distinctio cum nihil non. Velit consectetur adipisci repellendus, odit incidunt libero molestias!</p>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div class=" mb-3 mt-5 mx-5" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <a href=""><img src="./assets/image/account/interstellar.png" class="img-fluid rounded-start " alt="..."></a>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title titre2">Interstellar</h5>
-                <p class="card-text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint reiciendis quia culpa assumenda eos, odio recusandae rerum suscipit autem laboriosam aut repellendus delectus ut, eum quasi possimus ab animi cum.</p>
-              </div>
-              </div>
-            </div>
+      <!-- test -->
+     
+      <!-- 3 articles suivant -->
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-3">
+            <img src="./assets/image/account/exorciste.png" class="img-fluid" >
           </div>
-        </div>
-        <div class="hstack gap-2">
-          <div class=" mb-3 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <a href=""><img src="./assets/image/account/leo.png" class="img-fluid rounded-start" alt="..."></a>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title titre2">Léonardo di Caprio</h5>
-                  <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam reiciendis nemo in minus mollitia modi nobis molestias facilis quod esse inventore ducimus asperiores officiis consequuntur vel, sunt repellendus voluptates.</p>
-                </div>
-              </div>
+          <div class="col-9 my-auto">
+            <div class="row">
+          <div class="col-2">
+            <section>
+              <article>
+            <img src="./assets/image/account/jul.png" alt="Image 1" class="img-fluid">
             </div>
+            <div class="col-2 " >
+            <h2 class="titre2 text-truncate">Interstellar</h2>
+            <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos qui excepturi necessitatibus culpa itaque numquam iste rerum nobis! </p>
+            </article>
+          </section>
           </div>
-          <div class=" mb-3 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <a href=""><img src="./assets/image/account/oppen.png" class="img-fluid rounded-start " alt="..."></a>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title titre2">Oppenheimer</h5>
-                  <p class="card-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facilis dignissimos rem suscipit ab perferendis mollitia possimus eum voluptatibus vitae eos porro omnis commodi praesentium, alias molestiae itaque molestias animi!</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="hstack gap-2">
-            <div class=" mb-3 mx-5" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <a href=""><img src="./assets/image/account/barbie.png" class="img-fluid rounded-start " alt="..."></a>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title titre2">Barbie</h5>
-                    <p class="card-text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint porro voluptas itaque sequi ad totam. Repellat eaque, dicta soluta consequatur quia, quam voluptas architecto cupiditate, veniam sapiente magni exercitationem adipisci.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-3 mx-5 " style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <a href=""><img src="./assets/image/account/spiderman.png" class="img-fluid rounded-start " alt="..."></a>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title titre2">Spiderman</h5>
-                    <p class="card-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, soluta fugiat. Nobis repellat aut assumenda inventore commodi excepturi aperiam eum esse amet, voluptatem pariatur porro, fugit exercitationem qui totam maiores!</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>     
-   </div>
+          <div class="col-2">
+            <section>
+              <article>
+            <img src="./assets/image/account/oppen.png" alt="Image 2"class="img-fluid">
+          </div>
+          <div class="col-2">
+          <h2 class="titre2 text-truncate">Titre de l'article </h2>
+          <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+        </article>
+      </section> 
+        </div>
+          <div class="col-2">
+            <section>
+              <article>
+            <img src="./assets/image/account/jul.png" alt="Image 3"class="img-fluid">
+          </div>
+          <div class="col-2">
+          <h2 class="titre2 text-truncate">Titre de l'article </h2>
+          <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+        </article>
+      </section> 
+        </div>
+        <div class="col-2">
+          <section>
+            <article>
+          <img src="./assets/image/account/jul.png" alt="Image 1"class="img-fluid">
+        </div>
+        <div class="col-2">
+        <h2 class="titre2 text-truncate">Titre de l'article </h2>
+        <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+      </article>
+    </section>   
+      </div>
+        <div class="col-2">
+          <section>
+            <article>
+          <img src="./assets/image/account/oppen.png" alt="Image 2"class="img-fluid">
+        </div>
+        <div class="col-2">
+        <h2 class="titre2 text-truncate">Titre de l'article </h2>
+        <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+      </article>
+    </section>  
+      </div>
+        <div class="col-2">
+          <section>
+            <article>
+          <img src="./assets/image/account/jul.png" alt="Image 3"class="img-fluid">
+        </div>
+        <div class="col-2">
+        <h2 class="titre2 text-truncate">Titre de l'article </h2>
+        <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+      </article>
+    </section>   
+      </div>
+        <div class="col-2">
+          <section>
+            <article>
+          <img src="./assets/image/account/jul.png" alt="Image 1"class="img-fluid">
+        </div>
+        <div class="col-2">
+        <h2 class="titre2 text-truncate">Titre de l'article </h2>
+        <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+      </article>
+    </section> 
+      </div>
+        <div class="col-2">
+          <section>
+            <article>
+          <img src="./assets/image/account/oppen.png" alt="Image 2"class="img-fluid">
+        </div>
+        <div class="col-2">
+        <h2 class="titre2 text-truncate">Titre de l'article </h2>
+        <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+      </article>
+    </section>   
+      </div>
+        <div class="col-2">
+          <section>
+            <article>
+          <img src="./assets/image/account/jul.png" alt="Image 3"class="img-fluid">
+        </div>
+        <div class="col-2">
+        <h2 class="titre2 text-truncate">Titre de l'article </h2>
+        <p class="overflow-hidden" style="height: 60px; width: 200px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+      </article>
+    </section> 
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+      </div>
+    </div>
+        </div>
+      </div>
+      
        <!-- see more -->
    <a class="icon-link" href="#">
     <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
@@ -523,6 +564,11 @@
     <div class="input-group">
       <input type="password" class="form-control light" placeholder="Saisir votre nouveau mot de passe" aria-label="Phone" aria-describedby="basic-addon1">
     </div>
+    <p class="thin"> Votre mot de passe doit contenir :
+      8 à 72 caractères <br>
+      1 chiffre <br>
+      1 caractère spécial <br>
+      1 majuscule </p>
   </div>
   <div class="pt-3 px-14">
     <p class="ps-1">Pour confirmer entrer votre mot de passe :</p>
