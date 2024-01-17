@@ -13,10 +13,10 @@
 	  <link rel="shortcut icon" href="./assets/image/ar48px.png" type="image/x-icon">
   </head>
   <body>
-    <header class="header container-fluid">
+    <header class="header container-fluid py-22" >
        <div class="row">
         <div class="col-3" id="logo">
-          <img src="./assets/image/areview-header.png" class="img-fluid" alt="logo" width="200" height="52">
+          <img src="./assets/image/logo acgd.svg" class="img-fluid" alt="logo" width="200" height="52">
         </div>
         <div class="col-6" id="menu">
           <nav class="navbar navbar-expand-lg">
@@ -49,18 +49,71 @@
             </div>
           </nav>
         </div>
-        <div class="col-3 " id="profile">
-          <a href="#"><i class="fa-solid fa-user"></i></a>
+        <div class="col-2"></div>
+        <div class="col-1" id="profile">
           <a href="#"><img src="./assets/image/loupe.svg" alt="loupe"></a>
+          <a href="#"><img src="./assets/image/account.svg" alt="profile"></a>
         </div>
-       </div>
     </header>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <!--<img src="https://placehold.co/1920x305" alt="slider" width="1920"  height="305" class="img-fluid position-absolute">-->
-          <h1 class="position-relative text-center pb-100">slider</h1>
+        <div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons" id="img-1" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-3" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-2" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-2" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-1" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-3" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-3" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-2" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-1" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+              </div>
+            </ul>
+          </div>
         </div>
+        <!-- <div class="col-12">
+          <img src="https://placehold.co/1920x305" alt="slider" width="1920"  height="305" class="img-fluid position-absolute">
+          <h1 class="position-relative text-center pb-100">slider</h1>
+        </div> -->
       </div>
     </div>
     <footer class="footer text-center">
