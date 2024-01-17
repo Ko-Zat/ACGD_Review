@@ -1,304 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>index</title>
+  <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="./assets/css/index.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="fluid-container bg-grey gras">
-    <div>
-      <!--menu-->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand p-2" href="index.html"><img src="assets/image/areview-header.png"
-              alt="Logo retour Home"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item text-uppercase">
-                <a class="nav-link text-white" href="movietheater.html">cinéma</a>
-              </li>
-              <li class="nav-item text-uppercase">
-                <a class="nav-link text-white" href="series.html">séries</a>
-              </li>
-              <li class="nav-item text-uppercase">
-                <a class="nav-link text-white" href="video_game.html">gaming</a>
-              </li>
-              <li class="nav-item text-uppercase">
-                <a class="nav-link text-white" href="music.html">musique</a>
-              </li>
-              <li class="nav-item text-uppercase">
-                <a class="nav-link text-white" href="book.html">livre</a>
-              </li>
-              <li class="nav-item text-uppercase">
-                <a class="nav-link text-white" href="events.html">événement</a>
-              </li>
-            </ul>
-            <!--search-->
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn" type="submit"><img src="./assets/image/contact/loupe.png" alt=""></button>
-            </form>
-            <a class="nav-item p-2" href="login.html"><img src="assets/image/Group 13.svg" alt="account logo"
-                width="26px" height="26px"></a>
+  <!--create header with menu-->
+  <header class="header container-fluid">
+    <div class="row">
+      <div class="col-3" id="logo">
+        <!--col permet de définir la taille grid bootstrap-->
+        <img src="./assets/image/areview-header.png" alt="logo" width="200" height="52" class="img-fluid">
+      </div>
+      <div class="col-6" id="menu">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="menu nav-link" href="#">Cinéma</a>
+                </li>
+                <li class="nav-item">
+                  <a class="menu nav-link" href="#">Série</a>
+                </li>
+                <li class="nav-item">
+                  <a class="menu nav-link" href="#">Gaming</a>
+                </li>
+                <li class="nav-item">
+                  <a class="menu nav-link" href="#">Musique</a>
+                </li>
+                <li class="nav-item">
+                  <a class="menu nav-link" href="#">Livre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="menu nav-link" href="#">Événement</a>
+                </li>
+              </ul>
+            </div>
           </div>
-      </nav>
+        </nav>
+      </div>
+      <div class="col-3" id="search">
+        <a herf="#">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </div>
     </div>
   </header>
-  <main>
-    <!--carousel slider-->
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://placehold.co/1920x305" class="img-fluid d-block w-100" alt=".slider.">
-        </div>
+  <!--sliser-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <img src="https://placehold.co/1920x305" alt="slider" width="1920" height="305"
+          class="img-fluid position-absolute">
+        <h1 class="position-relative text-lg-center">Slider</h1>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <h1 class="bold textex-center text-uppercase">Distinguer le remarquable du banal</h1>
-    <div>
-      <!--movies-->
-      <div>
-        <h3 class="text-uppercase gras text-center py-2 stitre">Cinéma</h3>
+  </div>
+  <!--phrase d'accroche-->
+  <div class="titre container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="slogan position-relative text-lg-center">Distinguer le remarquable du banal</h2>
       </div>
-      <div>
-        <div>
-          <!--big image Movies-->
-          <a href="movies.html" class="rounded float-start m-5"><img src="https://placehold.co/490x453" alt="fake image"></a>
-        </div>
-        <div class="hstack gap-2">
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <!--image article 1-->
-                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="blue bold card-title">Aquaman</h5>
-                  <!--texte article 1-->
-                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                  <!--image article 2-->
-                  <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="blue bold card-title">Dune</h5>
-                    <!--texte article 2-->
-                    <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad</P>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-         <div class="hstack gap-2">
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <!--image article 1-->
-                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="blue bold card-title">Aquaman</h5>
-                  <!--texte article 1-->
-                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                  <!--image article 2-->
-                  <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="blue bold card-title">Dune</h5>
-                    <!--texte article 2-->
-                    <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad</P>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-         <div class="hstack gap-2">
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <!--image article 1-->
-                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="blue bold card-title">Aquaman</h5>
-                  <!--texte article 1-->
-                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                  <!--image article 2-->
-                  <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="blue bold card-title">Dune</h5>
-                    <!--texte article 2-->
-                    <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad</P>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div> 
-      <!--series-->
-      <div>
-        <h3 class="text-uppercase gras text-center py-2 stitre">Cinéma</h3>
-      </div>
-      <div>
-        <div>
-          <!--big image Movies-->
-          <a href="movies.html" class="rounded float-end mt-2 mx-5"><img src="https://placehold.co/490x453" alt="fake image"></a>
-        </div>
-        <div class="hstack gap-2">
-          <div class="mb-2 mt-2 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <!--image article 1-->
-                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="blue bold card-title">Aquaman</h5>
-                  <!--texte article 1-->
-                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                  <!--image article 2-->
-                  <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="blue bold card-title">Dune</h5>
-                    <!--texte article 2-->
-                    <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad</P>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-         <div class="hstack gap-2">
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <!--image article 1-->
-                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="blue bold card-title">Aquaman</h5>
-                  <!--texte article 1-->
-                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                  <!--image article 2-->
-                  <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="blue bold card-title">Dune</h5>
-                    <!--texte article 2-->
-                    <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad</P>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-         <div class="hstack gap-2">
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <!--image article 1-->
-                <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="blue bold card-title">Aquaman</h5>
-                  <!--texte article 1-->
-                  <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad?</P>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-3 mt-5 mx-5" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                  <!--image article 2-->
-                  <img src="https://placehold.co/192x127" class="card-img-top" alt="fake image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="blue bold card-title">Dune</h5>
-                    <!--texte article 2-->
-                    <P class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, ad</P>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div> 
-    <!--gaming-->
-    <div>
-     <h3 class="text-uppercase gras text-center py-2 stitre">Gaming</h3>
-    </div> 
-    <!--music-->
-    <div>
-      <h3 class="text-uppercase gras text-center py-2 stitre">Musique</h3>
-     </div> 
-    <!--book-->
-    <div>
-      <h3 class="text-uppercase gras text-center py-2 stitre">Livre</h3>
-     </div> 
-     <!--event-->
-     <div>
-       <h3 class="text-uppercase gras text-center py-2 stitre">Événements</h3>
-      </div>              
-  </main>
- </body>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h3 class="categorie position-relative text-lg-center">Cinéma</h3>
+    </div>
+  </div>
+</body>
+<!--bootsrtap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--font awesome-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
 </html>

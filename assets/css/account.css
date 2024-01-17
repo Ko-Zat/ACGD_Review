@@ -74,3 +74,22 @@ p {
     cursor: pointer;
     outline: none;
 }
+.navbar-nav {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  .navbar-toggler {
+    margin-left: auto; 
+  }
+  .mart {
+    margin-top: 310px;
+  }
+ .tp {
+    top: calc(200px);
+ }
+ .bgi {
+    background-position: 10px;
+ }

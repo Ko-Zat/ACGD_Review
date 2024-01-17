@@ -166,6 +166,11 @@ a:link {
     width: 1660px;
 }
 
+.mob2 {
+    width: 100%;
+    display: none;
+}
+
 .slide {
     width: 100%;
     max-width: 2000px;
@@ -182,6 +187,10 @@ a:link {
 @media (max-width: 768px) {
     .mob {
         display: none;
+    }
+
+    .mob2 {
+        display: block;
     }
 }
 
