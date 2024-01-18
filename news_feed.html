@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/.feed.css">
+</head>
+<body>
+  <!-- création du header avec le menu -->
+  <header class="container-fluid bg-gris">
+    <div class="row">
+        <div class="col-2" id="logo">
+          <!--col permet de definir la taille grid col-3 le bloc prend 3 colones il y a 12 colones sur une page bootstrap-->
+          <img src="./assets/image/areview-header.png" alt="logo" width="200" height="52" class="img-fluid">
+        </div>
+        <div class="col-8" id="menu">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <!--<a class="navbar-brand" href="#">Navbar</a>-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active text-white" aria-current="page" href="#">cinéma</a>
+                  <a class="nav-link text-white" href="#">séries</a>
+                  <a class="nav-link text-white" href="#">gaming</a>
+                  <a class="nav-link text-white" href="#">musiques</a>
+                  <a class="nav-link text-white" href="#">livres</a>
+                  <a class="nav-link text-white" href="#">événements</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-2" id="search" color="root-gris">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+  </header>
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-12">
+        <img src="https://placehold.co/1920x305" alt="slider" width="100%" height="305" class="img-fluid position-absolute">
+        <h1 class="position-relative">slider</h1>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+
+</html>
