@@ -49,16 +49,8 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: 100; 
 }
-.navbar-nav {
-    display: flex; 
-    justify-content: center; 
-    width: 100%; 
-    margin-left: 0; 
-    margin-right: 0; 
-  }
-  .navbar-toggler {
-    margin-left: auto; 
-  }
+
+
   .x_center {
     display: flex; 
     justify-content: center; 
@@ -66,3 +58,10 @@
     margin-left: 0; 
     margin-right: 0; 
   }
+
+  #lien {
+	color: #FFF;
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
+    font-weight: 900;
+}
