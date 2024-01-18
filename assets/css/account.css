@@ -10,7 +10,7 @@
     font-weight: 300; 
 }
 .gras{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif; 
     font-weight: 900; 
 }
 
@@ -140,4 +140,9 @@ p {
    text-transform: uppercase; 
    cursor: pointer;
    outline: none;
+}
+.pseudo {
+   margin-left: 75px;
+   margin-top: 175px;
+   padding-left: 20px;
 }
