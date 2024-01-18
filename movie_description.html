@@ -22,15 +22,20 @@
 	<header class="container-fluid bg_grey">
 		<div class="row">
 
-			<div class="col-3" id="logo">
+			<div class="col-2" id="logo">
 				<img src="./assets/image/areview.png" alt="logo" width="200" height="52" class="img-fluid">
 			</div>
 
-			<div class="col-6" id="menu">
+			<div class="col-8" id="menu">
 				<nav class="navbar navbar-expand-lg">
 					<div class="container-fluid">
 
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
 						<div class="collapse navbar-collapse uppercase" id="navbarNav">
+							
 							<ul class="navbar-nav">
 								<li class="nav-item">
 									<a class="nav-link text-white" href="movies.html">cinéma</a>
@@ -55,7 +60,7 @@
 					</div>
 				</nav>
 			</div>
-			<div class="col-3" id="search">
+			<div class="col-2" id="search">
 				<a href="login.html">
 					<i class="fa-solid fa-user"></i>
 				</a>
@@ -120,12 +125,12 @@
 	</header>
 	
 	<!-- Website content -->
-	<div class="px-80 py-40">
+	<main class="px-80 py-40">
 
 		<!-- Movie Title & quick description -->
 		<section id="titre_film" class="px-48">
 			<h1 class="gras text_blue">The Thing</h1>
-			<p class="bold"> 1h72 - Horreur, Mystère, Science-Fiction </p>
+			<p class="bold"> 1h49 - Horreur, Mystère, Science-Fiction </p>
 		</section>
 
 		<!-- Movie informations navigation tabs -->
@@ -254,11 +259,21 @@
 				<hr/>
 
 				<!-- The Comments chunk -->
-				<h4 class="bold text_blue">Commentaires :</h4>
+				<section id="commentaires">
+					<h4 class="bold text_blue">Commentaires :</h4>
+					<form>
+						<input type="text" 
+							id="enterComment" 
+							name="enterComment" 
+							placeholder="Entrez un commentaire ..."
+							spellcheck="true"
+							class="comment_frame"/>
+					</form>
+				</section>
 
 			</div>
 		</div>
-	</div>
+	</main>
 
 
 	<!-- The Footer -->

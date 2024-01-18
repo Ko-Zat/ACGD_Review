@@ -8,26 +8,51 @@
 	--yellow: #FFD600;
 }
 
+/* Header Logo style */
 #logo {
-	margin: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-top: 20px;
 }
 
+/* Search field style */
 #search svg {
 	color: var(--orange);
+	display: block;
+	margin: auto;
 }
 
+#navbarNav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	/* align-items: center; */
+	/* justify-content:center; */
+}	
+
+/* Note field style */
 #note {
 	display: block;
 	margin: auto;
 	text-align: center;
 }
 
+/* Star style */
 #star svg {
 	color: var(--yellow);
 	width: 64px;
 	height: 64px;
 	display: block;
 	margin: auto;
+}
+
+#enterComment {
+	color: var(--dark-grey);
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-top:10px;
 }
 
 .py-40 {
@@ -63,19 +88,19 @@
 	padding-bottom: 40px;
 }
 
-.bg_grey{
+.bg_grey {
 	background-color: var(--dark-grey);
 }
 
-.bg_light{
+.bg_light {
 	background-color: var(--light-grey);
 }
 
-.text_blue{
+.text_blue {
 	color: var(--blue);
 }
 
-.link a{
+.link a {
 	color: var(--white);
 	text-decoration: none;
 }
@@ -98,30 +123,37 @@ a:active {
 	width: 100%;
 }
 
+.comment_frame {
+	background-color: var(--light-grey);
+	border-radius: 25px;
+	width: 100%;
+	/* height: 100px; */
+}
+
 .justify_end {
 	justify-content: flex-end;
 }
 
-.uppercase{
+.uppercase {
 	text-transform: uppercase;
 }
 
-.thin{
+.thin {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 100;
 }
 
-.light{
+.light {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 300;
 }
 
-.bold{
+.bold {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 700;
 }
 
-.gras{
+.gras {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 900;
 }
