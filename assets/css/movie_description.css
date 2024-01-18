@@ -8,6 +8,12 @@
 	--yellow: #FFD600;
 }
 
+/* Change user selection color */
+::selection{
+	color: var(--white);
+	background-color: var(--blue);
+}
+
 /* Text input general style */
 input[type=text]:focus{
 	outline: 1px solid var(--blue);
@@ -52,6 +58,21 @@ input[type=text]:focus{
 	display: block;
 	margin: auto;
 }
+
+#comment {
+	display: flex;
+	flex-basis: 0;
+}
+
+#comment_profile_field {
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_picture {
+	clip-path: circle(50%);
+}
+
 
 .pb-40 {
 	padding-bottom: 40px;
@@ -121,15 +142,6 @@ input[type=text]:focus{
 	padding-left:10px;
 	padding-top:10px;
 	border: none;
-}
-
-.comment_frame_complete {
-	display: flex;
-	flex: 1;
-}
-
-.profile_picture {
-	clip-path: circle(50%);
 }
 
 
