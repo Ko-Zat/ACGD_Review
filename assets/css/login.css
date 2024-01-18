@@ -5,7 +5,9 @@
 #search svg{
     color: var(--orange)
 } 
-
+#user svg{
+    color: var(--orange)
+} 
 #bouton_orange {
     background-color: #f4661b; 
     color: white;
@@ -47,3 +49,13 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: 100; 
 }
+.navbar-nav {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  .navbar-toggler {
+    margin-left: auto; 
+  }
