@@ -120,3 +120,24 @@ p {
 .larl {
    margin-left: 50px;
 }
+:root {
+   --orange: #f4661b ;
+}
+
+#search svg{
+   color: var(--orange)
+} 
+#user svg{
+   color: var(--orange)
+} 
+#bouton_orange {
+   background-color: #f4661b; 
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 18px;
+   font-weight: bold;
+   text-transform: uppercase; 
+   cursor: pointer;
+   outline: none;
+}
