@@ -17,101 +17,129 @@
 </head>
 
 <body>
+
+	<!-- Header -->
 	<header class="container-fluid sticky-top px-3" style="background-color: #434343;">
 		<div class="row">
-			  <nav class="navbar navbar-expand-lg">
-					<a class="navbar-brand mx-3 " href="index.html"> <img src="./assets/image/areview-header.png"></a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					  <span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
-					  <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand mx-3 " href="index.html">
+					<img src="./assets/image/areview-header.png">
+				</a>
+
+				<!--  -->
+				<button 
+					id="category_button"
+					class="navbar-toggler" 
+					type="button" 
+					data-bs-toggle="collapse" 
+					data-bs-target="#navbarSupportedContent" 
+					aria-controls="navbarSupportedContent" 
+					aria-expanded="false" 
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
 						<li class="nav-item  px-4">
-						  <a class="nav-link text-white gras text-uppercase" href="movies.html">cinéma</a>
+							<a class="nav-link text-white gras text-uppercase" href="movies.html">
+								cinéma
+							</a>
 						</li>
 						<li class="nav-item px-4">
-						  <a class="nav-link text-white gras text-uppercase" href="series.html">
-							séries
-						  </a>
+							<a class="nav-link text-white gras text-uppercase" href="series.html">
+								séries
+							</a>
 						</li>
 						<li class="nav-item px-4">
-						  <a class="nav-link text-white gras text-uppercase" href="video_game.html">
-							gaming
-						  </a>
+							<a class="nav-link text-white gras text-uppercase" href="video_game.html">
+								gaming
+							</a>
 						</li>
 						<li class="nav-item px-4">
-						  <a class="nav-link text-white gras text-uppercase" href="music.html">
-							musique
-						  </a>
+							<a class="nav-link text-white gras text-uppercase" href="music.html">
+								musique
+							</a>
 						</li>
 						<li class="nav-item px-4">
-						  <a class="nav-link text-white gras text-uppercase" href="book.html">
-							livre
-						  </a>
+							<a class="nav-link text-white gras text-uppercase" href="book.html">
+								livre
+							</a>
 						</li>
 						<li class="nav-item px-4">
-						  <a class="nav-link text-white gras text-uppercase" href="evenement.html">
-							événements
-						  </a>
+							<a class="nav-link text-white gras text-uppercase" href="evenement.html">
+								événements
+							</a>
 						</li>
-					  </ul>
-					  <!-- search button -->
-					  <form class="d-flex" role="search" id="search">
-						<input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="height: 25px; width: 25px"></i></button>
-					  </form>
-					  <div id="user">
-					  <i class="fa-solid fa-user"  style="height: 25px; width: 25px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ></i>
-					  </div>
+					</ul>
+
+					<!-- search button -->
+					<form class="d-flex" role="search" id="search">
+						<input class="form-control me-2 thin" 
+							type="search" 
+							placeholder="Rechercher" 
+							aria-label="Search">
+						<button class="btn" type="submit">
+							<i class="fa-solid fa-magnifying-glass" style="height: 25px; width: 25px"></i>
+						</button>
+					</form>
+					<div id="user">
+						<i class="fa-solid fa-user" 
+							style="height: 25px; width: 25px;" 
+							type="button" 
+							data-bs-toggle="offcanvas" 
+							data-bs-target="#offcanvasWithBothOptions" 
+							aria-controls="offcanvasWithBothOptions" >
+						</i>
 					</div>
-				</nav>
-					<div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-					  <div class="offcanvas-header ">
-					  <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
-					  </div>
-					  <div class="offcanvas-body">
-						  <div class="input-group my-1" id="Pseudo">
-							<span class="input-group-text " id="logo_pseudo">
-							  <i class="fa-solid fa-user"></i>
-							</span>
-							  <div class="col-sm ">
-								<input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login" aria-describedby="addon-wrapping">
-							  </div>
-						  </div>
-						<div class="input-group my-1" id="password">
-						  <span class="input-group-text " id="logo_cadenas">
-							<i class="fa-solid fa-lock"></i>
-						  </span>
+
+				</div>
+			</nav>
+				<div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header ">
+					<h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="input-group my-1" id="Pseudo">
+						<span class="input-group-text " id="logo_pseudo">
+							<i class="fa-solid fa-user"></i>
+						</span>
 							<div class="col-sm ">
-							  <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login" aria-describedby="addon-wrapping">
+							<input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login" aria-describedby="addon-wrapping">
 							</div>
 						</div>
-						<div class="row my-1" >
-						  <div class="form-check ms-2 text-start">
-							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-							  <label class="form-check-label" for="flexCheckDefault">
-								Se souvenir de moi
-							  </label>
-						  </div>              
+					<div class="input-group my-1" id="password">
+						<span class="input-group-text " id="logo_cadenas">
+						<i class="fa-solid fa-lock"></i>
+						</span>
+						<div class="col-sm ">
+							<input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login" aria-describedby="addon-wrapping">
 						</div>
-						<div class="row my-1 text-center">
-						  <a href=""> Mot de passe oublié ?</a>
-						</div>
-						<div class="row mt-3 text-center">
-						  <a href="account.html"><button  class="btn" type="submit" id="bouton_orange">  Se connecter </button> </a>
-						</div>
-						<div class="row my-1 text-center"> 
-						  <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
-						  <a href="login.html"><button  class="btn" type="submit" id="bouton_orange">  S'inscrire </button> </a>
-						</div>
-					  </div>
+					</div>
+					<div class="row my-1" >
+						<div class="form-check ms-2 text-start">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+							Se souvenir de moi
+							</label>
+						</div>              
+					</div>
+					<div class="row my-1 text-center">
+						<a href=""> Mot de passe oublié ?</a>
+					</div>
+					<div class="row mt-3 text-center">
+						<a href="account.html"><button  class="btn" type="submit" id="bouton_orange">  Se connecter </button> </a>
+					</div>
+					<div class="row my-1 text-center"> 
+						<p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+						<a href="login.html"><button  class="btn" type="submit" id="bouton_orange">  S'inscrire </button> </a>
+					</div>
 					</div>
 				</div>
-	  
-		  </div>
-		  <!-- banner -->
-	  </header>
+			</div>
+		</div>
+	</header>
 	
 	<!-- The header -->
 	
@@ -150,9 +178,14 @@
 		<div class="main_frame">
 
 			<!-- Image & Trailer chunk -->
-			<section id="image&BA" class="px-48 py-48">
-				<img src="https://placehold.co/445x700" width="25.5%">
-				<img src="https://placehold.co/1154x700" width="66.2%">
+			<section id="image_BA" class="px-48 py-48">
+				<div>
+					<!--<img src="https://placehold.co/445x700" width="25.5%">-->
+					<img src="https://placehold.co/445x700" width="100%">
+				</div>
+				<div>
+					<img src="https://placehold.co/1154x700" width="100%" class="pl-48">
+				</div>
 			</section>
 
 			<!-- Infos chunk -->
