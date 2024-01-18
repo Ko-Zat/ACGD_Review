@@ -97,3 +97,12 @@ p {
  p {
     font-family: 'Noto Sans', sans-serif;
  }
+ .marl {
+    margin-left: 960px;
+ }
+ .marr {
+    margin-left: 100px;
+ }
+ .mars {
+    margin-right: 100px;
+ }
