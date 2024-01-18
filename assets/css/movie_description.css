@@ -32,7 +32,23 @@ input[type=search]:focus{
 	padding-top: 20px;
 }
 
-#category_button svg {
+#bouton_orange {
+	background-color: var(--orange); 
+	color: var(--white);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 18px;
+	font-weight: bold;
+	text-transform: uppercase; 
+	cursor: pointer;
+	outline: none;
+}
+
+#category_button {
+	color: var(--white);
+}
+
+#category_button_icon {
 	color: var(--white);
 }
 
@@ -86,7 +102,11 @@ input[type=search]:focus{
 }
 
 #profile_picture {
+	display: block;
+	margin: auto;
 	clip-path: circle(50%);
+	width: 45px;
+	height: 45px;
 }
 
 
@@ -168,20 +188,23 @@ input[type=search]:focus{
 .text_blue {
 	color: var(--blue);
 }
+.text_wrap {
+	text-wrap: wrap;
+}
 
-.link a {
+.white_link a {
 	color: var(--white);
 	text-decoration: none;
 }
 a:link { 
 	text-decoration: none; 
-} 
+}
 a:visited { 
 	text-decoration: none; 
-} 
+}
 a:hover { 
 	text-decoration: none; 
-} 
+}
 a:active { 
 	text-decoration: none; 
 }
@@ -213,17 +236,7 @@ a:active {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 900;
 }
-#bouton_orange {
-	background-color: var(--orange); 
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 18px;
-	font-weight: bold;
-	text-transform: uppercase; 
-	cursor: pointer;
-	outline: none;
-}
+
 .navbar-nav {
 	display: flex; 
 	justify-content: center; 

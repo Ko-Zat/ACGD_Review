@@ -96,10 +96,13 @@ p {
 	font-family: 'Noto Sans', sans-serif;
 }
 .marl {
-	margin-left: 830px;
+	margin-left: 900px;
 }
 .marr {
 	margin-left: 100px;
+}
+.marm {
+	margin-left: 130px;
 }
 .mars {
 	margin-right: 100px;

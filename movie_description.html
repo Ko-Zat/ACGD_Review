@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
 	<!-- Header -->
 	<header class="container-fluid sticky-top px-3" style="background-color: #434343;">
 		<div class="row">
@@ -30,15 +29,15 @@
 				<button 
 					id="category_button"
 					class="navbar-toggler" 
-					type="button" 
+					type="button"
 					data-bs-toggle="collapse" 
 					data-bs-target="#navbarSupportedContent" 
 					aria-controls="navbarSupportedContent" 
 					aria-expanded="false" 
 					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<span id="category_button_icon" class="navbar-toggler-icon"></span>
 				</button>
-				
+
 				<div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
 						<li class="nav-item  px-4">
@@ -129,19 +128,21 @@
 						<a href=""> Mot de passe oublié ?</a>
 					</div>
 					<div class="row mt-3 text-center">
-						<a href="account.html"><button  class="btn" type="submit" id="bouton_orange">  Se connecter </button> </a>
+						<a href="account.html">
+							<button  class="btn" type="submit" id="bouton_orange"> Se connecter </button>
+						</a>
 					</div>
 					<div class="row my-1 text-center"> 
 						<p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
-						<a href="login.html"><button  class="btn" type="submit" id="bouton_orange">  S'inscrire </button> </a>
+						<a href="login.html">
+							<button  class="btn" type="submit" id="bouton_orange">  S'inscrire </button>
+						</a>
 					</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	
-	<!-- The header -->
 	
 	<!-- Website content -->
 	<main class="px-80 py-40">
@@ -180,7 +181,6 @@
 			<!-- Image & Trailer chunk -->
 			<section id="image_BA" class="px-48 py-48">
 				<div>
-					<!--<img src="https://placehold.co/445x700" width="25.5%">-->
 					<img src="https://placehold.co/445x700" width="100%">
 				</div>
 				<div>
@@ -198,7 +198,7 @@
 						<div id="star">
 							<a class="bold" href="#notreavis">
 								<i class="fa-solid fa-star"></i>
-								<h1>5/5</h1>
+								<h1 class="bold text_blue">5 / 5</h1>
 							</a>
 						</div>
 					</section>
@@ -293,7 +293,7 @@
 							spellcheck="true"
 							class="comment_frame"/>
 					</form>
-					
+					<hr/>
 					<!-- Comment -->
 					<div id="comment" class="comment_frame gap-4 pt-40">
 						<div id="comment_profile_field">
@@ -301,8 +301,19 @@
 							H.P. Lovecraft
 						</div>
 						<div class="vl"></div>
-						<div>
+						<div class="text_wrap">
 							Super !
+						</div>
+					</div>
+					<hr/>
+					<div id="comment" class="comment_frame gap-4 pt-40">
+						<div id="comment_profile_field">
+							<img src="https://placehold.co/45x45/000000/FFFFFF" alt="profile picture" id="profile_picture">
+							Howard Hawks
+						</div>
+						<div class="vl"></div>
+						<div class="text_wrap">
+							rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro 
 						</div>
 					</div>
 
@@ -327,7 +338,7 @@
 		</div>
 
 		<div class="text-center pb-40">
-			<div class="text-white text-uppercase link">
+			<div class="text-white text-uppercase white_link">
 				<a href=""><p class="d-inline px-3">newsletter</p></a>
 				<a href="contact.html"><p class="d-inline px-3">contact</p></a>
 				<a href=""><p class="d-inline px-3">modération</p></a>
