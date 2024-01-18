@@ -8,19 +8,10 @@
     padding: 11px;
 }
 
-
-.header, .footer{
-    background-color: #434343;
-    
-}
-
 .footer {
-  margin-top: 20px;
-}
-
-
-.pb-40 {
-    padding-bottom: 40px;
+    background-color: #434343;
+    margin-top: 20px;
+    
 }
 
 a:link{
@@ -29,7 +20,7 @@ a:link{
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    letter-spacing: 3px;
+    
 }
 
 a:link { 
@@ -54,7 +45,7 @@ a:link {
   }
 
   /*carousel*/
-  .carousel1, .carosel2 {
+  .carousel1 {
     margin-left: 0;
     margin-right: 0;
     margin-top: 20px;
