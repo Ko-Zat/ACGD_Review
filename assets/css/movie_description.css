@@ -19,6 +19,10 @@ input[type=text]:focus{
 	outline: 1px solid var(--blue);
 	caret-color: var(--dark-grey);
 }
+input[type=search]:focus{
+	outline: 1px solid var(--orange);
+	caret-color: var(--dark-grey);
+}
 
 /* Header Logo style */
 #logo {
@@ -26,6 +30,10 @@ input[type=text]:focus{
 	padding-bottom: 20px;
 	padding-left: 40px;
 	padding-top: 20px;
+}
+
+#category_button svg {
+	color: var(--white);
 }
 
 /* Search field style */
@@ -36,7 +44,12 @@ input[type=text]:focus{
 }
 #user svg{
     color: var(--orange)
-} 
+}
+
+#image_BA {
+	display: flex;
+	justify-content: space-evenly;
+}
 
 #navbarNav {
 	display: flex;
@@ -128,6 +141,10 @@ input[type=text]:focus{
 	background-color: var(--light-grey);
 }
 
+.fg_white {
+	color: var(--white);
+}
+
 
 .main_frame {
 	border: 1px solid var(--light-grey);
@@ -197,23 +214,23 @@ a:active {
 	font-weight: 900;
 }
 #bouton_orange {
-    background-color: #f4661b; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 18px;
-    font-weight: bold;
-    text-transform: uppercase; 
-    cursor: pointer;
-    outline: none;
+	background-color: var(--orange); 
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 18px;
+	font-weight: bold;
+	text-transform: uppercase; 
+	cursor: pointer;
+	outline: none;
 }
 .navbar-nav {
-    display: flex; 
-    justify-content: center; 
-    width: 100%; 
-    margin-left: 0; 
-    margin-right: 0; 
-  }
-  .navbar-toggler {
-    margin-left: auto; 
-  }
+	display: flex; 
+	justify-content: center; 
+	width: 100%; 
+	margin-left: 0; 
+	margin-right: 0; 
+}
+.navbar-toggler {
+	margin-left: auto; 
+}
