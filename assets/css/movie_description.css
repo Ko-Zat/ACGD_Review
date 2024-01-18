@@ -102,7 +102,11 @@ input[type=search]:focus{
 }
 
 #profile_picture {
+	display: block;
+	margin: auto;
 	clip-path: circle(50%);
+	width: 45px;
+	height: 45px;
 }
 
 
@@ -183,6 +187,9 @@ input[type=search]:focus{
 
 .text_blue {
 	color: var(--blue);
+}
+.text_wrap {
+	text-wrap: wrap;
 }
 
 .white_link a {
