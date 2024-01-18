@@ -44,10 +44,7 @@
     text-decoration-line: underline;
 }
 
-p {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
-}
+
 
 .gras  {
     font-family: 'Noto Sans', sans-serif;
@@ -60,6 +57,11 @@ p {
 }
 
 .bold {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+p {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
 }
