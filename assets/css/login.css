@@ -59,3 +59,10 @@
   .navbar-toggler {
     margin-left: auto; 
   }
+  .x_center {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
