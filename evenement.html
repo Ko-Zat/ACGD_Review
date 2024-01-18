@@ -13,6 +13,7 @@
 	  <link rel="shortcut icon" href="./assets/image/ar48px.png" type="image/x-icon">
   </head>
   <body>
+    <!--navbar-->
     <header class="header container-fluid py-22" >
        <div class="row">
         <div class="col-3" id="logo">
@@ -27,10 +28,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item pe-5">
-                    <a class="nav-link" href="#">cinema</a>
+                    <a class="nav-link" href="#">cinéma</a>
                   </li>
                   <li class="nav-item pe-5">
-                    <a class="nav-link" href="#">serie</a>
+                    <a class="nav-link" href="#">série</a>
                   </li>
                   <li class="nav-item pe-5">
                     <a class="nav-link" href="#">gaming</a>
@@ -42,29 +43,29 @@
                     <a class="nav-link" href="#">livre</a>
                   </li>
                   <li class="nav-item pe-5">
-                    <a class="nav-link" href="#">evenements</a>
+                    <a class="nav-link" href="#">événements</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
         </div>
-        <div class="col-2"></div>
-        <div class="col-1" id="profile">
-          <a href="#"><img src="./assets/image/loupe.svg" alt="loupe"></a>
-          <a href="#"><img src="./assets/image/account.svg" alt="profile"></a>
+        <div class="col-1"></div>
+        <div class="col-2 gap-3" id="profile">
+          <a href="#"><img src="./assets/image/loupe.svg" alt="loupe"></a><a href="#"><img src="./assets/image/account.svg" alt="profile"></a>
         </div>
+        
     </header>
     <!--carousel-->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row col-md-12">
         <div>
-          <div class="carousel">
+          <div class="carousel1">
             <ul class="slides">
               <input type="radio" name="radio-buttons" id="img-1" checked />
               <li class="slide-container">
                 <div class="slide-image">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+                  <img src="./assets/image/events/artifice.jpg">
                 </div>
                 <div class="carousel-controls">
                   <label for="img-3" class="prev-slide">
@@ -78,7 +79,7 @@
               <input type="radio" name="radio-buttons" id="img-2" />
               <li class="slide-container">
                 <div class="slide-image">
-                  <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+                  <img src="./assets/image/events/concert01.jpg">
                 </div>
                 <div class="carousel-controls">
                   <label for="img-1" class="prev-slide">
@@ -92,7 +93,7 @@
               <input type="radio" name="radio-buttons" id="img-3" />
               <li class="slide-container">
                 <div class="slide-image">
-                  <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+                  <img src="./assets/image/events/comiccon01.jpeg">
                 </div>
                 <div class="carousel-controls">
                   <label for="img-2" class="prev-slide">
@@ -112,14 +113,23 @@
           </div>
         </div>
         <!--fin de carousel-->
-        <!-- <div class="col-12">
-          <img src="https://placehold.co/1920x305" alt="slider" width="1920"  height="305" class="img-fluid position-absolute">
-          <h1 class="position-relative text-center pb-100">slider</h1>
-        </div> -->
       </div>
     </div>
+    <!--text h2-h3-->
+    <div class="row text-center mt-3">
+      <div class="col-md-12">
+      <h2 class="fw-bold">événements</h2>
+      </div>
+    </div>
+    <div class="row text-center mt-3">
+      <div class="col-md-12">
+      <h3 class="fw-bolder">activités</h2>
+      </div>
+    </div>
+    <!--actu-->
+   
     <footer class="footer text-center">
-      <div class="container p-4 pb-0">
+      <div class="container p-4 pb-0 col-md-12">
         <section class="mb-4">
         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
         <a href="" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px" height="42px"></a>

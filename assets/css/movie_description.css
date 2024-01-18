@@ -8,6 +8,18 @@
 	--yellow: #FFD600;
 }
 
+/* Change user selection color */
+::selection{
+	color: var(--white);
+	background-color: var(--blue);
+}
+
+/* Text input general style */
+input[type=text]:focus{
+	outline: 1px solid var(--blue);
+	caret-color: var(--dark-grey);
+}
+
 /* Header Logo style */
 #logo {
 	padding-right: 20px;
@@ -47,12 +59,27 @@
 	margin: auto;
 }
 
-#enterComment {
-	color: var(--dark-grey);
-	padding-right:10px;
-	padding-bottom:10px;
-	padding-left:10px;
-	padding-top:10px;
+#comment {
+	display: flex;
+	flex-basis: 0;
+}
+
+#comment_profile_field {
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_picture {
+	clip-path: circle(50%);
+}
+
+
+.pb-40 {
+	padding-bottom: 40px;
+}
+
+.pt-40 {
+	padding-top: 40px;
 }
 
 .py-40 {
@@ -84,8 +111,10 @@
 	padding-left: 2.5%;
 }
 
-.pb-40 {
-	padding-bottom: 40px;
+
+.vl {
+	border-left: 1px solid var(--grey);
+	height:auto;
 }
 
 .bg_grey {
@@ -95,6 +124,26 @@
 .bg_light {
 	background-color: var(--light-grey);
 }
+
+
+.main_frame {
+	border: 1px solid var(--light-grey);
+	border-top-width: 0;
+	width: 100%;
+}
+
+.comment_frame {
+	background-color: var(--light-grey);
+	color: var(--dark-grey);
+	border-radius: 25px;
+	width: 100%;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-top:10px;
+	border: none;
+}
+
 
 .text_blue {
 	color: var(--blue);
@@ -115,19 +164,6 @@ a:hover {
 } 
 a:active { 
 	text-decoration: none; 
-}
-
-.main_frame {
-	border: 1px solid var(--light-grey);
-	border-top-width: 0;
-	width: 100%;
-}
-
-.comment_frame {
-	background-color: var(--light-grey);
-	border-radius: 25px;
-	width: 100%;
-	/* height: 100px; */
 }
 
 .justify_end {
