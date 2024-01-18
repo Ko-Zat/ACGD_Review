@@ -67,6 +67,7 @@ p {
     background-color: #f4661b; 
     color: white;
     padding: 10px 20px;
+    font-family: 'Noto Sans', sans-serif;
     border: none;
     border-radius: 18px;
     font-weight: bold;
@@ -93,3 +94,23 @@ p {
  .bgi {
     background-position: 10px;
  }
+ p {
+    font-family: 'Noto Sans', sans-serif;
+ }
+ .marl {
+    margin-left: 960px;
+ }
+ .marr {
+    margin-left: 100px;
+ }
+ .mars {
+    margin-right: 100px;
+ }
+ .martb {
+   margin-top: 200px;
+   margin-left: 250px;
+ }
+ .mare {
+   margin-left: 200px;
+   margin-bottom: 0px;
+}
