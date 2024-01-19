@@ -158,27 +158,45 @@
 		<!-- Movie informations navigation tabs -->
 		<ul class="nav nav-tabs nav-justified link_dark_grey">
 			<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">Résumé</a>
+				<a id="tabHome"
+					class="nav-link active" 
+					onclick="return showTab('tabHome');" 
+					href="#titre_film">Résumé</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Casting</a>
+				<a id="tabCasting"
+					class="nav-link" 
+					onclick="return showTab('tabCasting');" 
+					href="#titre_film">Casting</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Bandes-Annonces</a>
+				<a id="tabTrailer"
+					class="nav-link" 
+					onclick="return showTab('tabTrailer');" 
+					href="#titre_film">Bandes-Annonces</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Spectateurs</a>
+				<a id="tabViewers"
+					class="nav-link" 
+					onclick="return showTab('tabViewers');" 
+					href="#titre_film">Spectateurs</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Presse</a>
+				<a id="tabPress"
+					class="nav-link" 
+					onclick="return showTab('tabPress');" 
+					href="#titre_film">Presse</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Dstribution</a>
+				<a id="tabDistrib"
+					class="nav-link" 
+					onclick="return showTab('tabDistrib');" 
+					href="#titre_film">Dstribution</a>
 			</li>
 		</ul>
 
-		<!-- The main frame chunk -->
-		<div class="main_frame">
+		<!-- The home frame chunk -->
+		<div id="frameHome" class="main_frame">
 
 			<!-- Image & Trailer chunk -->
 			<section id="image_BA" class="px-48 py-48">
@@ -332,6 +350,34 @@
 
 			</div>
 		</div>
+
+		<!-- The casting frame chunk -->
+		<div id="frameCasting" class="main_frame py-40 px-48">
+			<p>Liste des acteurs :</p>
+		</div>
+
+		<!-- The trailer frame chunk -->
+		<div id="frameTrailer" class="main_frame py-40 px-48">
+			<div class="container" >
+				<iframe width="100%" height="100%"
+					allowfullscreen
+					src="https://www.youtube.com/embed/5ftmr17M-a4">
+				</iframe>
+			</div>
+		</div>
+
+		<!-- The viewers frame chunk -->
+		<div id="frameViewers" class="main_frame py-40 px-48">
+		</div>
+
+		<!-- The press frame chunk -->
+		<div id="framePress" class="main_frame py-40 px-48">
+		</div>
+
+		<!-- The distribution frame chunk -->
+		<div id="frameDistrib" class="main_frame py-40 px-48">
+			<p>Disponible dans tout les bons cinémas !</p>
+		</div>
 	</main>
 
 
@@ -360,6 +406,28 @@
 		</div>
 
 	</footer>
+
+	<script>
+		function showTab( currentTab )
+		{
+			const tabsID = ["tabHome","tabCasting","tabTrailer","tabViewers","tabPress","tabDistrib"];
+			const framesID = ["frameHome","frameCasting","frameTrailer","frameViewers","framePress","frameDistrib"];
+
+			for( let i = 0; i<tabsID.length; i++ )
+			{
+				if( currentTab != tabsID[i] )
+				{
+					document.getElementById( tabsID[i] ).className = document.getElementById( tabsID[i] ).className.replace( /(?:^|\s)active(?!\S)/g, '' );
+					document.getElementById( framesID[i] ).style.display="none";
+				} else {
+					document.getElementById( tabsID[i] ).className += " active";
+					document.getElementById( framesID[i] ).style.display="block";
+				}
+			}
+
+			return false;
+		}
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>

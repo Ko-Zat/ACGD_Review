@@ -26,32 +26,27 @@
     top: calc(305 px- 50%);
 }*/
 h1 {
-    color: var(--white);
+    color: var(--orange );
     font-family: var(--police);
     font-weight: 700;
 }
+.tittle {
+    font-size: 17 px;
+  }
 h2 {
-    color: var(--orange);
-    font-family: var(--police);
-    font-weight: 700;
-}
-h3{
     color: var(--white);
     background-color: var(--grey);
     font-family: var(--police);
     font-weight: 700;
 }
-
-.titre {
-    color: var(--orange);
-    font-size: 17 px;
-    padding-bottom: 20 px;
-  }
-
-.slogan {
-    padding-top:300 px ;
+h3{
+    color: var(--blue);
+    font-family: var(--police);
+    font-weight: 700;
 }
-
+p {
+	font-family: 'Noto Sans', sans-serif;
+}
 .x_center {
     display: flex; 
     justify-content: center; 
