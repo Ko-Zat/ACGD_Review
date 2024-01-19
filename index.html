@@ -10,57 +10,117 @@
   <!--font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="./assets/css/index.css" rel="stylesheet">
+  <!--font NOTO-SANS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!--create header with menu-->
-  <header class="header container-fluid">
+  <header class="container-fluid sticky-top px-3 header">
     <div class="row">
-      <div class="col-3" id="logo">
-        <!--col permet de définir la taille grid bootstrap-->
-        <img src="./assets/image/areview-header.png" alt="logo" width="200" height="52" class="img-fluid">
-      </div>
-      <div class="col-6" id="menu">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">Navbar</a>-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="menu nav-link" href="#">Cinéma</a>
-                </li>
-                <li class="nav-item">
-                  <a class="menu nav-link" href="#">Série</a>
-                </li>
-                <li class="nav-item">
-                  <a class="menu nav-link" href="#">Gaming</a>
-                </li>
-                <li class="nav-item">
-                  <a class="menu nav-link" href="#">Musique</a>
-                </li>
-                <li class="nav-item">
-                  <a class="menu nav-link" href="#">Livre</a>
-                </li>
-                <li class="nav-item">
-                  <a class="menu nav-link" href="#">Événement</a>
-                </li>
-              </ul>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand mx-3 " href="index.html"> <img src="./assets/image/areview-header.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto">
+            <li class="nav-item  px-4">
+              <a class="nav-link text-white gras text-uppercase" href="movies.html">
+                cinéma
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="series.html">
+                séries
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="video_game.html">
+                gaming
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="music.html">
+                musique
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="book.html">
+                livre
+              </a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-white gras text-uppercase" href="evenement.html">
+                événements
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" id="search">
+            <input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
+            <a class="btn" href="news_feed.html" role="button"> <i class="fa-solid fa-magnifying-glass"
+                style="height: 25px;width: 25px;"></i></a>
+          </form>
+          <div id="user">
+            <i class="fa-solid fa-user" style="height: 25px; width: 25px;" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header ">
+          <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="input-group my-1" id="Pseudo">
+            <span class="input-group-text " id="logo_pseudo">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <div class="col-sm ">
+              <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+                aria-describedby="addon-wrapping">
             </div>
           </div>
-        </nav>
-      </div>
-      <div class="col-3" id="search">
-        <a herf="#">
-          <i class="fa-solid fa-user"></i>
-        </a>
+          <div class="input-group my-1" id="password">
+            <span class="input-group-text " id="logo_cadenas">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <div class="col-sm ">
+              <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+                aria-describedby="addon-wrapping">
+            </div>
+          </div>
+          <div class="row my-1">
+            <div class="form-check ms-2 text-start">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Se souvenir de moi
+              </label>
+            </div>
+          </div>
+          <div class="row my-1 text-center">
+            <a href=""> Mot de passe oublié ?</a>
+          </div>
+          <div class="row mt-3 text-center">
+            <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
+          </div>
+          <div class="row my-1 text-center">
+            <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+            <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+          </div>
+        </div>
       </div>
     </div>
+
+    </div>
+    <!-- banner -->
   </header>
-  <!--sliser-->
+  <!--sliser
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
@@ -69,8 +129,8 @@
         <h1 class="position-relative text-lg-center">Slider</h1>
       </div>
     </div>
-  </div>
-  <!--phrase d'accroche-->
+  </div>-->
+  <!--phrase d'accroche
   <div class="titre container-fluid">
     <div class="row">
       <div class="col-12">
@@ -82,11 +142,193 @@
     <div class="col-12">
       <h3 class="categorie position-relative text-lg-center">Cinéma lal</h3>
     </div>
-  </div>
+  </div>-->
+
+  <main>
+    <!--Slider-->
+    <div>
+      <div class="row">
+        <div class="col-12 m-0 p-0">
+          <img src="https://placehold.co/1920x305" alt="slider" width="1920" height="305">
+        </div>
+      </div>
+    </div>
+    <!--Hook-->
+    <div>
+      <h1 class="tittle text-uppercase gras text-center py-3 titre mb-5 "><strong>distinguer le remarquable du
+          banal!</strong></h1>
+    </div>
+    <!--category movie-->
+    <div>
+      <a href="movies.html">
+        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
+      </a>
+    </div>
+    <div class="row">
+      <section class="col-12 col-lg-4">
+        <!--Movie-->
+        <article>
+          <div class="row">
+            <div class="col-4 col-lg-auto">
+              <!--Big image category movie-->
+              <a href=""><img src="https://placehold.co/490x453" alt="image grande catégorie" width="490" height="453"
+                  class="flex-column"></a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="col-4 col-lg-4">
+            <!--First article movie aquaman-->
+            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
+                class="float-start"></a>
+            <h3 class="text-capitalize"><strong>aquaman</strong></h3>
+            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Deserunt minima inventore ratione magnam
+              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          </div>
+        </article>
+        <article>
+          <div class="col-4 col-lg-4">
+            <!--First article movie dune-->
+            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
+                class="float-start"></a>
+            <h3 class="text-capitalize"><strong>dune</strong></h3>
+            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Deserunt minima inventore ratione magnam
+              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+        </article>
+        <article>
+          <div class="col-4 col-lg-4">
+            <!--First article movie dvd-->
+            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
+                class="float-start"></a>
+            <h3 class="text-capitalize"><strong>dvd spectacles</strong></h3>
+            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Deserunt minima inventore ratione magnam
+              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          </div>
+        </article>
+        <article>
+          <div class="col-4 col-lg-4">
+            <!--First article movie barbie-->
+            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
+                class="float-start"></a>
+            <h3 class="text-capitalize"><strong>barbie</strong></h3>
+            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Deserunt minima inventore ratione magnam
+              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          </div>
+        </article>
+        <article>
+          <div class="col-4 col-lg-4">
+            <!--First article movie krisha-->
+            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
+                class="float-start"></a>
+            <h3 class="text-capitalize"><strong>krisha</strong></h3>
+            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Deserunt minima inventore ratione magnam
+              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          </div>
+        </article>
+        <article>
+          <div class="col-4 col-lg-4">
+            <!--First article movie lanuée-->
+            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
+                class="float-start"></a>
+            <h3 class="text-capitalize"><strong>la nuée</strong></h3>
+            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Deserunt minima inventore ratione magnam
+              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          </div>
+        </article>
+      </section>
+      <div>
+        <!--category series-->
+        <a href="series.html">
+          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>série</strong></h2>
+        </a>
+      </div>
+      <section>
+        <!--series-->
+      </section>
+      <div>
+        <!--category gaming-->
+        <a href="">
+          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>gaming</strong></h2>
+        </a>
+      </div>
+      <section>
+        <!--gaming-->
+      </section>
+      <div>
+        <!--category musique-->
+        <a href="">
+          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>musique</strong></h2>
+        </a>
+      </div>
+      <section>
+        <!--musique-->
+      </section>
+      <div>
+        <!--category book-->
+        <a href="">
+          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>livre</strong></h2>
+        </a>
+      </div>
+      <section>
+        <!--book-->
+      </section>
+      <div>
+        <!--category event-->
+        <a href="">
+          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>événement</strong></h2>
+        </a>
+      </div>
+      <section>
+        <!--event-->
+      </section>
+  </main>
+  <footer class="footer">
+    <div class="text-center py-4">
+      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" rel="noopener noreferrer"
+        target="_blank"><img alt="youtube" height="42px" src="./assets/image/contact/YOUTUBE.png" width="42px"></a> <a
+        class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="instagram"
+          height="42px" src="./assets/image/contact/INSTAGRAM.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="facebook" height="42px"
+          src="./assets/image/contact/FACEBOOK.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="marketplace" height="42px"
+          src="./assets/image/contact/MARKETPLACE.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="pinterest" height="42px"
+          src="./assets/image/contact/PINTEREST.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="twitter" height="42px"
+          src="./assets/image/contact/TWITTER.png" width="42px"></a>
+    </div>
+    <div class="text-center pb-1">
+      <div class="text-uppercase lien m-0">
+        <a href="">
+          <p class="footer d-inline px-3">newsletter</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">contact</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">modération</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">mention légale</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">c.g.u cookies</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">politique de confidentialité</p>
+        </a>
+      </div>
+    </div>
+    <div class="pb-1 text-white ps-4">
+      <p>droits légaux. dépôt....</p>
+    </div>
+  </footer>
 </body>
 <!--bootsrtap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <!--font awesome-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
 </html>

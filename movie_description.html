@@ -158,35 +158,57 @@
 		<!-- Movie informations navigation tabs -->
 		<ul class="nav nav-tabs nav-justified link_dark_grey">
 			<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">Résumé</a>
+				<a id="tabHome"
+					class="nav-link active" 
+					onclick="return showTab('tabHome');" 
+					href="#titre_film">Résumé</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Casting</a>
+				<a id="tabCasting"
+					class="nav-link" 
+					onclick="return showTab('tabCasting');" 
+					href="#titre_film">Casting</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Bandes-Annonces</a>
+				<a id="tabTrailer"
+					class="nav-link" 
+					onclick="return showTab('tabTrailer');" 
+					href="#titre_film">Bandes-Annonces</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Spectateurs</a>
+				<a id="tabViewers"
+					class="nav-link" 
+					onclick="return showTab('tabViewers');" 
+					href="#titre_film">Spectateurs</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Presse</a>
+				<a id="tabPress"
+					class="nav-link" 
+					onclick="return showTab('tabPress');" 
+					href="#titre_film">Presse</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#">Dstribution</a>
+				<a id="tabDistrib"
+					class="nav-link" 
+					onclick="return showTab('tabDistrib');" 
+					href="#titre_film">Dstribution</a>
 			</li>
 		</ul>
 
-		<!-- The main frame chunk -->
-		<div class="main_frame">
+		<!-- The home frame chunk -->
+		<div id="frameHome" class="main_frame">
 
 			<!-- Image & Trailer chunk -->
 			<section id="image_BA" class="px-48 py-48">
 				<div>
-					<img src="https://placehold.co/445x700" width="100%">
+					<img src="assets/image/movie_description/theThing445x700.png" width="100%">
 				</div>
-				<div>
-					<img src="https://placehold.co/1154x700" width="100%" class="pl-48">
+				<div class="container">
+					<!-- <img src="https://placehold.co/1154x700" width="100%" class="pl-48"> -->
+					<iframe width="100%" height="100%"
+						allowfullscreen
+						src="https://www.youtube.com/embed/5ftmr17M-a4">
+					</iframe>
 				</div>
 			</section>
 
@@ -209,7 +231,7 @@
 					<section id="synopsis">
 						<h4 class="bold text_blue">Synopsis :</h4>
 						<p>
-							Une équipe de chercheurs en Antarctique est chasée par 
+							Une équipe de chercheurs en Antarctique est chassée par 
 							une étrange créature capable d'imiter ses victimes. 
 							Mais qui peut bien être "la chose" ?
 						</p>
@@ -288,12 +310,17 @@
 				<section id="commentaires" class="pb-40">
 					<h4 class="bold text_blue">Commentaires :</h4>
 					<form>
-						<input type="text" 
+						<!--<input type="text" 
 							id="enterComment" 
 							name="enterComment" 
 							placeholder="Entrez un commentaire ..."
 							spellcheck="true"
-							class="comment_frame"/>
+							class="comment_frame"/>-->
+							<textarea 
+								id="enterComment" 
+								name="enterComment"
+								placeholder="Entrez un commentaire ..."
+								class="input comment_frame"></textarea>
 					</form>
 					<hr/>
 					<!-- Comment -->
@@ -323,11 +350,147 @@
 
 			</div>
 		</div>
+
+		<!-- The casting frame chunk -->
+		<div id="frameCasting" class="main_frame py-40 px-48">
+			<h2 class="bold text_blue">Casting</h2>
+			<table class="table table-sm table-striped table-hover">
+				<thread>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">John Carpenter</a></th>
+						<th class="thin">Réalisation</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Bill Lancaster</a></th>
+						<th class="thin">Scénario</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">John W. Campbell Jr.</a></th>
+						<th class="thin">Histoire originale : "Who Goes There ?"</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Kurt Russel</a></th>
+						<th class="thin">MacReady</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Wilfrid Brimley</a></th>
+						<th class="thin">Dr. Blair</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">T.K. Carter</a></th>
+						<th class="thin">Nauls</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">David Clennon</a></th>
+						<th class="thin">Palmer</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Keith David</a></th>
+						<th class="thin">Childs</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Richard Dysart</a></th>
+						<th class="thin">Dr. Copper</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Charles Hallahan</a></th>
+						<th class="thin">Vance Norris</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">George Bennings</a></th>
+						<th class="thin">Peter Maloney</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Richard Masur</a></th>
+						<th class="thin">Clark</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Donald Moffat</a></th>
+						<th class="thin">Garry</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Joel Polis</a></th>
+						<th class="thin">Fuchs</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Thomas G. Waites</a></th>
+						<th class="thin">Peter Windows</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Norbert Weisser</a></th>
+						<th class="thin">Norvégien</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Larry Franco</a></th>
+						<th class="thin">Passager norvégien armé</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Nate Irwin</a></th>
+						<th class="thin">Pilote d'hélicoptère</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">William Zeman</a></th>
+						<th class="thin">Pilote</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Adrienne Barbeau</a></th>
+						<th class="thin">Voix ordinateur, non-créditée</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">John Carpenter</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Jed</a></th>
+						<th class="thin">La chose en chien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Bill Lancaster</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Dick Warlock</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+				</thread>
+			</table>
+		</div>
+
+		<!-- The trailer frame chunk -->
+		<div id="frameTrailer" class="main_frame py-40 px-48">
+			<h2 class="bold text_blue">Bandes-Annonces</h2>
+			<div class="container" >
+				<iframe width="100%" height="100%"
+					allowfullscreen
+					src="https://www.youtube.com/embed/5ftmr17M-a4">
+				</iframe>
+			</div>
+		</div>
+
+		<!-- The viewers frame chunk -->
+		<div id="frameViewers" class="main_frame py-40 px-48">
+			<h2 class="bold text_blue">L'avis des spectateurs</h2>
+		</div>
+
+		<!-- The press frame chunk -->
+		<div id="framePress" class="main_frame py-40 px-48">
+			<h2 class="bold text_blue">L'avis de la presse</h2>
+		</div>
+
+		<!-- The distribution frame chunk -->
+		<div id="frameDistrib" class="main_frame py-40 px-48">
+			<p>Disponible dans tout les bons cinémas !</p>
+		</div>
 	</main>
 
 
-	<!-- The Footer -->
-	<footer class="bg_grey">
+		<!-- The Footer -->
+	<!-- Footer fixer en bas -->
+	<div id="container">
+	<div id="main">
+	<div id="footer">
+	<!-- Footer fixer en bas -->
+		<footer class="bg_grey">
 
 		<!-- Link Icons -->
 		<div class="text-center py-40">
@@ -349,8 +512,39 @@
 				<a href=""><p class="d-inline px-3">politique de confidentialité</p></a>
 			</div>
 		</div>
+<!-- Footer fixer en bas -->
+</div>
+</div>
+</div>
+<!-- Footer fixer en bas -->
 
 	</footer>
+
+	<script>
+		// This script allow switching between tabs by showing and hiding category frames
+		function showTab( currentTab )
+		{
+			const tabsID = ["tabHome","tabCasting","tabTrailer","tabViewers","tabPress","tabDistrib"];
+			const framesID = ["frameHome","frameCasting","frameTrailer","frameViewers","framePress","frameDistrib"];
+
+			for( let i = 0; i<tabsID.length; i++ )
+			{
+				if( currentTab != tabsID[i] )
+				{
+					// Hide tabs
+					document.getElementById( tabsID[i] ).className = 
+						document.getElementById( tabsID[i] ).className.replace( /(?:^|\s)active(?!\S)/g, '' );
+					document.getElementById( framesID[i] ).style.display="none";
+				} else {
+					// Show tab
+					document.getElementById( tabsID[i] ).className += " active";
+					document.getElementById( framesID[i] ).style.display="block";
+				}
+			}
+
+			return false;
+		}
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>

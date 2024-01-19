@@ -19,14 +19,14 @@
 } */
 
 /* Text input general style */
-input[type=text]:focus{
+/* input[type=text]:focus{
 	outline: 1px solid var(--blue);
 	caret-color: var(--dark-grey);
 }
 input[type=search]:focus{
 	outline: 1px solid var(--orange);
 	caret-color: var(--dark-grey);
-}
+} */
 
 /* Header Logo style */
 #logo {
@@ -268,3 +268,24 @@ a:active {
 .navbar-toggler {
 	margin-left: auto; 
 }
+/* <!-- Footer fixer en bas --> */
+html, body {
+	margin:0;
+	padding:0;
+	height:78%;
+ }
+ #main {
+	min-height:100%;
+	position:relative;
+	padding-bottom:100px;   /* Hauteur du pied de page */
+ }
+ #footer {
+	position:absolute;
+	bottom:0;  /* on le colle en bas */
+	width:100%;
+	height:100px;   /* Hauteur du pied de page */
+ }
+ #container {
+	height:100%;
+ }
+ /* <!-- Footer fixer en bas --> */
