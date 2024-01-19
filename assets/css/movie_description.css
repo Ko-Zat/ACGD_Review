@@ -19,14 +19,14 @@
 } */
 
 /* Text input general style */
-input[type=text]:focus{
+/* input[type=text]:focus{
 	outline: 1px solid var(--blue);
 	caret-color: var(--dark-grey);
 }
 input[type=search]:focus{
 	outline: 1px solid var(--orange);
 	caret-color: var(--dark-grey);
-}
+} */
 
 /* Header Logo style */
 #logo {
