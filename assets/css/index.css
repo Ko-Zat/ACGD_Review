@@ -9,6 +9,10 @@
     color: var(--orange);
 }
 
+#user svg {
+    color: var(--orange);
+}
+
 .header {
     background-color: var(--grey);
 }
@@ -48,3 +52,41 @@ h3{
     padding-top:300 px ;
 }
 
+.x_center {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  #bouton_orange {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
+}
+.bold{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700; 
+}
+.light{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300; 
+}
+.gras{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900; 
+}
+
+.thin{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100; 
+}
+*{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300; }
