@@ -353,11 +353,112 @@
 
 		<!-- The casting frame chunk -->
 		<div id="frameCasting" class="main_frame py-40 px-48">
-			<p>Liste des acteurs :</p>
+			<h2 class="bold text_blue">Casting</h2>
+			<table class="table table-sm table-striped table-hover">
+				<thread>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">John Carpenter</a></th>
+						<th class="thin">Réalisation</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Bill Lancaster</a></th>
+						<th class="thin">Scénario</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">John W. Campbell Jr.</a></th>
+						<th class="thin">Histoire originale : "Who Goes There ?"</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Kurt Russel</a></th>
+						<th class="thin">MacReady</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Wilfrid Brimley</a></th>
+						<th class="thin">Dr. Blair</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">T.K. Carter</a></th>
+						<th class="thin">Nauls</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">David Clennon</a></th>
+						<th class="thin">Palmer</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Keith David</a></th>
+						<th class="thin">Childs</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Richard Dysart</a></th>
+						<th class="thin">Dr. Copper</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Charles Hallahan</a></th>
+						<th class="thin">Vance Norris</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">George Bennings</a></th>
+						<th class="thin">Peter Maloney</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Richard Masur</a></th>
+						<th class="thin">Clark</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Donald Moffat</a></th>
+						<th class="thin">Garry</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Joel Polis</a></th>
+						<th class="thin">Fuchs</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Thomas G. Waites</a></th>
+						<th class="thin">Peter Windows</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Norbert Weisser</a></th>
+						<th class="thin">Norvégien</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Larry Franco</a></th>
+						<th class="thin">Passager norvégien armé</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Nate Irwin</a></th>
+						<th class="thin">Pilote d'hélicoptère</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">William Zeman</a></th>
+						<th class="thin">Pilote</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Adrienne Barbeau</a></th>
+						<th class="thin">Voix ordinateur, non-créditée</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">John Carpenter</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Jed</a></th>
+						<th class="thin">La chose en chien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Bill Lancaster</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="thin"><a href="celebrity.html">Dick Warlock</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+				</thread>
+			</table>
 		</div>
 
 		<!-- The trailer frame chunk -->
 		<div id="frameTrailer" class="main_frame py-40 px-48">
+			<h2 class="bold text_blue">Bandes-Annonces</h2>
 			<div class="container" >
 				<iframe width="100%" height="100%"
 					allowfullscreen
@@ -368,10 +469,12 @@
 
 		<!-- The viewers frame chunk -->
 		<div id="frameViewers" class="main_frame py-40 px-48">
+			<h2 class="bold text_blue">L'avis des spectateurs</h2>
 		</div>
 
 		<!-- The press frame chunk -->
 		<div id="framePress" class="main_frame py-40 px-48">
+			<h2 class="bold text_blue">L'avis de la presse</h2>
 		</div>
 
 		<!-- The distribution frame chunk -->
@@ -381,8 +484,13 @@
 	</main>
 
 
-	<!-- The Footer -->
-	<footer class="bg_grey">
+		<!-- The Footer -->
+	<!-- Footer fixer en bas -->
+	<div id="container">
+	<div id="main">
+	<div id="footer">
+	<!-- Footer fixer en bas -->
+		<footer class="bg_grey">
 
 		<!-- Link Icons -->
 		<div class="text-center py-40">
@@ -404,10 +512,16 @@
 				<a href=""><p class="d-inline px-3">politique de confidentialité</p></a>
 			</div>
 		</div>
+<!-- Footer fixer en bas -->
+</div>
+</div>
+</div>
+<!-- Footer fixer en bas -->
 
 	</footer>
 
 	<script>
+		// This script allow switching between tabs by showing and hiding category frames
 		function showTab( currentTab )
 		{
 			const tabsID = ["tabHome","tabCasting","tabTrailer","tabViewers","tabPress","tabDistrib"];
@@ -417,9 +531,12 @@
 			{
 				if( currentTab != tabsID[i] )
 				{
-					document.getElementById( tabsID[i] ).className = document.getElementById( tabsID[i] ).className.replace( /(?:^|\s)active(?!\S)/g, '' );
+					// Hide tabs
+					document.getElementById( tabsID[i] ).className = 
+						document.getElementById( tabsID[i] ).className.replace( /(?:^|\s)active(?!\S)/g, '' );
 					document.getElementById( framesID[i] ).style.display="none";
 				} else {
+					// Show tab
 					document.getElementById( tabsID[i] ).className += " active";
 					document.getElementById( framesID[i] ).style.display="block";
 				}
