@@ -65,9 +65,7 @@
     margin: 25px;
 }
 
-input[type="text"], textarea.msg {
-    background-color : #8b8b8b;
-} 
+
 
 .navbar-nav {
     display: flex; 
@@ -127,9 +125,7 @@ input[type="text"], textarea.msg {
 	color: white;
 	text-decoration: none;
 }
-a:link { 
-	text-decoration: none; 
-} 
+
 a:visited { 
 	text-decoration: none; 
 } 
@@ -142,4 +138,18 @@ a:active {
 .thead{
     text-shadow: 5px 5px;
     border-radius: 30%;
+}
+#user svg{
+    color: var(--orange)
+} 
+#bouton_orange {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
 }

@@ -43,14 +43,7 @@
     text-decoration-line: underline;
 }
 
-p {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
-    max-width: 2500px;
-    display: inline-flexbox;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .gras  {
     font-family: 'Noto Sans', sans-serif;
@@ -66,6 +59,16 @@ p {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
 }
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 input[type="text"], input[type="email"], input[type="tel"], textarea.msg {
     background-color : #D9D9D9;
@@ -172,4 +175,25 @@ a:link {
     display: inline-flexbox;
     margin-left: auto;
     margin-right: auto;
+}
+:root {
+    --orange: #f4661b ;
+}
+
+#search svg{
+    color: var(--orange)
+} 
+#user svg{
+    color: var(--orange)
+} 
+#bouton_orange {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
 }
