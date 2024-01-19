@@ -49,3 +49,7 @@
     flex-shrink: 0;
     padding: 5px;
 }
+
+@media (min-width: 991px) {
+
+}
