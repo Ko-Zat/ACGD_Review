@@ -268,3 +268,24 @@ a:active {
 .navbar-toggler {
 	margin-left: auto; 
 }
+/* <!-- Footer fixer en bas --> */
+html, body {
+	margin:0;
+	padding:0;
+	height:78%;
+ }
+ #main {
+	min-height:100%;
+	position:relative;
+	padding-bottom:100px;   /* Hauteur du pied de page */
+ }
+ #footer {
+	position:absolute;
+	bottom:0;  /* on le colle en bas */
+	width:100%;
+	height:100px;   /* Hauteur du pied de page */
+ }
+ #container {
+	height:100%;
+ }
+ /* <!-- Footer fixer en bas --> */
