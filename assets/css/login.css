@@ -1,5 +1,7 @@
 :root {
     --orange: #f4661b ;
+    --grey: #434343;
+
 }
 
 #search svg{
@@ -23,14 +25,6 @@
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300; }
     
-.bg_grey{
-    background-color: #434343;;
-}
-
-.bg_light{
-    background-color: #d9d9d9;;
-}
-
 
 .bold{
     font-family: 'Noto Sans', sans-serif;
