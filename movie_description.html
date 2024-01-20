@@ -540,7 +540,7 @@
 		<div id="frameTrailer" class="main_frame py-40 px-48" style="display: none;">
 			<h2 class="bold text_blue">Bandes-Annonces</h2>
 			<div class="container" >
-				<iframe width="100%" height="100%"
+				<iframe width="100%" height="700px"
 					allowfullscreen
 					src="https://www.youtube.com/embed/5ftmr17M-a4">
 				</iframe>
@@ -601,21 +601,22 @@
 		{
 			const tabsID = ["tabHome","tabCasting","tabTrailer","tabViewers","tabPress","tabDistrib"];
 			const framesID = ["frameHome","frameCasting","frameTrailer","frameViewers","framePress","frameDistrib"];
+			let fID = 0;
 
 			for( let i = 0; i<tabsID.length; i++ )
 			{
-				if( currentTab != tabsID[i] )
-				{
-					// Hide tabs
-					document.getElementById( tabsID[i] ).className = 
-						document.getElementById( tabsID[i] ).className.replace( /(?:^|\s)active(?!\S)/g, '' );
-					document.getElementById( framesID[i] ).style.display="none";
-				} else {
-					// Show tab
-					document.getElementById( tabsID[i] ).className += " active";
-					document.getElementById( framesID[i] ).style.display="block";
-				}
+				// Hide all tabs
+				document.getElementById( tabsID[i] ).className = 
+					document.getElementById( tabsID[i] ).className.replace( /(?:^|\s)active(?!\S)/g, '' );
+				document.getElementById( framesID[i] ).style.display="none";
+				
+				if( currentTab == tabsID[i] )
+					fID = i;
 			}
+
+			// Show selected tab
+			document.getElementById( currentTab ).className += " active";
+			document.getElementById( framesID[fID] ).style.display="block";
 
 			return false;
 		}
