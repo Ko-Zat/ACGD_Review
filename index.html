@@ -70,6 +70,7 @@
           </div>
         </div>
       </nav>
+
       <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header ">
@@ -120,7 +121,64 @@
     </div>
     <!-- banner -->
   </header>
-  <!--sliser
+  <!--carousel
+        <div class="container-fluid">
+          <div class="row col-md-12">
+            <div>
+              <div class="carousel1">
+                <ul class="slides">
+                  <input type="radio" name="radio-buttons" id="img-1" checked />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="./assets/image/events/artifice.jpg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-2" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="./assets/image/events/concert01.jpg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-1" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-3" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-3" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="./assets/image/events/comiccon01.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-2" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <div class="carousel-dots">
+                    <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            fin de carousel-->
+  <!--slider
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
@@ -146,107 +204,285 @@
 
   <main>
     <!--Slider-->
-    <div>
-      <div class="row">
-        <div class="col-12 m-0 p-0">
-          <img src="https://placehold.co/1920x305" alt="slider" width="1920" height="305">
-        </div>
+    <div class="row" id="banner">
+      <div class="col-12 col-md-12">
+        <img src="./assets/image/accueil/slide-acceuil.jpg" alt="slider" width="1920" height="305" class="slider mt-3">
+        <!--<h1 class="slide text-center">Actuellement</h1>-->
       </div>
     </div>
     <!--Hook-->
     <div>
-      <h1 class="tittle text-uppercase gras text-center py-3 titre mb-5 "><strong>distinguer le remarquable du
+      <h1 class="tittle text-uppercase gras text-center py-3 titre mb-1 "><strong>distinguer le remarquable du
           banal!</strong></h1>
     </div>
     <!--category movie-->
     <div>
-      <a href="movies.html">
-        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
-      </a>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
     </div>
-    <div class="row">
-      <section class="col-12 col-lg-4">
-        <!--Movie-->
-        <article>
-          <div class="row">
-            <div class="col-4 col-lg-auto">
-              <!--Big image category movie-->
-              <a href=""><img src="https://placehold.co/490x453" alt="image grande catégorie" width="490"
-                  height="453"></a>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="col-4 col-lg-4">
-            <!--First article movie aquaman-->
-            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"></a>
-            <h3 class="text-capitalize"><strong>aquaman</strong></h3>
-            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Deserunt minima inventore ratione magnam
-              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
-          </div>
-        </article>
+    <!--Movie-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 col-lg-4">
+         <a href=""><img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/cimema-accueil.jpg"
+              alt="image grande catégorie" width="490" height="453" style="height: auto; width: auto;"></a>
+        </div>
+        <!--Article movie aquaman-->
+        <div class="col-8 col-lg-auto">
+          <section>
+            <article style="height: auto; width: auto;">
+              <a href="movies.html"><img src="./assets/image/accueil/accine-aquaman.jpg" alt="image aquaman" width="192"
+                  height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+            </article>
+          </section>
+        </div>
+        <div class="col-4 col-lg-4">
+          <h3 class="text-capitalize mb-0 mt-3 p-0"><strong>aquaman</strong></h3>
+          <p class="overflow-scroll m-0" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+            qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+        <!--Article movie dune-->
+        <div class="col-4 col-lg-auto">
+          <section>
+            <article>
+              <a href="movies.html"><img src="./assets/image/accueil/accine-dune.jpg" alt="image dune" width="192"
+                    height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+            </article>
+          </section>
+        </div>
+        <div class="col-8 col-lg-3">
+          <h3 class="text-capitalize pb-0 mb-0"><strong>dune</strong></h3>
+          <p class="overflow-scroll m-0" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+            qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+
+        <!--Article movie dvd spectale-->
+        <div class="col-4 col-lg-auto">
+         <section>
+           <article>
+            <a href="movies.html"><img src="./assets/image/accueil/accine-dvdspec.jpg" alt="image dvd spectacle" width="192"
+                  height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+            </article>
+          </section>
+        </div>
+        <div class="col-8 col-lg-4">
+          <h3 class="text-capitalize pb-0 mb-0"><strong>dvd spectacle</strong></h3>
+          <p class="overflow-scroll m-0" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+          qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+        <!--Article movie barbie-->
+        <div class="col-4 col-lg-auto">
+          <section>
+             <article>
+                <a href="movies.html"><img src="./assets/image/accueil/accine-barbie.jpg" alt="image barbie" width="192"
+                         height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+              </article>
+          </section>
+        </div>
+        <div class="col-8 col-lg-3">
+          <h3 class="text-capitalize pb-0 mb-0"><strong>barbie</strong></h3>
+          <p class="overflow-scroll m-0" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+                 qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+        <!--Article movie krisha-->
+        <div class="col-4 col-lg-auto">
+          <section>
+            <article>
+             <a href="movies.html"><img src="./assets/image/accueil/accine-krisha.jpg" alt="image krisha" width="192"
+                   height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+             </article>
+           </section>
+         </div>
+         <div class="col-8 col-lg-4">
+           <h3 class="text-capitalize pb-0 mb-0"><strong>krisha</strong></h3>
+           <p class="overflow-scroll m-0" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+           adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+           qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+         </div>
+        <!--Article movie la nuée-->
+        <div class="col-4 col-lg-auto">
+          <section>
+             <article>
+                <a href="movies.html"><img src="./assets/image/accueil/accine-lanuee.jpg" alt="image la nuée" width="192"
+                         height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+              </article>
+          </section>
+        </div>
+        <div class="col-8 col-lg-3">
+          <h3 class="text-capitalize pb-0 mb-0"><strong>la nuée</strong></h3>
+          <p class="overflow-scroll m-0" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+                 qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+      </div> 
     </div>
-    </section>
+
+
+    <!--category series-->
     <div>
-      <!--category series-->
-      <a href="series.html">
-        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>série</strong></h2>
-      </a>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>série</strong></h2>
     </div>
-    <section>
-      <!--series-->
-    </section>
+
+    <div class="container-fluid">
+      <div class="row">
+       <!--Article serie misanthrope-->
+        <div class="col-4 col-lg-auto">
+         <h3 class="text-capitalize mb-0 mt-3 p-0 text-lg-end"><strong>misanthrope</strong></h3>
+          <p class="overflow-scroll m-0 text-lg-end" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+          qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>       
+        <div class="col-8 col-lg-4">
+          <section>
+            <article style="height: auto; width: auto;">
+              <a href="movies.html"><img src="./assets/image/accueil/acserie-misanthrope.png" alt="image misanthrope" width="192"
+                  height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+            </article>
+          </section>
+        </div>
+
+        <!--Article movie dune-->
+        <div class="col-4 col-lg-auto">
+          <h3 class="text-capitalize pb-0 mb-0 text-lg-end"><strong>pauvre créature</strong></h3>
+         <p class="overflow-scroll m-0 text-lg-end" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+          qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+       </div>
+        <div class="col-8 col-lg-3">
+          <section>
+            <article>
+              <a href="movies.html"><img src="./assets/image/accueil/acserie-pauvrecrea.jpg" alt="image pauvre créature" width="192"
+                    height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+            </article>
+          </section>
+        </div>
+
+        <!--Article serie un coup de dés-->
+        <div class="col-4 col-lg-auto">
+          <h3 class="text-capitalize pb-0 mb-0 text-lg-end"><strong>un coup de dés</strong></h3>
+          <p class="overflow-scroll m-0 text-lg" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+          qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+        <div class="col-8 col-lg-4">
+         <section>
+           <article>
+            <a href="movies.html"><img src="./assets/image/accueil/acserie-coupde.jpg" alt="image un coup de dés" width="192"
+                  height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+            </article>
+          </section>
+        </div>
+
+        <!--Article serir aman-->
+        <div class="col-4 col-lg-auto">
+          <h3 class="text-capitalize pb-0 mb-0 text-lg-end"><strong>aman</strong></h3>
+          <p class="overflow-scroll m-0 text-lg-end" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+                 qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+        <div class="col-8 col-lg-3">
+          <section>
+             <article>
+                <a href="movies.html"><img src="./assets/image/accueil/acserie-aman.jpg" alt="image aman" width="192"
+                         height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+              </article>
+          </section>
+        </div>
+
+        <!--Article serie iris et les hommes-->
+        <div class="col-4 col-lg-auto">
+          <h3 class="text-capitalize pb-0 mb-0 text-lg-end"><strong>iris et les hommes</strong></h3>
+          <p class="overflow-scroll m-0 text-lg-end" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+          qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>        
+        <div class="col-8 col-lg-4">
+          <section>
+            <article>
+             <a href="movies.html"><img src="./assets/image/accueil/acserie-iris.jpg" alt="image iris et les hommes" width="192"
+                   height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+             </article>
+           </section>
+         </div>
+
+        <!--Article serie krisha-->
+        <div class="col-4 col-lg-auto">
+          <h3 class="text-capitalize pb-0 mb-0 text-lg-end"><strong>krisha et le maître</strong></h3>
+          <p class="overflow-scroll m-0 text-lg-end" style="height: 100px; width: 250px;">Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos
+                 qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+        </div>
+        <div class="col-8 col-lg-3">
+          <section>
+             <article>
+                <a href="movies.html"><img src="./assets/image/accueil/acserie-krisha.jpg" alt="image krisha et le maître" width="192"
+                         height="127" class="img-fluid mt-3 mb-lg-0 mb-0 rounded" style="height: 127px; width: 192px;"></a>
+              </article>
+          </section>
+        </div>
+        <div class="col-4 col-lg-8 ">
+          <a href=""><img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/cimema-accueil.jpg"
+               alt="image grande catégorie" width="490" height="453" style="height: auto; width: auto;"></a>
+         </div>
+      </div> 
+    </div>    
+
+    <!--category gaming-->
     <div>
-      <!--category gaming-->
-      <a href="">
-        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>gaming</strong></h2>
-      </a>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>gaming</strong></h2>
     </div>
-    <section>
-      <!--gaming-->
-    </section>
+
+    <!--category musique-->
     <div>
-      <!--category musique-->
-      <a href="">
-        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>musique</strong></h2>
-      </a>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>musique</strong></h2>
     </div>
-    <section>
-      <!--musique-->
-    </section>
+
+    <!--category livre-->
     <div>
-      <!--category book-->
-      <a href="">
-        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>livre</strong></h2>
-      </a>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>livre</strong></h2>
     </div>
-    <section>
-      <!--book-->
-    </section>
+
+    <!--category événement-->
     <div>
-      <!--category event-->
-      <a href="">
-        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>événement</strong></h2>
-      </a>
-    </div>
-    <section>
-      <!--event-->
-    </section>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>musique</strong></h2>
+    </div> 
+
+
   </main>
+
   <footer class="footer">
     <div class="text-center py-4">
-      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" rel="noopener noreferrer" target="_blank"><img alt="youtube" height="42px" src="./assets/image/contact/YOUTUBE.png" width="42px"></a> <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="instagram" height="42px" src="./assets/image/contact/INSTAGRAM.png" width="42px"></a> <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="facebook" height="42px" src="./assets/image/contact/FACEBOOK.png" width="42px"></a> <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="marketplace" height="42px" src="./assets/image/contact/MARKETPLACE.png" width="42px"></a> <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="pinterest" height="42px" src="./assets/image/contact/PINTEREST.png" width="42px"></a> <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="twitter" height="42px" src="./assets/image/contact/TWITTER.png" width="42px"></a>
+      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" rel="noopener noreferrer"
+        target="_blank"><img alt="youtube" height="42px" src="./assets/image/contact/YOUTUBE.png" width="42px"></a> <a
+        class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="instagram"
+          height="42px" src="./assets/image/contact/INSTAGRAM.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="facebook" height="42px"
+          src="./assets/image/contact/FACEBOOK.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="marketplace" height="42px"
+          src="./assets/image/contact/MARKETPLACE.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="pinterest" height="42px"
+          src="./assets/image/contact/PINTEREST.png" width="42px"></a> <a class="d-inline"
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="twitter" height="42px"
+          src="./assets/image/contact/TWITTER.png" width="42px"></a>
     </div>
     <div class="text-center pb-1">
       <div class="text-uppercase lien m-0">
         <a href="">
-        <p class="d-inline px-3">newsletter</p></a> <a href="contact.html">
-        <p class="d-inline px-3">contact</p></a> <a href="">
-        <p class="d-inline px-3">modération</p></a> <a href="">
-        <p class="d-inline px-3">mention légale</p></a> <a href="">
-        <p class="d-inline px-3">c.g.u cookies</p></a> <a href="">
-        <p class="d-inline px-3">politique de confidentialité</p></a>
+          <p class="footer d-inline px-3">newsletter</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">contact</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">modération</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">mention légale</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">c.g.u cookies</p>
+        </a> <a href="">
+          <p class="footer d-inline px-3">politique de confidentialité</p>
+        </a>
       </div>
     </div>
     <div class="pb-1 text-white ps-4">
