@@ -32,8 +32,9 @@
 .titre3 {
 	font-size: 20;
 	font-family: 'Noto Sans', sans-serif;
-	color: #FFF;
-	background-color: #434343;
+	color: black;
+	background-color:  rgba(255, 255, 255, 0.5);
+	font-weight: 700;
 }
 .titre2 {
 	font-size: 20;
@@ -83,9 +84,6 @@ p {
 .navbar-toggler {
 	margin-left: auto;
 }
-.mart {
-	margin-top: 310px;
-}
 .tp {
 	top: calc(200px);
 }
@@ -94,6 +92,9 @@ p {
 }
 p {
 	font-family: 'Noto Sans', sans-serif;
+}
+.mart {
+	margin-top: 310px;
 }
 .marl {
 	margin-left: 900px;
@@ -158,3 +159,19 @@ p {
    }
    
 }
+.image-container {
+	position: relative;
+	text-align: center;
+	margin: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+  }
+  
+  .centered-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	 /* Arrière-plan semi-transparent pour le texte */
+	padding: 10px;
+  }
