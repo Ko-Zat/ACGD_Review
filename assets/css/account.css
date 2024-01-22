@@ -175,3 +175,7 @@ p {
 	 /* Arrière-plan semi-transparent pour le texte */
 	padding: 10px;
   }
+  .lienb {
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
+}
