@@ -32,8 +32,8 @@
 .titre3 {
 	font-size: 20;
 	font-family: 'Noto Sans', sans-serif;
-	color: black;
-	background-color:  rgba(255, 255, 255, 0.5);
+	color: rgb(255, 254, 254);
+	background-color:  rgba(27, 11, 11, 0.7);
 	font-weight: 700;
 }
 .titre2 {
