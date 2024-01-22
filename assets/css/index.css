@@ -55,6 +55,7 @@ p {
 	font-family: var(--police);
   font-weight: 300;
 }
+
 .x_center {
     display: flex; 
     justify-content: center; 
