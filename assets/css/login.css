@@ -4,12 +4,8 @@
 
 }
 
-#search svg{
-    color: var(--orange)
-} 
-#user svg{
-    color: var(--orange)
-} 
+
+
 #bouton_orange {
     background-color: #f4661b; 
     color: white;
