@@ -17,334 +17,832 @@
 </head>
 
 <body>
-  <!--create header with menu-->
-  <header class="container-fluid sticky-top px-3 header">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand mx-3 " href="index.html"> <img src="./assets/image/areview-header.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto">
-            <li class="nav-item  px-4">
-              <a class="nav-link text-white gras text-uppercase" href="movies.html">
-                cinéma
-              </a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="series.html">
-                séries
-              </a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="video_game.html">
-                gaming
-              </a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="music.html">
-                musique
-              </a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="book.html">
-                livre
-              </a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="evenement.html">
-                événements
-              </a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search" id="search">
-            <input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
-            <a class="btn" href="news_feed.html" role="button"> <i class="fa-solid fa-magnifying-glass"
-                style="height: 25px;width: 25px;"></i></a>
-          </form>
-          <div id="user">
-            <i class="fa-solid fa-user" style="height: 25px; width: 25px;" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
-          </div>
-        </div>
-      </nav>
-      <!--carousel-->
-    <div class="container-fluid">
-      <div class="row col-md-12"><!--un peu de bootstrap5-->
-        <div>
-          <div class="carousel1">
-            <ul class="slides">
-              <input type="radio" name="radio-buttons" id="img-1" checked />
-              <li class="slide-container">
-                <div class="slide-image">
-                  <img src="./assets/image/events/artifice.jpg"><!--img1-->
-                </div>
-                <div class="carousel-controls">
-                  <label for="img-3" class="prev-slide">
-                    <span>&lsaquo;</span>
-                  </label>
-                  <label for="img-2" class="next-slide">
-                    <span>&rsaquo;</span>
-                  </label>
-                </div>
-              </li>
-              <input type="radio" name="radio-buttons" id="img-2" />
-              <li class="slide-container">
-                <div class="slide-image">
-                  <img src="./assets/image/events/concert01.jpg"><!--img2-->
-                </div>
-                <div class="carousel-controls">
-                  <label for="img-1" class="prev-slide">
-                    <span>&lsaquo;</span>
-                  </label>
-                  <label for="img-3" class="next-slide">
-                    <span>&rsaquo;</span>
-                  </label>
-                </div>
-              </li>
-              <input type="radio" name="radio-buttons" id="img-3" />
-              <li class="slide-container">
-                <div class="slide-image">
-                  <img src="./assets/image/events/comiccon01.jpeg"><!--img3-->
-                </div>
-                <div class="carousel-controls">
-                  <label for="img-2" class="prev-slide">
-                    <span>&lsaquo;</span>
-                  </label>
-                  <label for="img-1" class="next-slide">
-                    <span>&rsaquo;</span>
-                  </label>
-                </div>
-              </li>
-              <div class="carousel-dots">
-                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <!--fin de carousel-->
-      <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header ">
-          <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="input-group my-1" id="Pseudo">
-            <span class="input-group-text " id="logo_pseudo">
-              <i class="fa-solid fa-user"></i>
-            </span>
-            <div class="col-sm ">
-              <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
-                aria-describedby="addon-wrapping">
-            </div>
-          </div>
-          <div class="input-group my-1" id="password">
-            <span class="input-group-text " id="logo_cadenas">
-              <i class="fa-solid fa-lock"></i>
-            </span>
-            <div class="col-sm ">
-              <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
-                aria-describedby="addon-wrapping">
-            </div>
-          </div>
-          <div class="row my-1">
-            <div class="form-check ms-2 text-start">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Se souvenir de moi
-              </label>
-            </div>
-          </div>
-          <div class="row my-1 text-center">
-            <a href=""> Mot de passe oublié ?</a>
-          </div>
-          <div class="row mt-3 text-center">
-            <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
-          </div>
-          <div class="row my-1 text-center">
-            <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
-            <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
-          </div>
-        </div>
+<!-- DERNIERE MODIFICATION HEADER -->
+<header class="sticky-top" style="background-color: #434343;">
+  <nav class="navbar navbar-expand-xl">
+    <div class="container-fluid align-items-center">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/image/areview-header.png" alt="LOGO" width="200" height="100%">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex column-gap-2 align-items-center ms-auto order-lg-2" role="search">
+          <input class="form-control thin" type="search" placeholder="Search" aria-label="Search">
+          <a href="index.html"><i class="fa-solid fa-magnifying-glass" style="width: 20px;height: 100%;"></i></a>
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
+            <i class="fa-solid fa-user" style="width: 20px; height: 100%;"></i>
+          </button>
+        </form>
+        <ul class="navbar-nav d-flex flex-fill text-center order-lg-1">
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="movies.html">cinéma</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="series.html">séries</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="video_game.html">gaming</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="music.html">musique</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="book.html">livre</a>
+          </li>
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="evenement.html">événements</a>
+          </li>
+        </ul>
       </div>
     </div>
-
+  </nav>
+  <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header ">
+      <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
     </div>
-    <!-- banner -->
-  </header>
-  <!--sliser
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <img src="https://placehold.co/1920x305" alt="slider" width="1920" height="305"
-          class="img-fluid position-absolute">
-        <h1 class="position-relative text-lg-center">Slider</h1>
+    <div class="offcanvas-body">
+      <div class="input-group my-1" id="Pseudo">
+        <span class="input-group-text " id="logo_pseudo">
+          <i class="fa-solid fa-user" style="color: #f4661B;"></i>
+        </span>
+        <div class="col-sm ">
+          <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+            aria-describedby="addon-wrapping">
+        </div>
       </div>
-    </div>
-  </div>-->
-  <!--phrase d'accroche
-  <div class="titre container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="slogan position-relative text-lg-center">Distinguer le remarquable du banal</h2>
+      <div class="input-group my-1" id="password">
+        <span class="input-group-text " id="logo_cadenas">
+          <i class="fa-solid fa-lock" style="color: #f4661B;"></i>
+        </span>
+        <div class="col-sm ">
+          <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+            aria-describedby="addon-wrapping">
+        </div>
+      </div>
+      <div class="row my-1">
+        <div class="form-check ms-2 text-start">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Se souvenir de moi
+          </label>
+        </div>
+      </div>
+      <div class="row my-1 text-center">
+        <a href=""> Mot de passe oublié ?</a>
+      </div>
+      <div class="row mt-3 text-center">
+        <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
+      </div>
+      <div class="row my-1 text-center">
+        <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+        <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-12">
-      <h3 class="categorie position-relative text-lg-center">Cinéma lal</h3>
-    </div>
-  </div>-->
-
+</header>
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+<!--carousel
+        <div class="container-fluid">
+          <div class="row col-md-12">
+            <div>
+              <div class="carousel1">
+                <ul class="slides">
+                  <input type="radio" name="radio-buttons" id="img-1" checked />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="./assets/image/events/artifice.jpg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-2" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="./assets/image/events/concert01.jpg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-1" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-3" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-3" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="./assets/image/events/comiccon01.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-2" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <div class="carousel-dots">
+                    <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            fin de carousel-->
   <main>
     <!--Slider-->
-    <div>
-      <div class="row">
-        <div class="col-12 m-0 p-0">
-          <img src="https://placehold.co/1920x305" alt="slider" width="1920" height="305">
-        </div>
+    <div class="row" id="banner">
+      <div class="col-12 col-md-12">
+        <img src="./assets/image/accueil/slide-acceuil.jpg" alt="slider" width="1920" height="305" class="slider mt-3">
+        <!--<h1 class="slide text-center">Actuellement</h1>-->
       </div>
     </div>
     <!--Hook-->
     <div>
-      <h1 class="tittle text-uppercase gras text-center py-3 titre mb-5 "><strong>distinguer le remarquable du
+      <h1 class="tittle text-uppercase gras text-center py-3 titre mb-1 "><strong>distinguer le remarquable du
           banal!</strong></h1>
     </div>
-    <!--category movie-->
+    <!--Category movie-->
     <div>
-      <a href="movies.html">
-        <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
-      </a>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
     </div>
-    <div class="row">
-      <section class="col-12 col-lg-4">
-        <!--Movie-->
-        <article>
-          <div class="row">
-            <div class="col-4 col-lg-auto">
-              <!--Big image category movie-->
-              <a href=""><img src="https://placehold.co/490x453" alt="image grande catégorie" width="490" height="453"
-                  class="flex-column"></a>
+    <!--Movie-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--Movie image-->
+        <div class="col-4">
+          <a href=""><img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/cimema-accueil.jpg"
+              alt="image grande cinéma" width="490" height="453" style="height: auto; width: auto;"></a>
+        </div>
+        <div class="row col-8">
+
+          <div class="row col-6">
+            <div col-4>
+            <!--Article movie aquaman-->
+            <img src="./assets/image/accueil/accine-aquaman.jpg" alt="image film aquaman" width="192" height="127"
+              class="rounded">
             </div>
           </div>
-        </article>
-        <article>
-          <div class="col-4 col-lg-4">
-            <!--First article movie aquaman-->
-            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
-                class="float-start"></a>
-            <h3 class="text-capitalize"><strong>aquaman</strong></h3>
-            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Deserunt minima inventore ratione magnam
-              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          <div class="col-8">
+            <article>
+              <header>
+                <h3 class="text-capitalize">aquaman</h3>
+              </header>
+            </article>
+            <section>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                illum.</p>
+            </section>
+            <footer>
+              <p>publié le<timer>24/01/2024</timer>
+              </p>
+            </footer>
           </div>
-        </article>
-        <article>
-          <div class="col-4 col-lg-4">
-            <!--First article movie dune-->
-            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
-                class="float-start"></a>
-            <h3 class="text-capitalize"><strong>dune</strong></h3>
-            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Deserunt minima inventore ratione magnam
-              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
-        </article>
-        <article>
-          <div class="col-4 col-lg-4">
-            <!--First article movie dvd-->
-            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
-                class="float-start"></a>
-            <h3 class="text-capitalize"><strong>dvd spectacles</strong></h3>
-            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Deserunt minima inventore ratione magnam
-              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+
+          <div class="row col-8">
+            <div class="row col-4">
+              <!--Article movie barbie-->
+              <img src="./assets/image/accueil/accine-barbie.jpg" alt="image film accine-barbie" width="192" height="127"
+                class="rounded">
+            </div>
+            <div class="col-8">
+              <article>
+                <header>
+                  <h3 class="text-capitalize">barbie</h3>
+                </header>
+              </article>
+              <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                  illum.</p>
+              </section>
+              <footer>
+                <p>publié le<timer>24/01/2024</timer>
+                </p>
+              </footer>
+            </div>
+
+
+            <!--Article movie dune-->
+            <div class="row">
+              <div class="col-6">
+                <img src="./assets/image/accueil/accine-dune.jpg" alt="image film dune" width="192" height="127"
+                  class="rounded">
+              </div>
+              <div class="col-6">
+                <h3 class="text-capitalize">dune</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                  illum.</p>
+              </div>
+            </div>
           </div>
-        </article>
-        <article>
-          <div class="col-4 col-lg-4">
-            <!--First article movie barbie-->
-            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
-                class="float-start"></a>
-            <h3 class="text-capitalize"><strong>barbie</strong></h3>
-            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Deserunt minima inventore ratione magnam
-              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          <div class="col-12 col-lg-6">
+            <!--Article movie krisha-->
+            <div class="row">
+              <div class="col-6">
+                <img src="./assets/image/accueil/accine-krisha.jpg" alt="image film krisha" width="192" height="127"
+                  class="rounded">
+              </div>
+              <div class="col-6">
+                <h3 class="text-capitalize">krisha</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                  illum.</p>
+              </div>
+            </div>
           </div>
-        </article>
-        <article>
-          <div class="col-4 col-lg-4">
-            <!--First article movie krisha-->
-            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
-                class="float-start"></a>
-            <h3 class="text-capitalize"><strong>krisha</strong></h3>
-            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Deserunt minima inventore ratione magnam
-              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          <div class="col-12 col-lg-6">
+            <!--Article movie dvd spectacle-->
+            <div class="row">
+              <div class="col-6">
+                <img src="./assets/image/accueil/accine-dvdspec.jpg" alt="image dvd spectacle" width="192" height="127"
+                  class="rounded">
+              </div>
+              <div class="col-6">
+                <h3 class="text-capitalize">dvd spectacle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                  illum.</p>
+              </div>
+            </div>
+
           </div>
-        </article>
-        <article>
-          <div class="col-4 col-lg-4">
-            <!--First article movie lanuée-->
-            <a href=""><img src="https://placehold.co/192x127" alt="image petitearticle 1" width="192" height="127"
-                class="float-start"></a>
-            <h3 class="text-capitalize"><strong>la nuée</strong></h3>
-            <p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Deserunt minima inventore ratione magnam
-              earum libero consequuntur nisi dolorum cumque quibusdam.</p>
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <!--Article movie la nuée-->
+              <div class="col-6">
+                <img src="./assets/image/accueil/accine-lanuee.jpg" alt="image film la nuée" width="192" height="127"
+                  class="rounded">
+              </div>
+              <div class="col-6">
+                <h3 class="text-capitalize"><strong>la nuée</strong></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                  illum.</p>
+              </div>
+            </div>
+            </section>
           </div>
-        </article>
-      </section>
-      <div>
-        <!--category series-->
-        <a href="series.html">
-          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>série</strong></h2>
-        </a>
+        </div>
       </div>
-      <section>
-        <!--series-->
-      </section>
-      <div>
-        <!--category gaming-->
-        <a href="">
-          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>gaming</strong></h2>
-        </a>
+
+      <!--category series-->
+      <!--<div>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>série</strong></h2>
+    </div>-->
+      <!--serie-->
+      <!--<div class="container-fluid">
+      <div class="row section">
+        <div class="col-8 col-lg-8">
+          <section class="row">
+            <div class="col-12 col-lg-6">-->
+      <!--Article serie aman-->
+      <!--<div class="row">
+                <div class="col-6 m-0 p-2">
+                  <h3 class="text-capitalize text-lg-end">aman</h3>
+                  <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat
+                    facilis
+                    dolor inventore
+                    illum.</p>
+                </div>
+                <div class="col-6 m-0 p-2">
+                  <img src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman" width="192" height="127"
+                    class="rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">-->
+      <!--Article série misanthrope-->
+      <!--<div class="row">
+                <div class="col-6">
+                  <h3 class="text-capitalize text-lg-end">misanthrope</h3>
+                  <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat
+                    facilis
+                    dolor inventore
+                    illum.</p>
+                </div>
+                <div class="col-6 m-0 p-2">
+                  <img src="./assets/image/accueil/acserie-misanthrope.png" alt="image série misanthrope" width="192"
+                    height="127" class="rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">-->
+      <!--Article serie iris et les hommes-->
+      <!--<div class="row">
+                <div class="col-6">
+                  <h3 class="text-capitalize text-lg-end">iris et les hommes</h3>
+                  <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat
+                    facilis
+                    dolor inventore
+                    illum.</p>
+                </div>
+                <div class="col-6 m-0 p-2">
+                  <img src="./assets/image/accueil/acserie-iris.jpg" alt="image série iris et les hommes" width="192"
+                    height="127" class="rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">-->
+      <!--Article serie pauvre créature-->
+      <!--<div class="row">
+                <div class="col-6">
+                  <h3 class="text-capitalize text-lg-end">pauvre créature</h3>
+                  <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat
+                    facilis
+                    dolor inventore
+                    illum.</p>
+                </div>
+                <div class="col-6 m-0 p-2">
+                  <img src="./assets/image/accueil/acserie-pauvrecrea.jpg" alt="image série pauvre créature" width="192"
+                    height="127" class="rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">-->
+      <!--Article serie krisha et le maître-->
+      <!--<div class="row">
+                <div class="col-6">
+                  <h3 class="text-capitalize text-lg-end">krisha et le maître</h3>
+                  <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat
+                    facilis
+                    dolor inventore
+                    illum.</p>
+                </div>
+                <div class="col-4 col-lg-4">
+                  <img src="./assets/image/accueil/acserie-krisha.jpg" alt="image série krisha et le maître" width="192"
+                    height="127" class="rounded">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">-->
+      <!--Article serie un coup de dés-->
+      <!--<div class="row">
+                <div class="col-6">
+                  <h3 class="text-capitalize text-lg-end">un coup de dés</h3>
+                  <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat
+                    facilis
+                    dolor inventore
+                    illum.</p>
+                </div>
+                <div class="col-4 m-0 p-2">
+                  <img src="./assets/image/accueil/acserie-coupde.jpg" alt="image série un coup de dés" width="192"
+                    height="127" class="rounded">
+                </div>
+              </div>-->
+    </div>
+    </section>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <!--category gaming-->
+    <div>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>gaming</strong></h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!--Gaming image-->
+        <div class="col-4 col-lg-4">
+          <a href=""><img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/gaming-accueil.jpg"
+              alt="image grande gaming" width="490" height="453" style="height: auto; width: auto;"></a>
+        </div>
+        <div class="col-8 col-lg-8">
+          <section class="row">
+            <div class="col-12 col-lg-6">
+              <!--Article gaming fortnite-->
+              <div class="row">
+                <div class="col-6 m-0 p-2">
+                  <img src="./assets/image/accueil/acgame-fortnite.jpg" alt="image gaming fortnite" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize m-2">fortnite</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article gaming final fantasy-->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/acgame-finalf.jpg" alt="image gaming final fantasy" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">final fantasy VII</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article gaming star wars-->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/acgame-starwars.jpg" alt="image gaming star wars outlaw" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">star wars outlaw</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article gaming dragon dogma -->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/acgame-dragond.jpg" alt="image gaming dragon dogma II" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">dragon dogma II</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article gaming hollowknigth-->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/acgame-hollow.jpg" alt="image gaming hollowknigth" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">hollowknigth</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <!--Article gaming hades-->
+                <div class="col-6">
+                  <img src="./assets/image/accueil/acgame-hades.jpg" alt="image gaming hades II" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize"><strong>la nuée</strong></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+          </section>
+        </div>
       </div>
-      <section>
-        <!--gaming-->
-      </section>
-      <div>
-        <!--category musique-->
-        <a href="">
-          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>musique</strong></h2>
-        </a>
+    </div>
+
+    <!--category musique
+    <div>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>musique</strong></h2>
+    </div>
+    <!--musique-->
+    <div class="container-fluid">
+      <div class="col-8 col-lg-8">
+        <section class="row">
+          <div class="col-12 col-lg-6">
+            <!--Article musique 20&2-->
+            <div class="row">
+              <div class="col-6 m-0 p-2">
+                <h3 class="text-capitalize text-lg-end">20&2</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acmus-vinght.jpg" alt="image musique 20&2" width="192" height="127"
+                  class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article musique orqideas-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">orqideas</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acmus-orchid.jpg" alt="image musique orqideas" width="192" height="127"
+                  class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article musique 24-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">24</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acmus-deuxquatre.jpg" alt="image serie iris et les hommes" width="192"
+                  height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article musique bluedron-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">bluedron</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acmus-blued.jpg" alt="image musique bluedron" width="192" height="127"
+                  class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!-- Article musique nightshift mix-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">nightshift mix</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acmus-nights.jpg" alt="image musique nightshift mix" width="192"
+                  height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article musique lacrima-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">lacrima</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acmus-lacrima.jpg" alt="image musique lacrima" width="192" height="127"
+                  class="rounded">
+              </div>
+            </div>
+          </div>
       </div>
-      <section>
-        <!--musique-->
-      </section>
-      <div>
-        <!--category book-->
-        <a href="">
-          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>livre</strong></h2>
-        </a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <a href=""><img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/musique-accueil.jpg"
+                alt="image grande cinéma" width="490" height="453" style="height: auto; width: auto;"></a>
+          </div>
+        </div>
       </div>
-      <section>
-        <!--book-->
       </section>
-      <div>
-        <!--category event-->
-        <a href="">
-          <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>événement</strong></h2>
-        </a>
+    </div>
+
+    <!--Category book-->
+    <div>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>livre</strong></h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!--Book image-->
+        <div class="col-4 col-lg-4">
+          <a href=""><img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/livre-accueil.jpg"
+              alt="image grande livre" width="490" height="453" style="height: auto; width: auto;"></a>
+        </div>
+        <div class="col-8 col-lg-8">
+          <section class="row">
+            <div class="col-12 col-lg-6">
+              <!--Article livre panorama-->
+              <div class="row">
+                <div class="col-6 m-0 p-2">
+                  <img src="./assets/image/accueil/aclivre-panorama.jpg" alt="image livre panorama" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize m-2">panorama</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article livre veiller sur elle-->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/aclivre-veiller.jpg" alt="image livre veiller sur elle" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">veiller sur elle</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article livre les aiguilles d'or-->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/aclivre-aiguilles.jpg" alt="image livre les aiguilles d'or"
+                    width="192" height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">les aiguilles d'or</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article livre le mage du kremelin-->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/aclivre-lemage.jpg" alt="image livre le mage du kremelin" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">le mage du kremelin</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!--Article livre la jurée-->
+              <div class="row">
+                <div class="col-6">
+                  <img src="./assets/image/accueil/aclivre-lajuree.jpg" alt="image livre la jurée" width="192"
+                    height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize">la jurée</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row">
+                <!--Article livre trois vies par semaine-->
+                <div class="col-6">
+                  <img src="./assets/image/accueil/aclivre-troivies.jpg" alt="image livre trois vies par semaine"
+                    width="192" height="127" class="rounded">
+                </div>
+                <div class="col-6">
+                  <h3 class="text-capitalize"><strong>trois vies par semaine</strong></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis dolor inventore
+                    illum.</p>
+                </div>
+              </div>
+          </section>
+        </div>
       </div>
-      <section>
-        <!--event-->
+    </div>
+
+    <!--category événement-->
+    <div>
+      <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>événements</strong></h2>
+    </div>
+    <!--event-->
+    <div class="container-fluid">
+      <div class="col-8 col-lg-8">
+        <section class="row">
+          <div class="col-12 col-lg-6">
+            <!--Article event rose festival-->
+            <div class="row">
+              <div class="col-6 m-0 p-2">
+                <h3 class="text-capitalize text-lg-end">rose festival</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acevent-rosef.jpg" alt="image événement rose festival" width="192"
+                  height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article event exposition street art-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">exposition street art</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acevent-streetart.jpg" alt="image événement exposition street art"
+                  width="192" height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article événement dédicace ségolène royal-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">dédicace ségolène royal</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acevent-sego.jpg" alt="image événement dédicace ségolène roya"
+                  width="192" height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article événement les nuits courtes-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">bluedron</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acevent-nuitc.jpg" alt="image événement les nuits courtes" width="192"
+                  height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!-- Article événement free musique-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">free musique</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acevent-freem.jpg" alt="image événement free musique" width="192"
+                  height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Article événement musicalarue-->
+            <div class="row">
+              <div class="col-6">
+                <h3 class="text-capitalize text-lg-end">musicalarue</h3>
+                <p class="text-lg-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos fugiat facilis
+                  dolor inventore
+                  illum.</p>
+              </div>
+              <div class="col-6 m-0 p-2">
+                <img src="./assets/image/accueil/acevent-musical.jpg" alt="image événement musicalarue" width="192"
+                  height="127" class="rounded">
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <a href=""><img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/event-accueil.jpg"
+                alt="image grande cinéma" width="490" height="453" style="height: auto; width: auto;"></a>
+          </div>
+        </div>
+      </div>
       </section>
+    </div>
+
+    <div class="col-12 m-5">
+      <a href=""><img class="img-fluid" src="./assets/image/accueil/fleche-toppage.svg" alt="fleche retour haut de page"
+          width="" height="" style="height: auto; width: auto;"></a>
+    </div>
   </main>
+
   <footer class="footer">
     <div class="text-center py-4">
       <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" rel="noopener noreferrer"

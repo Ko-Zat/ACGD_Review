@@ -555,11 +555,14 @@
 		<!-- The press frame chunk -->
 		<div id="framePress" class="main_frame py-40 px-48" style="display: none;">
 			<h2 class="bold text_blue">L'avis de la presse</h2>
+
 		</div>
 
 		<!-- The distribution frame chunk -->
 		<div id="frameDistrib" class="main_frame py-40 px-48" style="display: none;">
-			<p>Disponible dans tout les bons cinémas !</p>
+			<h2 class="bold text_blue">Streaming</h2>
+			
+			<img class="round-stream-image" src="https://fr.web.img4.acsta.net/commons/v9/common/svod_providers/square-paramountplus.svg" alt="Paramount+ logo" width="60" height="60">
 		</div>
 	</main>
 
@@ -618,7 +621,7 @@
 			document.getElementById( currentTab ).className += " active";
 			document.getElementById( framesID[fID] ).style.display="block";
 
-			return false;
+			return 0;
 		}
 	</script>
 

@@ -123,20 +123,10 @@ a:link {
     padding-bottom: 150px;
 }
 
+a p:hover {
+    color: #f4661B
+}
 
-.navbar-nav {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    width: 100%; 
-    margin-left: 0; 
-    margin-right: 0; 
-  }
-  
-  
-  .navbar-toggler {
-    margin-left: auto; 
-  }
   
 .titre {
   font-size: 30px;
@@ -228,4 +218,28 @@ a:link {
     text-transform: uppercase; 
     cursor: pointer;
     outline: none;
+}
+
+.navbar-nav .nav-item a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #f4661b;
+  }
+  
+.fa-user, .fa-lock,.fa-magnifying-glass{
+    color: #f4661b;
+  }
+
+.form-control {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100!important;
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
 }
