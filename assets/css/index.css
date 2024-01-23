@@ -54,7 +54,6 @@
 }
 
 
-
 .gras  {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 900;
@@ -106,17 +105,7 @@ p {
 #user svg{
   color: var(--orange)
 } 
-#bouton_orange {
-  background-color: #f4661b; 
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 18px;
-  font-weight: bold;
-  text-transform: uppercase; 
-  cursor: pointer;
-  outline: none;
-}
+
 
 
 /*MAIN HOME PAGE Areview*/
