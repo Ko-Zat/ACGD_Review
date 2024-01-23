@@ -87,7 +87,7 @@ a p {
 }
 
 a p:hover {
-    color: #f4661B
+    color: var(--orange)
 }
 
 a:link { 
