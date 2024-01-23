@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
@@ -14,76 +14,93 @@
 </head>
 <body style="height: auto; width: auto;">
 	<!-- Navbar header-->
-	<header class="container-fluid sticky-top px-3" style="background-color: #434343;">
-		<div class="row">
-			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand mx-3" href="index.html"><img src="./assets/image/areview-header.png"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
-						<li class="nav-item px-4">
-							<a class="nav-link text-white gras text-uppercase" href="movies.html">cinéma</a>
-						</li>
-						<li class="nav-item px-4">
-							<a class="nav-link text-white gras text-uppercase" href="series.html">séries</a>
-						</li>
-						<li class="nav-item px-4">
-							<a class="nav-link text-white gras text-uppercase" href="video_game.html">gaming</a>
-						</li>
-						<li class="nav-item px-4">
-							<a class="nav-link text-white gras text-uppercase" href="music.html">musique</a>
-						</li>
-						<li class="nav-item px-4">
-							<a class="nav-link text-white gras text-uppercase" href="book.html">livre</a>
-						</li>
-						<li class="nav-item px-4">
-							<a class="nav-link text-white gras text-uppercase" href="evenement.html">événements</a>
-						</li>
-					</ul>
-					<!-- search button -->
-					<form class="d-flex" role="search" id="search">
-						<input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
-						<a class="btn" href="news_feed.html" role="button"> <i class="fa-solid fa-magnifying-glass" style="height: 25px;width: 25px;"></i></a>
-					  </form>
-					  <!-- User section for connexion -->
-					<div id="user">
-						<i class="fa-solid fa-user"  style="height: 25px; width: 25px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ></i>
-					</div>
-				</div>
-			</nav>
-			<div aria-labelledby="offcanvasWithBothOptionsLabel" class="offcanvas offcanvas-end" data-bs-scroll="true" id="offcanvasWithBothOptions" tabindex="-1">
-				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Se connecter</h5><button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas" type="button"></button>
-				</div>
-				<div class="offcanvas-body">
-					<div class="input-group my-1" id="Pseudo">
-						<span class="input-group-text" id="logo_pseudo"><i class="fa-solid fa-user"></i></span>
-						<div class="col-sm">
-							<input aria-describedby="addon-wrapping" aria-label="Login" class="form-control" placeholder="Pseudo / email" type="text">
-						</div>
-					</div>
-					<div class="input-group my-1" id="password">
-						<span class="input-group-text" id="logo_cadenas"><i class="fa-solid fa-lock"></i></span>
-						<div class="col-sm">
-							<input aria-describedby="addon-wrapping" aria-label="Login" class="form-control" placeholder="Mot de passe" type="password">
-						</div>
-					</div>
-					<div class="row my-1">
-						<div class="form-check ms-2 text-start">
-							<input class="form-check-input" id="flexCheckDefault" type="checkbox" value=""> <label class="form-check-label" for="flexCheckDefault">Se souvenir de moi</label>
-						</div>
-					</div>
-					<div class="row my-1 text-center">
-						<a href="">Mot de passe oublié ?</a>
-					</div>
-					<div class="row mt-3 text-center">
-						<a href="account.html"><button class="btn" id="bouton_orange" type="submit">Se connecter</button></a>
-					</div>
-					<div class="row my-1 text-center">
-						<p>Vous n'avez pas encore de compte ?<br>
-						Rejoignez-nous !</p><a href="login.html"><button class="btn" id="bouton_orange" type="submit">S'inscrire</button></a>
-					</div>
-				</div>
+	<header class="sticky-top" style="background-color: #434343;">
+		<nav class="navbar navbar-expand-xl">
+		  <div class="container-fluid align-items-center">
+			<a class="navbar-brand" href="index.html">
+			  <img src="./assets/image/areview-header.png" alt="LOGO" width="200" height="100%">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <form class="d-flex column-gap-2 align-items-center ms-auto order-lg-2" role="search" id="search">
+				<input class="form-control thin" type="search" placeholder="Search" aria-label="Search">
+				<a href="index.html"><i class="fa-solid fa-magnifying-glass" style="width: 20px;height: 100%;color: #f4661B;"></i></a>
+				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+				  aria-controls="offcanvasWithBothOptions">
+				  <i class="fa-solid fa-user" style="width: 20px; height: 100%; color: #f4661B;"></i>
+				</button>
+			  </form>
+			  <ul class="navbar-nav d-flex flex-fill text-center order-lg-1">
+				<li class="nav-item flex-fill">
+				  <a class="nav-link" href="movies.html">cinéma</a>
+				</li>
+				<li class="nav-item flex-fill">
+				  <a class="nav-link" href="series.html">séries</a>
+				</li>
+				<li class="nav-item flex-fill">
+				  <a class="nav-link" href="video_game.html">gaming</a>
+				</li>
+				<li class="nav-item flex-fill">
+				  <a class="nav-link" href="music.html">musique</a>
+				</li>
+				<li class="nav-item flex-fill">
+				  <a class="nav-link" href="book.html">livre</a>
+				</li>
+				<li class="nav-item flex-fill">
+				  <a class="nav-link" href="evenement.html">événements</a>
+				</li>
+			  </ul>
 			</div>
+		  </div>
+		</nav>
+	<!--LOGIN-->
+		<div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+		  aria-labelledby="offcanvasWithBothOptionsLabel">
+		  <div class="offcanvas-header ">
+			<h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+		  </div>
+		  <div class="offcanvas-body">
+			<div class="input-group my-1" id="Pseudo">
+			  <span class="input-group-text " id="logo_pseudo">
+				<i class="fa-solid fa-user" style="color: #f4661B;"></i>
+			  </span>
+			  <div class="col-sm ">
+				<input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+				  aria-describedby="addon-wrapping">
+			  </div>
+			</div>
+			<div class="input-group my-1" id="password">
+			  <span class="input-group-text " id="logo_cadenas">
+				<i class="fa-solid fa-lock" style="color: #f4661B;"></i>
+			  </span>
+			  <div class="col-sm ">
+				<input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+				  aria-describedby="addon-wrapping">
+			  </div>
+			</div>
+			<div class="row my-1">
+			  <div class="form-check ms-2 text-start">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+				  Se souvenir de moi
+				</label>
+			  </div>
+			</div>
+			<div class="row my-1 text-center">
+			  <a href=""> Mot de passe oublié ?</a>
+			</div>
+			<div class="row mt-3 text-center">
+			  <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
+			</div>
+			<div class="row my-1 text-center">
+			  <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+			  <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+			</div>
+		  </div>
 		</div>
 		<!-- banner with pseudo and profil picture -->
 	</header>
@@ -156,22 +173,22 @@
 						<!-- 2 first articles -->
 						<section>
 							<article style="height: auto; width: auto;">
-							<a href="movie_description.html"><img alt="island" class="img-fluid" src="./assets/image/account/island.png" style="height: 127px; width: 192px;"></a>
+							<a href="movie_description.html"><img alt="island" class="img-fluid" src="./assets/image/account/island.png" style="max-height: 127px; height: auto; width: 192px;"></a>
 						</div>
 					<div class="col-7 col-lg-4">
 						<h2 class="titre2 text-truncate">Shutter Island</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
 					</article>
 				</section>
 					</div>
 					<div class="col-4 col-lg-auto">
 						<section>
 							<article>
-								<a href="movie_description.html"><img alt="interstellar" class="img-fluid" src="./assets/image/account/interstellar.png" style="height: 127px; width: 192px;"></a>							
+								<a href="movie_description.html"><img alt="interstellar" class="img-fluid" src="./assets/image/account/interstellar.png" style="max-height: 127px; height: auto; width: 192px;"></a>							
 					</div>
-					<div class="col-8 col-lg-3">
+					<div class="col-7 col-lg-3">
 						<h2 class="titre2 text-truncate">Interstellar</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsum iure totam obcaecati dolores omnis illo, magnam nobis amet ipsa facilis aspernatur earum sit officiis eligendi, expedita iusto nulla? Commodi?</p><!-- 2 articles suivant -->
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsum iure totam obcaecati dolores omnis illo, magnam nobis amet ipsa facilis aspernatur earum sit officiis eligendi, expedita iusto nulla? Commodi?</p><!-- 2 articles suivant -->
 					</article>
 				</section>
 					</div>
@@ -181,22 +198,22 @@
 					<div class="col-4 col-lg-auto">
 						<section>
 							<article>
-								<a href="movie_description.html"><img alt="Leonardo di caprio" class="img-fluid" src="./assets/image/account/leo.png" style="height: 127px; width: 192px;"></a>
+								<a href="movie_description.html"><img alt="Leonardo di caprio" class="img-fluid" src="./assets/image/account/leo.png" style="max-height: 127px; height: auto; width: 192px;"></a>
 					</div>
-					<div class="col-8 col-lg-4">
+					<div class="col-7 col-lg-4">
 						<h2 class="titre2 text-truncate">Léonardo Di Caprio</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis qui soluta et suscipit. Ducimus, illum eaque corrupti vel ea consectetur? Quia molestias et corrupti aliquam in hic nemo, dicta ad!</p>
+						<p class="overflow-hidden" style="height: 60px;  max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis qui soluta et suscipit. Ducimus, illum eaque corrupti vel ea consectetur? Quia molestias et corrupti aliquam in hic nemo, dicta ad!</p>
 					</article>
 				</section>
 					</div>
 					<div class="col-4 col-lg-auto">
 						<section>
 							<article>
-								<a href="movie_description.html"><img alt="Oppenheimer" class="img-fluid" src="./assets/image/account/oppen.png" style="height: 127px; width: 192px;"></a>
+								<a href="movie_description.html"><img alt="Oppenheimer" class="img-fluid" src="./assets/image/account/oppen.png" style="max-height: 127px; height: auto; width: 192px;"></a>
 					</div>
-					<div class="col-8 col-lg-3">
+					<div class="col-7 col-lg-3">
 						<h2 class="titre2 text-truncate">Oppenheimer</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel quia, ab, nihil commodi deleniti, ipsa quasi cum maiores provident incidunt iusto consectetur eaque totam quae. Exercitationem quae eius laudantium.</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel quia, ab, nihil commodi deleniti, ipsa quasi cum maiores provident incidunt iusto consectetur eaque totam quae. Exercitationem quae eius laudantium.</p>
 					</article>
 				</section>
 					</div>
@@ -206,22 +223,22 @@
 					<div class="col-4 col-lg-auto">
 						<section>
 							<article>
-								<a href=""><img alt="Barbie" class="img-fluid" src="./assets/image/account/barbie.png" style="height: 127px; width: 192px;"></a>
+								<a href=""><img alt="Barbie" class="img-fluid" src="./assets/image/account/barbie.png" style="max-height: 127px; height: auto;width: 192px;"></a>
 					</div>
-					<div class="col-8 col-lg-4">
+					<div class="col-7 col-lg-4">
 						<h2 class="titre2 text-truncate">Barbie</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati molestias ut. Nihil itaque dicta, neque molestias aspernatur cumque unde. Quia voluptatem tempora velit. Voluptatibus modi aut consequuntur earum eos.</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati molestias ut. Nihil itaque dicta, neque molestias aspernatur cumque unde. Quia voluptatem tempora velit. Voluptatibus modi aut consequuntur earum eos.</p>
 					</article>
 				</section>
 					</div>
 					<div class="col-4 col-lg-auto">
 						<section>
 							<article>
-								<a href=""><img alt="Spiderman" class="img-fluid" src="./assets/image/account/spiderman.png" style="height: 127px; width: 192px;"></a>
+								<a href=""><img alt="Spiderman" class="img-fluid" src="./assets/image/account/spiderman.png" style="max-height: 127px; height: auto; width: 192px;"></a>
 					</div>
-					<div class="col-8 col-lg-4">
+					<div class="col-7 col-lg-4">
 						<h2 class="titre2 text-truncate">Spiderman</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus natus quisquam? Perferendis voluptas saepe voluptatum minus eius! Maxime ad cupiditate unde accusantium? Saepe voluptas dolores dolorum reiciendis! Deserunt, molestias?</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus natus quisquam? Perferendis voluptas saepe voluptatum minus eius! Maxime ad cupiditate unde accusantium? Saepe voluptas dolores dolorum reiciendis! Deserunt, molestias?</p>
 					</article>
 				</section>
 					</div>
@@ -249,9 +266,9 @@
 							<article>
 								<a href=""><img alt="Interstellar" class="img-fluid " src="./assets/image/account/interstellar.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2 me-lg-5">
 						<h2 class="titre2 text-truncate">Interstellar</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, sapiente vel incidunt optio iusto dolore ipsa repellendus deleniti nulla eos qui excepturi necessitatibus culpa itaque numquam iste rerum nobis!</p>
 					</article>
 				</section>
 					</div>
@@ -260,9 +277,9 @@
 							<article>
 								<a href=""><img alt="island" class="img-fluid " src="./assets/image/account/island.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2 me-lg-5">
 						<h2 class="titre2 text-truncate">Shutter Island</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p><!-- 3 articles suivant -->
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p><!-- 3 articles suivant -->
 					</article>
 				</section>
 				</div>
@@ -271,9 +288,9 @@
 							<article>
 								<a href=""><img alt="Oppenheimer" class="img-fluid " src="./assets/image/account/oppen.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2">
 						<h2 class="titre2 text-truncate">Oppenheimer</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
 					</article>
 				</section>
 					</div>
@@ -285,9 +302,9 @@
 							<article>
 								<a href=""><img alt="Superman" class="img-fluid " src="./assets/image/account/superman.png"></a>
         				</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2 me-lg-5">
 						<h2 class="titre2 text-truncate">Superman</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
 					</article>
 				</section>
 					</div>
@@ -296,9 +313,9 @@
 							<article>
 								<a href=""><img alt="Poupée" class="img-fluid " src="./assets/image/account/poup%C3%A9e.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2 me-lg-5">
 						<h2 class="titre2 text-truncate">Poupée de Chiffon</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
 					</article>
 				</section>
 					</div>
@@ -307,9 +324,9 @@
 							<article>
 								<a href=""><img alt="Minecraft" class="img-fluid " src="./assets/image/account/minecraft.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2">
 						<h2 class="titre2 text-truncate">Minecraft</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
 					</article>
 				</section>
 					</div>
@@ -321,9 +338,9 @@
 							<article>
 								<a href=""><img alt="Margot" class="img-fluid " src="./assets/image/account/margot.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2 me-lg-5">
 						<h2 class="titre2 text-truncate">Margot Robbie</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+						<p class="overflow-hidden" style="height: 60px;  max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
 					</article>
 				</section>
 					</div>
@@ -332,9 +349,9 @@
 							<article>
 								<a href=""><img alt="Roméo" class="img-fluid " src="./assets/image/account/romeo.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
-						<h2 class="titre2 text-truncate">Roméo Elvis</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+					<div class="col-7 col-lg-2 me-md-5">
+						<h2 class="titre2 text-truncate ">Roméo Elvis</h2>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
 					</article>
 				</section>
 					</div>
@@ -343,9 +360,9 @@
 							<article>
 								<a href=""><img alt="Jul" class="img-fluid " src="./assets/image/account/jul.png"></a>
 					</div>
-					<div class="col-8 col-lg-2">
+					<div class="col-7 col-lg-2">
 						<h2 class="titre2 text-truncate">Jul</h2>
-						<p class="overflow-hidden" style="height: 60px; width: 300px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
+						<p class="overflow-hidden" style="height: 60px; max-width: 300px; width: auto;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et ratione</p>
 					</article>
 				</section>
 					</div>
@@ -355,13 +372,13 @@
 	</div>
 	<!-- 6 inline articles -->
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-12 col-lg-2">
 				<!-- Article 1 -->
 				<section>
 					<article>
 						<h3 class="text-center titre2">Cetro</h3>
-						<a href=""><img alt="Cetro" class="ms-5 justify-content-center" src="./assets/image/account/cetro.png"></a>
+						<a href=""><img alt="Cetro" class="" src="./assets/image/account/cetro.png"></a>
 					</article>
 				</section>
 			</div>
@@ -369,7 +386,7 @@
 			<div class="col-12 col-md-2">
 				<section>
 					<article>
-						<h3 class="text-center titre2">Batman</h3><a href=""><img alt="Batman" class="ms-5" src="./assets/image/account/batman.png"></a>
+						<h3 class="text-center titre2">Batman</h3><a href=""><img alt="Batman" class="" src="./assets/image/account/batman.png"></a>
 					</article>
 				</section>
 			</div>
@@ -377,7 +394,7 @@
 			<div class="col-12 col-lg-2">
 				<section>
 					<article>
-						<h3 class="text-center titre2">Hitman</h3><a href=""><img alt="Hitman" class="ms-5" src="./assets/image/account/hitman.png"></a>
+						<h3 class="text-center titre2">Hitman</h3><a href=""><img alt="Hitman" class="" src="./assets/image/account/hitman.png"></a>
 					</article>
 				</section>
 			</div>
@@ -385,7 +402,7 @@
 			<div class="col-12 col-md-2">
 				<section>
 					<article>
-						<h3 class="text-center titre2">News</h3><a href=""><img alt="News" class="ms-5" src="./assets/image/account/news.png"></a>
+						<h3 class="text-center titre2">News</h3><a href=""><img alt="News" class="" src="./assets/image/account/news.png"></a>
 					</article>
 				</section>
 			</div>
@@ -393,7 +410,7 @@
 			<div class="col-12 col-lg-2">
 				<section>
 					<article>
-						<h3 class="text-center titre2">The Shinning</h3><a href=""><img alt="Shining" class="ms-5" src="./assets/image/account/shining.png"></a>
+						<h3 class="text-center titre2">The Shinning</h3><a href=""><img alt="Shining" class="" src="./assets/image/account/shining.png"></a>
 					</article>
 				</section>
 			</div>
@@ -401,7 +418,7 @@
 			<div class="col-12 col-md-2">
 				<section>
 					<article>
-						<h3 class="text-center titre2">The Thing</h3><a href=""><img alt="The Thing" class=" ms-5" src="./assets/image/account/thing.png"></a>
+						<h3 class="text-center titre2">The Thing</h3><a href=""><img alt="The Thing" class=" " src="./assets/image/account/thing.png"></a>
 					</article>
 				</section>
 			</div>
@@ -414,11 +431,11 @@
 	</div>
 	</div>
 	<!-- Categories -->
-		<h2 class="text-uppercase gras text-center py-3 titre">centres d'interêts</h2>
+		<h2 class="text-uppercase gras text-center py-3 titre ">centres d'interêts</h2>
 	</div>
-	<div class="container">
-		<div class="row">
-			<!-- Categorie 1 -->
+	<!-- Categorie 1 -->
+	<div class="container-fluid">
+		<div class="row mx-lg-auto" style="max-width: 1510px; max-height: 1310px;">
 		  <div class="col-md-4 d-flex align-items-center justify-content-center">
 			<div class="image-container">
 				<section>
@@ -460,8 +477,8 @@
 		</div>
 	  </div>
 	  <!-- Categorie 4 -->
-	  <div class="container">
-		<div class="row">
+	  <div class="container-fluid">
+		<div class="row mx-lg-auto" style="max-width: 1510px; max-height: 1310px;">
 		  <div class="col-md-4 d-flex align-items-center justify-content-center">
 			<div class="image-container">
 				<section>
@@ -513,8 +530,8 @@
 		<h2 class="text-uppercase gras text-center py-3 titre">derniers messages</h2>
 	</div>
 	<!-- Review 1 -->
-	<div class="row">
-		<div class="col-10 col-md-3 mar my-3">
+	<div class="row justify-content-center">
+		<div class="col-11 col-md-3 my-3 me-md-5">
 			<div class="card">
 				<div class="card-body">
 					<img alt="Avatar" class="rounded-circle" src="./assets/image/account/avatar.png"> <span class="badge bg-primary mare">1</span>
@@ -524,7 +541,7 @@
 			</div>
 		</div>
 		<!-- Review 2 -->
-		<div class="col-10 col-md-3 mar my-3">
+		<div class="col-11 col-md-3 my-3 me-md-5">
 			<div class="card">
 				<div class="card-body">
 					<img alt="Avatar" class="rounded-circle" src="./assets/image/account/avatar.png"> <span class="badge bg-primary mare">5</span>
@@ -534,7 +551,7 @@
 			</div>
 		</div>
 		<!-- Review 3 -->
-		<div class="col-10 col-md-3 mar my-3">
+		<div class="col-11 col-md-3 my-3">
 			<div class="card">
 				<div class="card-body">
 					<img alt="Avatar" class="rounded-circle" src="./assets/image/account/avatar.png"> <span class="badge bg-primary mare">4</span>
@@ -545,8 +562,8 @@
 		</div>
 	</div>
 	<!-- Review 4 -->
-	<div class="row">
-		<div class="col-10 col-md-3 mar my-3">
+	<div class="row justify-content-center">
+		<div class="col-11 col-md-3  my-3 me-md-5">
 			<div class="card">
 				<div class="card-body">
 					<img alt="Avatar" class="rounded-circle" src="./assets/image/account/avatar.png"> <span class="badge bg-primary mare">1</span>
@@ -556,7 +573,7 @@
 			</div>
 		</div>
 		<!-- Review 5 -->
-		<div class="col-10 col-md-3 mar my-3">
+		<div class="col-11 col-md-3 my-3 me-md-5">
 			<div class="card">
 				<div class="card-body">
 					<img alt="Avatar" class="rounded-circle" src="./assets/image/account/avatar.png"> <span class="badge bg-primary mare">5</span>
@@ -566,7 +583,7 @@
 			</div>
 		</div>
 		<!-- Review 6 -->
-		<div class="col-10 col-md-3 mar my-3">
+		<div class="col-11 col-md-3 my-3">
 			<div class="card">
 				<div class="card-body">
 					<img alt="Avatar" class="rounded-circle" src="./assets/image/account/avatar.png"> <span class="badge bg-primary mare">4</span>

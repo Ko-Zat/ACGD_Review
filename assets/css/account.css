@@ -1,3 +1,4 @@
+/* text and title change */
 .grey {
 	background-color: #434343;
 }
@@ -21,6 +22,9 @@
 	background-color: #434343;
 	color: #FFF;
 	font-size: 17px;
+}
+p {
+	font-family: 'Noto Sans', sans-serif;
 }
 .text {
 	font-size: 13px;
@@ -47,22 +51,13 @@
 	font-family: 'Noto Sans', sans-serif;
 	text-decoration: none;
 }
-.neg {
-	margin-top: -0.25rem;
-}
+
 p {
 	text-align: left;
 	font-family: 'Noto Sans', sans-serif;
 }
-.mar {
-	margin-left: 80px;
-	margin-right: 80px;
-}
-.px-14 {
-	padding-left: 14rem;
-	padding-right: 14rem;
-}
-#confirmer {
+/* Navbar and button */
+#bouton_orange, #confirmer {
 	background-color: #f4661b;
 	color: white;
 	padding: 10px 20px;
@@ -84,15 +79,9 @@ p {
 .navbar-toggler {
 	margin-left: auto;
 }
-.tp {
-	top: calc(200px);
-}
-.bgi {
-	background-position: 10px;
-}
-p {
-	font-family: 'Noto Sans', sans-serif;
-}
+
+
+/* Marging and padding */
 .mart {
 	margin-top: 310px;
 }
@@ -116,12 +105,35 @@ p {
 	margin-left: 200px;
 	margin-bottom: 0px;
 }
+.mar {
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.px-14 {
+	padding-left: 14rem;
+	padding-right: 14rem;
+}
 .larr {
 	margin-right: 500px;
+}
+.neg {
+	margin-left: -4.25rem;
 }
 .larl {
 	margin-left: 50px;
 }
+@media (max-width: 1100px) {
+	.px-14 {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+	.log {
+		padding-top: 10px;
+		width: 50px;
+		height: 50px;
+	}  
+ }
+/* Header */
 :root {
 	--orange: #f4661b;
 }
@@ -131,34 +143,14 @@ p {
 #user svg {
 	color: var(--orange)
 }
-#bouton_orange {
-	background-color: #f4661b;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 18px;
-	font-weight: bold;
-	text-transform: uppercase;
-	cursor: pointer;
-	outline: none;
-}
+/*  Position element */
 .pseudo {
 	margin-left: 75px;
 	margin-top: 175px;
 	padding-left: 20px;
 	padding-right: 10px;
 }
-@media (max-width: 1100px) {
-   .px-14 {
-       padding-left: 1rem !important;
-       padding-right: 1rem !important;
-   }
-   .log {
-       padding-top: 10px;
-       width: 50px;
-       height: 50px;
-   }  
-}
+
 .image-container {
 	position: relative;
 	text-align: center;
@@ -176,4 +168,28 @@ p {
   .lienb {
 	font-family: 'Noto Sans', sans-serif;
 	text-decoration: none;
+}
+.tp {
+	top: calc(200px);
+}
+.bgi {
+	background-position: 10px;
+}
+     /* Navbar hoover */
+.navbar-nav .nav-item a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+.navbar-nav .nav-item a:hover {
+    color: #f4661b;
+  }
+  
+.fa-user, .fa-lock,.fa-magnifying-glass{
+    color: #f4661b;
+  }
+        /* Footer hover */
+  footer #lien:hover{
+    color: #f4661b;
 }
