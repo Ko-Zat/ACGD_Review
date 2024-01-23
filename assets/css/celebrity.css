@@ -305,4 +305,18 @@
     width: 100%; 
     margin-left: 0; 
     margin-right: 0; 
-  }
+}
+
+.navbar-nav .nav-item a{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 900;
+
+}
+.navbar-nav .nav-item a:hover {
+  color: #f4661b;
+}
+
+.fa-user, .fa-lock,.fa-magnifying-glass{
+  color: #f4661b;
+}

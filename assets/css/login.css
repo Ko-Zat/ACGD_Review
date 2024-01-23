@@ -2,24 +2,7 @@
     --orange: #f4661b ;
     --grey: #434343;
 
-    
 }
-
-.navbar-nav .nav-item a{
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 900;
-
-}
-.navbar-nav .nav-item a:hover {
-    color: #f4661b;
-  }
-  
-.fa-user, .fa-lock,.fa-magnifying-glass{
-    color: #f4661b;
-  }
-
-
 #bouton_orange {
     background-color: #f4661b; 
     color: white;
@@ -70,7 +53,23 @@
     font-weight: 900;
     
 }
-
 footer #lien:hover{
+    color: #f4661b;
+}
+
+/* DERNIERES MODIFICATIONS CSS DU HEADER */
+
+
+.navbar-nav .nav-item a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+.navbar-nav .nav-item a:hover {
+    color: #f4661b;
+}
+  
+.fa-user, .fa-lock,.fa-magnifying-glass{
     color: #f4661b;
 }
