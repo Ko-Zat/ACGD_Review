@@ -234,3 +234,12 @@ a p:hover {
 .fa-user, .fa-lock,.fa-magnifying-glass{
     color: #f4661b;
   }
+
+.form-control {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100!important;
+    max-width: 2500px;
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
