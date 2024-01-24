@@ -9,6 +9,14 @@
     
 }
 
+li img {
+    width: 100%;
+    
+}
+#box-shadow {
+    -webkit-box-shadow: 8px 6px 7px -1px #000000; 
+    box-shadow: 8px 6px 7px -1px #000000;
+    }
 .main_frame {
 	border: 1px solid var(--color-light-grey);
 	width: 100%;
@@ -45,6 +53,7 @@
     font-family: 'noto sans', sans-serif;
     font-size: 60px;
     text-align: center;
+    text-transform: uppercase;
     color: #F4661B ;
     
 }
@@ -52,6 +61,7 @@
     font-family: 'noto sans', sans-serif;
     font-size: 40px;
     text-align: center;
+    text-transform: uppercase;
     color: white ;
     background-color: #434343;
 }
@@ -59,13 +69,16 @@
     font-family: 'noto sans', sans-serif;
     font-size: 20px;
     text-align: center;
-    color:#F4661B;
+    color:black;
+    text-transform: uppercase;
 }
 .text-center{
     margin: 25px;
 }
 
-
+.form-control{
+    width: 60%;
+}
 
 .navbar-nav {
     display: flex; 
