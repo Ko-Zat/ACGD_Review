@@ -53,7 +53,6 @@
   text-decoration-line: underline;
 }
 
-
 .gras  {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 900;
@@ -78,6 +77,11 @@ p {
   margin-right: auto;
 }
 
+a {
+  margin: 0;
+  padding: 0;
+}
+
 /*HEADER Areview*//*LAST MODIFICATIONS*/
 
 /*MENU NAVBAR Areview*/    
@@ -86,12 +90,20 @@ p {
   font-family: var(--police);
   font-weight: 700;
 }
+
+.d-inline {
+  color: var(--white);
+  font-family: var(--police);
+  font-weight: 700;
+
+}
+
 .navbar-nav .nav-item a{
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 900;
-
 }
+
 .navbar-nav .nav-item a:hover {
   color: #f4661b;
 }
@@ -99,14 +111,14 @@ p {
 .fa-user, .fa-lock,.fa-magnifying-glass{
   color: #f4661b;
 }
+
 #search svg{
   color: var(--orange)
 } 
+
 #user svg{
   color: var(--orange)
 } 
-
-
 
 /*MAIN HOME PAGE Areview*/
 h1 {
@@ -114,12 +126,14 @@ h1 {
   font-family: var(--police);
   font-size: 2Opx;
 }
+
 h2 {
   color: var(--white);
   background-color: var(--grey);
   font-family: var(--police);
   font-size: 30px;
 }
+
 h3 {
   color: var(--blue);
   font-family: var(--police);
@@ -132,10 +146,6 @@ p {
   text-align: justify;
 }
 
-.movie {
-  margin: 0px;
-}
-
 
 /*FOOTER*/
 .footer {
@@ -143,6 +153,7 @@ p {
   background-color: var(--grey);
   font-family: var(--police);
 }
+
 .x_center {
   display: flex; 
   justify-content: center; 
@@ -150,6 +161,7 @@ p {
   margin-left: 0; 
   margin-right: 0; 
 }
+
 #bouton_orange {
   background-color: #f4661b; 
   color: white;
