@@ -87,7 +87,7 @@
     h1{
         color: var(--orange);
         text-align: center;
-        font-size: 50px;
+        font-size: 60px;
         font-family: 'Noto Sans', sans-serif;
     }
     p1{
@@ -105,4 +105,18 @@
        .ban{
         width: 100%;
         height: 150;
+       }
+       h3{
+        color: var(--bleu);
+        font-family: 'Noto Sans', sans-serif;
+        vertical-align: top;
+        font-size: 50px;
+       } h4{
+        color: var(--orange);
+        font-size: 40px;
+        font-family: 'Noto Sans', sans-serif;
+       }
+       p{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 30px;
        }
