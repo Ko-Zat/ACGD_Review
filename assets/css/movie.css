@@ -1,13 +1,6 @@
 :root { 
     --orange: #f4661b;
 }
-#search svg {
-    color : var(--orange);
-}
-.header{
-    background-color: #434343;
-    
-}
 
 li img {
     width: 100%;
@@ -74,26 +67,13 @@ li img {
     color:black;
     text-transform: uppercase;
 }
-.text-center{
-    margin: 25px;
-}
 
 .form-control{
     width: 60%;
 }
 
-.navbar-nav {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    width: 100%; 
-    margin-left: 0; 
-    margin-right: 0; 
-  }
-  
-  .navbar-toggler {
-    margin-left: auto; 
-  }
+
+
 
   .hashtag a {
     color: black;
@@ -154,9 +134,7 @@ a:active {
     text-shadow: 5px 5px;
     border-radius: 30%;
 }
-#user svg{
-    color: var(--orange)
-} 
+ 
 #bouton_orange {
     background-color: #f4661b; 
     color: white;
@@ -167,4 +145,18 @@ a:active {
     text-transform: uppercase; 
     cursor: pointer;
     outline: none;
+}
+
+.navbar-nav .nav-item a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+.navbar-nav .nav-item a:hover {
+    color: #f4661b;
+}
+  
+.fa-user, .fa-lock,.fa-magnifying-glass{
+    color: #f4661b;
 }
