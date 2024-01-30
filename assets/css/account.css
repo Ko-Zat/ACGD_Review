@@ -1,4 +1,19 @@
 /* text and title change */
+*{
+	--bs-gutter-x: 1.2rem;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.marginneg{
+	margin-left: -10px;
+}
+
 .grey {
 	background-color: #434343;
 }
@@ -23,6 +38,7 @@
 	color: #FFF;
 	font-size: 17px;
 }
+
 p {
 	font-family: 'Noto Sans', sans-serif;
 }
