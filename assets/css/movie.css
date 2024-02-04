@@ -137,3 +137,54 @@ li img {
 .fa-magnifying-glass {
     color: #f4661b;
 }
+
+
+/*   RESPONSIVE 
+/* Styles de base pour tous les écrans */
+/* body {
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styles pour les écrans de petite à moyenne taille (par exemple, smartphones et tablettes en mode portrait) */
+/* @media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    } */
+
+    /* Ajoutez d'autres styles pour les écrans de taille moyenne si nécessaire */
+
+
+/* Styles pour les écrans de taille moyenne à grande (par exemple, tablettes en mode paysage et ordinateurs portables) */
+/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 80%;
+    } */
+
+    /* Ajoutez d'autres styles pour les écrans de taille moyenne à grande si nécessaire */
+    
+
+/* Styles pour les écrans plus grands (par exemple, ordinateurs de bureau) */
+/* @media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    /* Ajoutez d'autres styles pour les écrans plus grands si nécessaire */
+
