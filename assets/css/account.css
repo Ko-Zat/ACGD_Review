@@ -1,4 +1,19 @@
 /* text and title change */
+*{
+	--bs-gutter-x: 1.2rem;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.marginneg{
+	margin-left: -10px;
+}
+
 .grey {
 	background-color: #434343;
 }
@@ -23,6 +38,7 @@
 	color: #FFF;
 	font-size: 17px;
 }
+
 p {
 	font-family: 'Noto Sans', sans-serif;
 }
@@ -69,18 +85,6 @@ p {
 	cursor: pointer;
 	outline: none;
 }
-.navbar-nav {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-}
-.navbar-toggler {
-	margin-left: auto;
-}
-
-
 /* Marging and padding */
 .mart {
 	margin-top: 310px;

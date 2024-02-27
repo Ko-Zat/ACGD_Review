@@ -19,104 +19,92 @@
 
 <body>
   <!-- Barre de navigation en tête de page -->
-  <header class="container-fluid sticky-top px-3 bg_grey">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand mx-3 " href="index.html"> <img src="./assets/image/areview-header.png"></a>
+  <header class="sticky-top" style="background-color: #434343;">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/image/areview-header.png" alt="LOGO" width="200" height="100%">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto">
-            <li class="nav-item  px-4">
-              <a class="nav-link text-white gras text-uppercase" href="movies.html">
-                cinéma
-              </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex column-gap-2 align-items-center ms-auto order-lg-2" role="search">
+            <input class="form-control thin" type="search" placeholder="Search" aria-label="Search">
+            <a href="index.html"><i class="fa-solid fa-magnifying-glass" style="width: 20px;height: 100%;"></i></a>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">
+              <i class="fa-solid fa-user" style="width: 20px; height: 100%;"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav d-flex flex-fill text-center order-lg-1">
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="movies.html">cinéma</a>
             </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="series.html">
-                séries
-              </a>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="series.html">séries</a>
             </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="video_game.html">
-                gaming
-              </a>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="video_game.html">gaming</a>
             </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="music.html">
-                musique
-              </a>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="music.html">musique</a>
             </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="book.html">
-                livre
-              </a>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="book.html">livre</a>
             </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-white gras text-uppercase" href="evenement.html">
-                événements
-              </a>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="evenement.html">événements</a>
             </li>
           </ul>
-          <form class="d-flex" role="search" id="search">
-            <input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
-            <a class="btn" href="news_feed.html" role="button"> <i class="fa-solid fa-magnifying-glass"
-                style="height: 25px;width: 25px;"></i></a>
-          </form>
-          <div id="user">
-            <i class="fa-solid fa-user" style="height: 25px; width: 25px;" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
-          </div>
-        </div>
-      </nav>
-      <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header ">
-          <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="input-group my-1" id="Pseudo">
-            <span class="input-group-text " id="logo_pseudo">
-              <i class="fa-solid fa-user"></i>
-            </span>
-            <div class="col-sm ">
-              <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
-                aria-describedby="addon-wrapping">
-            </div>
-          </div>
-          <div class="input-group my-1" id="password">
-            <span class="input-group-text " id="logo_cadenas">
-              <i class="fa-solid fa-lock"></i>
-            </span>
-            <div class="col-sm ">
-              <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
-                aria-describedby="addon-wrapping">
-            </div>
-          </div>
-          <div class="row my-1">
-            <div class="form-check ms-2 text-start">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Se souvenir de moi
-              </label>
-            </div>
-          </div>
-          <div class="row my-1 text-center">
-            <a href=""> Mot de passe oublié ?</a>
-          </div>
-          <div class="row mt-3 text-center">
-            <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
-          </div>
-          <div class="row my-1 text-center">
-            <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
-            <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
-          </div>
         </div>
       </div>
-    </div>
+    </nav>
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header ">
+        <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="input-group my-1" id="Pseudo">
+          <span class="input-group-text " id="logo_pseudo">
+            <i class="fa-solid fa-user" style="color: #f4661B;"></i>
+          </span>
+          <div class="col-sm ">
+            <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+              aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <div class="input-group my-1" id="password">
+          <span class="input-group-text " id="logo_cadenas">
+            <i class="fa-solid fa-lock" style="color: #f4661B;"></i>
+          </span>
+          <div class="col-sm ">
+            <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+              aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <div class="row my-1">
+          <div class="form-check ms-2 text-start">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Se souvenir de moi
+            </label>
+          </div>
+        </div>
+        <div class="row my-1 text-center">
+          <a href=""> Mot de passe oublié ?</a>
+        </div>
+        <div class="row mt-3 text-center">
+          <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
+        </div>
+        <div class="row my-1 text-center">
+          <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+          <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+        </div>
+      </div>
     </div>
   </header>
   <!-- fin de la barre de navigation  -->
@@ -137,33 +125,7 @@
         <li class="splide__slide"><img src="./assets/image/movie_theatre/Slide/joker-bannière.webp"></li>
       </ul>
     </div>
-    <script>
-document.addEventListener( 'DOMContentLoaded', function() {
-    let splide = new Splide( '.splide' , {
-      with: '100%' , 
-      height: '320px',
-      start: 0, 
-      // demarrer le slide à l'image voulu zéro étant l'image 1
-      perPage: 1, 
-      // nombre d'image par slide
-      gap: '10px', 
-      // permet de mettre un espace entre les images si plusieurs sur le meme slide
-      focus: 'center', 
-      type:'fade',
-      snap: true, 
-      // permet de mettre le slide en infini
-      autoplay: true,
-      // permet de lire les slide sans cliquer
-      interval: 2000,
-      // durée entre chaque slide compte en milliseconde donc 1000 = 1 sec
-      speed: 1000,
-      // temps de transition 
-      rewind: true,
-      // permet de rembobinner le slide
-    });
-    splide.mount();
-  } );
-    </script>
+    <script src="./assets/js/movie/main.js"></script>
   </section>
   <!-- fin du carroussel -->
 
@@ -173,10 +135,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
       <p class="h1 uppercase gras">LA PAGE DES CINÉPHILES </p>
     </div>
   </section>
+
   <section>
     <div class="fluid-container">
       <div>
-        <p class="h2 bold">les bandes annonces à ne pas manquer</p>
+        <p class="h2 bold uppercase">les bandes annonces à ne pas manquer</p>
       </div>
 
 
@@ -184,8 +147,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
         <div class="col-12 col-lg-6">
           <div class="row">
             <div class="col-md-2">
-              <a href="./movie_description.html"><img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
-                height="230" id="box-shadow"></a>
+              <a href="./movie_description.html"><img src="./assets/image/movie_theatre/Movies/antman.jpg"
+                  class="rounded-5" alt="antman" width="170" height="230" id="box-shadow"></a>
             </div>
             <div class="col-md-2">
               <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
@@ -227,6 +190,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         </div>
       </div>
     </div>
+
   </section>
 
 
@@ -234,47 +198,57 @@ document.addEventListener( 'DOMContentLoaded', function() {
     <div class="fluid-container col-12 col-lg-12">
       <div class="col-12 col-lg-12">
         <div>
-          <p class="h2 uppercase bold"> Actuellement en salles</p>
+          <p class="h2 uppercase bold "> Actuellement en salles</p>
           <div class="h3 uppercase bold">
-            <p class="d-inline px-3 "> <span style="color:#F4661B">#</span> Films Marvel</p>
-            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Agenda des sorties</p>
-            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Sorties ciné du mois</p>
-            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Actus cinéma</p>
-            <p class="d-inline px-3"> <span style="color:#F4661B;">#</span>Box Office</p>
+            <p class="d-inline uppercase "> <span style="color:#F4661B">#</span> Films Marvel</p>
+            <p class="d-inline uppercase"> <span style="color:#F4661B;">#</span>Agenda des sorties</p>
+            <p class="d-inline uppercase"> <span style="color:#F4661B;">#</span>Sorties ciné du mois</p>
+            <p class="d-inline uppercase"> <span style="color:#F4661B;">#</span>Actus cinéma</p>
+            <p class="d-inline uppercase"> <span style="color:#F4661B;">#</span>Box Office</p>
           </div>
 
           <!-- Terminer bloc recherche de salle, .... -->
-          <div class="d-flex justify-content-center">
-            <div class="input-group mb-3 align-content-md-center">
-              <input type="text" class="form-control light " placeholder="Rechercher une salle : Dax, CGR, 64100,..."
-                aria-label="name" aria-describedby="basic-addon1">
-              <input type="text" class="form-control" placeholder="Connectez vous pour enregistrer vos films favoris">
-            </div>
+
+
+          <div>
+            <form class="row col-xl-8 mx-auto">
+              <div class="col-12 col-xl-8 mb-4">
+                <label class="form-label"></label>
+                <input type="text" class="form-control light " placeholder="Rechercher une salle : Dax, CGR, 64100,..."
+                  aria-label="name" aria-describedby="basic-addon1">
+              </div>
+              <div class="col-12 col-xl-8 mb-lg-4">
+                <label class="form-label"></label>
+                <input type="text" class="form-control" placeholder="Connectez vous pour enregistrer vos films favoris">
+              </div>
+
+
+            </form>
           </div>
+
         </div>
       </div>
 
-      <div class="col-12 col-md-6">
-        <!-- <div>
-          <p class="h3 uppercase bold">SORTIE DE LA SEMAINE</p>
-        </div> -->
+
+
+      <div class="col-12 col-lg-12 mb-4">
         <div class="d-flex flex-row">
           <div>
-            <p class="h3 uppercase bold">SORTIE DE LA SEMAINE</p>
+            <p class="h3 uppercase bold">les sorties de la semaine</p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
               height="230" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
               height="230px" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
               height="230px" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
               height="230px" id="box-shadow">
           </div>
@@ -284,27 +258,25 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
       <!-- mettre les 2 blocs sur la meme ligne -->
 
-      <div class="col-12 col-md-6">
-        <!-- <div>
-          <p class="h3 uppercase bold">TOUJOURS À L'AFFICHE</p>
-        </div> -->
+      <div class="col-12 col-lg-12 mb-4">
+
         <div class="d-flex flex-row-reverse">
           <div>
-            <p class="h3 uppercase bold">TOUJOURS À L'AFFICHE</p>
+            <p class="h3 uppercase bold">toujours à l'affiche</p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
               height="230" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
               height="230px" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
               height="230px" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
               height="230px" id="box-shadow">
           </div>
@@ -313,79 +285,35 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 
 
-      <div class="black hashtag text-start gras">
+      <div class="col-12 col-lg-12 mb-4">
         <div class="d-flex flex-row">
-          <p class="d-inline px-3 uppercase">prochainement</p>
-          <div class="col-md-2">
+          <div>
+            <p class="h3 uppercase bold">prochainnement</p>
+          </div>
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
               height="230" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
               height="230px" id="box-shadow">
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
               height="230px" id="box-shadow">
           </div>
-          <div class="col-md-2">
-            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-        </div>
-        <!-- mettre un espace entre ces 2 blocs -->
-
-        <div class="d-flex flex-row-reverse ">
-          <p class="d-inline px-3 uppercase">LES PLUS ATTENDUS PAR LES FANS</p>
-          <div class="col-md-2">
-            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
-              height="230" id="box-shadow">
-          </div>
-          <div class="col-md-2">
-            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-2">
-            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
               height="230px" id="box-shadow">
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <!-- mettre un espace entre ces 2 blocs -->
 
-  <section>
-    <div>
-      <p class="h2"> DVD & BLU-RAY</p>
-      <div class="black hashtag text-start gras" style="font-size: 14px;">
-        <p class=" d-inline px-3 uppercase"> LES SORTIES DU MOMENT</p>
-        <div class="d-flex flex-row"">
-            <!-- <p class=" d-inline px-3 uppercase"> LES SORTIES DU MOMENT</p> -->
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
-              height="230" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-
-
-          <p class="d-inline px-3 uppercase">POUR LES ENFANTS</p>
-          <div class="d-flex flex-row-reverse ">
-
+      <div class="col-12 col-lg-12 mb-4">
+        <div class="d-flex flex-row-reverse">
+          <div>
+            <p class="h3 uppercase bold">les plus attendus par les fans</p>
           </div>
           <div class="col-md-1">
             <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
@@ -406,92 +334,137 @@ document.addEventListener( 'DOMContentLoaded', function() {
         </div>
       </div>
     </div>
+    </div>
   </section>
-
 
   <section>
     <div>
-      <p class="h2"> VOD</p>
-      <div class="black hashtag text-start gras" style="font-size: 14px;">
-        <div class="d-flex justify-content-center">
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
-              height="230" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
-              height="230" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-        </div>
+      <p class="h2 bold uppercase"> DVD & BLU-RAY</p>
+      <p class="h3 uppercase bold"> LES SORTIES DU MOMENT</p>
+      <div class="d-flex flex-row"">
+          <div class=" col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+          height="230" id="box-shadow">
       </div>
+      <div class="col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+          height="230px" id="box-shadow">
+      </div>
+      <div class="col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+          height="230px" id="box-shadow">
+      </div>
+      <div class="col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+          height="230px" id="box-shadow">
+      </div>
+
+
+      <p class="h3 uppercase bold">POUR LES ENFANTS</p>
+      <div class="d-flex flex-row-reverse ">
+      </div>
+      <div class="col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+          height="230" id="box-shadow">
+      </div>
+      <div class="col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+          height="230px" id="box-shadow">
+      </div>
+      <div class="col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+          height="230px" id="box-shadow">
+      </div>
+      <div class="col-md-1">
+        <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+          height="230px" id="box-shadow">
+      </div>
+    </div>
+    </div>
     </div>
   </section>
 
 
   <section>
     <div>
-      <p class="h2"> STREAMING</p>              
-      <div class="black hashtag text-start gras" style="font-size: 14px;">
-        <div class="d-flex justify-content-between">  
-          <div class="col-md-1">
-            
-            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
-              height="230" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
-              height="230" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
-              height="230px" id="box-shadow">
-          </div>
-          <div class="col-md-1">
-            <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
-              height="230px" id="box-shadow">
-          </div>
+      <p class="h2 bold uppercase"> VOD</p>
+      <div class="d-flex justify-content-center">
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+            height="230" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+            height="230" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+            height="230px" id="box-shadow">
         </div>
       </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <p class="h2 bold uppercase"> STREAMING</p>
+      <div class="d-flex justify-content-between">
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+            height="230" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman.jpg" class="rounded-5" alt="antman" width="170"
+            height="230" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/antman2.jpg" class="rounded-5" alt="antman2" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers.jpg" class="rounded-5" alt="avengers" width="170"
+            height="230px" id="box-shadow">
+        </div>
+        <div class="col-md-1">
+          <img src="./assets/image/movie_theatre/Movies/avengers2.jpg" class="rounded-5" alt="avengers2" width="170"
+            height="230px" id="box-shadow">
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
