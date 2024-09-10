@@ -9,11 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="./assets/css/index.css" rel="stylesheet">
+
     <!--font NOTO-SANS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
+    <link href="./assets/css/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -113,31 +114,39 @@
     <!--MAIN PART HOME PAGE-->
     <main>
         <!--Slider-->
-        <div class="row" id="banner">
-            <div class="col-12 col-md-12">
-                <img src="./assets/image/accueil/slide-acceuil.jpg" alt="slider" width="1920" height="305"
-                    class="slider mt-3">
-                <!--<h1 class="slide text-center">Actuellement</h1>-->
+        <div class="container-fluid">
+            <!-- Banner -->
+            <div class="row" id="banner">
+                <div class="col-12">
+                    <img src="./assets/image/accueil/slide-acceuil.jpg" alt="slider" class="img-fluid slider mt-3">
+                    <!--<h1 class="slide text-center">Actuellement</h1>-->
+                </div>
             </div>
         </div>
+        
 
         <!--Hook of the web site-->
-        <div>
-            <h1 class="tittle text-uppercase gras text-center py-3 titre mb-1 "><strong>distinguer le remarquable du
-                    banal!</strong></h1>
+        <div class="container-fluid">
+            <!-- Titre -->
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title text-uppercase font-weight-bold text-center py-3 mb-1">Distinguer le remarquable du banal !</h1>
+                </div>
+            </div>
         </div>
+        
 
         <div class="container-fluid">
             <!--Category 1 title-->
             <section class="col-12">
+                <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
                 <div class="row">
-                    <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
                     <!--MOVIE-->
                     <article class="col-4">
                         <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/cimema-accueil.jpg"
                             alt="image film aquaman" width="192" height="127" style="height: auto; width: auto;">
                     </article>
-                    <!--Movie section 1-->
+                    <!--Movie  1-->
                     <div class="col-8 pt-3">
                         <div class="row">
                             <div class="col-6">
@@ -234,116 +243,105 @@
                 </div>
             </section>
         </div>
+
+    
         <div class="container-fluid">
-            <!--Category 2 title-->
-            <section class="col-12">
-                <div class="row">
-                    <h2 class="category text-uppercase gras text-center py-2 stitre mt-3"><strong>série</strong></h2>
-                    <!--SERIES-->
-                    <div class="col-sm-8 pt-3">
+            <!-- Category 2 title -->
+            <h2 class="category text-uppercase gras text-center py-2 stitre mt-3"><strong>série</strong></h2>
+
+                <section class="row">
+                    <!-- Series sections -->
+                    <div class="col-md-8 pt-3">
                         <div class="row">
-                            <!--Serie section 1-->
-                            <div class="col-6">
+                            <!-- Serie section 1 -->
+                            <div class="col-md-6">
                                 <div class="row">
                                     <article class="col-4 col-lg-6 text-lg-end">
                                         <h3 class="align-baseline text-capitalize"><strong>aman</strong></h3>
-                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
                                         <p>publié le<timer>24/01/2024</timer>
                                     </article>
-                                    <article class="col-4 col-lg-6 ">
-                                        <img class="img-fluid rounded-5"
-                                            src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman"
-                                            width="192" height="127" style="height: auto; width: auto;">
+                                    <article class="col-4 col-lg-6">
+                                        <img class="img-fluid rounded-5" src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman">
                                     </article>
                                 </div>
                             </div>
                             <!--Serie section 2-->
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="row">
                                     <article class="col-4 col-lg-6 text-lg-end">
-                                        <h3 class="align-baseline text-capitalize"><strong>misanthrope</strong></h3>
-                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <h3 class="align-baseline text-capitalize"><strong>aman</strong></h3>
+                                        <p class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
                                         <p>publié le<timer>24/01/2024</timer>
                                     </article>
-                                    <article class="col-4 col-lg-6 ">
-                                        <img class="img-fluid mt-3 rounded-5"
-                                            src="./assets/image/accueil/acserie-misanthrope.png" alt="image série misanthrope "
-                                            width="192" height="127" style="height: auto; width: auto;">
+                                    <article class="col-4 col-lg-6">
+                                        <img class="img-fluid rounded-5" src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman">
                                     </article>
                                 </div>
                             </div>
                             <!--Serie section 3-->
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="row">
                                     <article class="col-4 col-lg-6 text-lg-end">
-                                        <h3 class="align-baseline text-capitalize"><strong>iris et les hommes</strong></h3>
-                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <h3 class="align-baseline text-capitalize"><strong>aman</strong></h3>
+                                        <p class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
                                         <p>publié le<timer>24/01/2024</timer>
                                     </article>
-
-                                    <article class="col-4 col-lg-6 ">
-                                        <img class="img-fluid rounded-5"
-                                            src="./assets/image/accueil/acserie-iris.jpg" alt="image série iris et les hommes"
-                                            width="192" height="127" style="height: auto; width: auto;">
+                                    <article class="col-4 col-lg-6">
+                                        <img class="img-fluid rounded-5" src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman">
                                     </article>
                                 </div>
                             </div>
                             <!--Serie section 4-->
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="row">
                                     <article class="col-4 col-lg-6 text-lg-end">
-                                        <h3 class="align-baseline text-capitalize"><strong>pauvre créature</strong></h3>
-                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <h3 class="align-baseline text-capitalize"><strong>aman</strong></h3>
+                                        <p class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
                                         <p>publié le<timer>24/01/2024</timer>
                                     </article>
-                                    <article class="col-4 col-lg-6 ">
-                                        <img class="img-fluid mt-3 rounded-5"
-                                            src="./assets/image/accueil/acserie-pauvrecrea.jpg" alt="image série pauvre créature"
-                                            width="192" height="127" style="height: auto; width: auto;">
+                                    <article class="col-4 col-lg-6">
+                                        <img class="img-fluid rounded-5" src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman">
                                     </article>
                                 </div>
                             </div>
                             <!--Serie section 5-->
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="row">
                                     <article class="col-4 col-lg-6 text-lg-end">
-                                        <h3 class="align-baseline text-capitalize"><strong>krisha et le maître</strong></h3>
-                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <h3 class="align-baseline text-capitalize"><strong>aman</strong></h3>
+                                        <p class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
                                         <p>publié le<timer>24/01/2024</timer>
-                                    </article>                                    
-                                    <article class="col-4 col-lg-6 ">
-                                        <img class="img-fluid mt-3 rounded-5"
-                                            src="./assets/image/accueil/acserie-krisha.jpg" alt="image série krisha et le maître"
-                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6">
+                                        <img class="img-fluid rounded-5" src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman">
                                     </article>
                                 </div>
                             </div>
                             <!--Serie section 6-->
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="row">
                                     <article class="col-4 col-lg-6 text-lg-end">
-                                        <h3 class="align-items-lg-baseline text-capitalize"><strong>un coup de dés</strong></h3>
-                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <h3 class="align-baseline text-capitalize"><strong>aman</strong></h3>
+                                        <p class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
                                         <p>publié le<timer>24/01/2024</timer>
-                                    </article>                                   
-                                    <article class="col-4 col-lg-6 ">
-                                        <img class="img-fluid mt-3 rounded-5"
-                                            src="./assets/image/accueil/acserie-coupde.jpg" alt="image série un coup de dés"
-                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6">
+                                        <img class="img-fluid rounded-5" src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman">
                                     </article>
                                 </div>
                             </div>
                          </div>
                     </div>     
-                <div class="col-4">
-                    <div class="row">
-                        <article class="col-12">
-                            <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/serie-accueil.jpg"
-                                alt="image film aquaman" width="490" height="453" style="height: auto; width: auto;">
+                    <!-- Image section -->
+                    <div class="col-md-4">
+                        <div class="row">
+                            <article class="col-12">
+                             <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/serie-accueil.jpg" alt="image série accueil" width="490" height="453">
                         </article>
                     </div>
                 </div>
-             </section>
+            </section>
         </div>
         <div class="container-fluid">
             <!--Category 3 title-->
